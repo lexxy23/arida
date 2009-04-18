@@ -1,0 +1,53 @@
+<project
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
+>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>ds2.arida</groupId>
+	<artifactId>arida-suite</artifactId>
+	<packaging>pom</packaging>
+	<name>Arida Suite</name>
+	<version>0.0.1-SNAPSHOT</version>
+	<description>The complete raid suite</description>
+	<parent>
+		<artifactId>kaeto23-base-pom</artifactId>
+		<groupId>ds2.kaeto23.maven</groupId>
+		<version>1.5-SNAPSHOT</version>
+	</parent>
+	<modules>
+		<module>common</module>
+		<module>ear</module>
+		<module>ext-client</module>
+		<module>webapps</module>
+		<module>ejb</module>
+		<module>aspects</module>
+	</modules>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<configuration>
+					<attach>true</attach>
+				</configuration>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>com.google.code.maven-license-plugin</groupId>
+				<artifactId>maven-license-plugin</artifactId>
+				<configuration>
+					<header>header.txt</header>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
