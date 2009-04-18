@@ -1,0 +1,29 @@
+<project
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
+>
+	<name>Arida Business RAR</name>
+	<description>The rar which allocates all server db JNDIs</description>
+	<parent>
+		<artifactId>arida-business</artifactId>
+		<groupId>ds2.arida</groupId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>arida-business-rar</artifactId>
+	<packaging>rar</packaging>
+	<repositories>
+		<repository>
+			<id>EclipseLink Repo</id>
+			<url>http://www.eclipse.org/downloads/download.php?r=1&amp;nf=1&amp;file=/rt/eclipselink/maven.repo</url>
+     </repository>
+  </repositories>
+  <dependencies>
+  	<dependency>
+  		<groupId>org.eclipse.persistence</groupId>
+  		<artifactId>eclipselink</artifactId>
+  		<version>1.1.0</version>
+  	</dependency>
+  </dependencies>
+</project>
