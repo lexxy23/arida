@@ -1,0 +1,56 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<name>Arida EAR</name>
+	<description>The EAR, ready to deploy into a JEE container</description>
+  <parent>
+    <artifactId>arida-suite</artifactId>
+    <groupId>ds2.arida</groupId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>arida-ear</artifactId>
+  <packaging>ear</packaging>
+  <dependencies>
+  	<dependency>
+  		<groupId>ds2.arida</groupId>
+  		<artifactId>arida-business-impl</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  		<type>ejb</type>
+  	</dependency>
+  	<dependency>
+  		<groupId>ds2.arida</groupId>
+  		<artifactId>arida-guild-webapp</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  		<type>war</type>
+  	</dependency>
+  	<dependency>
+  		<groupId>ds2.arida</groupId>
+  		<artifactId>arida-planer-webapp</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  		<type>war</type>
+  	</dependency>
+  	<dependency>
+  		<groupId>ds2.arida</groupId>
+  		<artifactId>arida-business-rar</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  		<type>rar</type>
+  	</dependency>
+  	<dependency>
+  		<groupId>ds2.arida</groupId>
+  		<artifactId>arida-aspects</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>ds2.arida</groupId>
+  		<artifactId>arida-reporting-webapp</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  		<type>war</type>
+  		<optional>true</optional>
+  	</dependency>
+  	<dependency>
+  		<groupId>ds2.arida</groupId>
+  		<artifactId>arida-ext-client</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  		<optional>true</optional>
+  	</dependency>
+  </dependencies>
+</project>
