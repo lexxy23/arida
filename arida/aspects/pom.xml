@@ -6,7 +6,7 @@
 	<name>Arida Aspects</name>
 	<parent>
 		<artifactId>arida-suite</artifactId>
-		<groupId>ds2.arida</groupId>
+		<groupId>com.google.code.arida</groupId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>

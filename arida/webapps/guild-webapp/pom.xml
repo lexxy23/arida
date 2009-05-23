@@ -6,7 +6,7 @@
 	<name>Arida Guild Webapp</name>
 	<parent>
 		<artifactId>arida-webapps</artifactId>
-		<groupId>ds2.arida</groupId>
+		<groupId>com.google.code.arida</groupId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
@@ -30,4 +30,11 @@
 			</plugin>
 		</plugins>
 	</build>
+	<dependencies>
+		<dependency>
+			<groupId>com.google.code.arida</groupId>
+			<artifactId>arida-webapp-common</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
 </project>

@@ -33,7 +33,10 @@
 	<module id="WebModule_1239032559644">
 		<web>
 			<web-uri>arida-planer-webapp-0.0.1-SNAPSHOT.war</web-uri>
-			<context-root>raid-planer-webapp</context-root>
+			<context-root>arida-planer-webapp</context-root>
 		</web>
+	</module>
+	<module>
+		<connector>arida-business-rar-0.0.1-SNAPSHOT.rar</connector>
 	</module>
 </application>

@@ -7,7 +7,7 @@
 	<description>A client to execute methods on the server. This artifact is usually given to external raid leaders to have them manage the platform</description>
 	<parent>
 		<artifactId>arida-suite</artifactId>
-		<groupId>ds2.arida</groupId>
+		<groupId>com.google.code.arida</groupId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>

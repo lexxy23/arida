@@ -7,14 +7,14 @@
 	<description>Here are all persistence entites (DB DTOs)</description>
 	<parent>
 		<artifactId>arida-business</artifactId>
-		<groupId>ds2.arida</groupId>
+		<groupId>com.google.code.arida</groupId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>arida-business-persistence</artifactId>
 	<dependencies>
 		<dependency>
-			<groupId>ds2.arida</groupId>
+			<groupId>com.google.code.arida</groupId>
 			<artifactId>arida-business-rar</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 			<type>rar</type>
@@ -27,7 +27,7 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>ds2.arida</groupId>
+			<groupId>com.google.code.arida</groupId>
 			<artifactId>arida-common-api</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>

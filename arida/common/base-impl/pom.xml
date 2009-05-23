@@ -6,14 +6,14 @@
 	<name>Arida Common Base Implementation</name>
 	<parent>
 		<artifactId>arida-common</artifactId>
-		<groupId>ds2.arida</groupId>
+		<groupId>com.google.code.arida</groupId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>arida-common-baseimpl</artifactId>
 	<dependencies>
 		<dependency>
-			<groupId>ds2.arida</groupId>
+			<groupId>com.google.code.arida</groupId>
 			<artifactId>arida-common-api</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
