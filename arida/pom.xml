@@ -11,9 +11,9 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<description>The complete raid suite</description>
 	<parent>
-		<artifactId>kaeto23-base-pom</artifactId>
-		<groupId>ds2.kaeto23.maven</groupId>
-		<version>1.5-SNAPSHOT</version>
+		<artifactId>arida-base-pom</artifactId>
+		<groupId>com.google.code.arida</groupId>
+		<version>0.0.2</version>
 	</parent>
 	<modules>
 		<module>common</module>
