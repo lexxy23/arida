@@ -196,13 +196,35 @@
 				<checksumPolicy>ignore</checksumPolicy>
 			</releases>
 		</repository>
+		<repository>
+			<id>ds2</id>
+			<name>DS2 Snapshot Repo</name>
+			<url>http://maven.ds-2.de/snapshots</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<checksumPolicy>warn</checksumPolicy>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>ds2</id>
+			<name>DS2 Releases</name>
+			<url>http://maven.ds-2.de/releases</url>
+			<releases>
+				<checksumPolicy>fail</checksumPolicy>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
 	</repositories>
 	<dependencyManagement>
 		<dependencies>
 		</dependencies>
 	</dependencyManagement>
 	<distributionManagement>
-		<downloadUrl>http://ds-2.de/mavendoc/${groupId}/${artifactId}</downloadUrl>
+		<downloadUrl>http://maven.ds-2.de/site/${groupId}/${artifactId}</downloadUrl>
 		<repository>
 			<id>ds2</id>
 			<name>Arida Releases Repository</name>
@@ -216,7 +238,7 @@
 		<site>
 			<id>ds2</id>
 			<name>DS2 FTP</name>
-			<url>ftp://www.ds-2.de/www/main/mavendoc/${groupId}/${artifactId}</url>
+			<url>ftp://www.ds-2.de/www/maven/site/${groupId}/${artifactId}</url>
 		</site>
 	</distributionManagement>
 </project>
