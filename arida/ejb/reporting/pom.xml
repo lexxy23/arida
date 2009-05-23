@@ -13,7 +13,7 @@
 	<name>Arida Business Reporting</name>
 	<dependencies>
 		<dependency>
-			<groupId>ds2.arida</groupId>
+			<groupId>com.google.code.arida</groupId>
 			<artifactId>arida-business-impl</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 			<type>ejb-client</type>
