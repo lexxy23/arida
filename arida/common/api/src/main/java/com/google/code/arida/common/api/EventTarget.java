@@ -63,4 +63,12 @@ public interface EventTarget {
 	 */
 	public String getDescr(Locale l);
 
+	/**
+	 * Returns the minimum player character level for this target to get
+	 * considered.
+	 * 
+	 * @return the minimum player level, or -1 if not applicable
+	 */
+	public int getMinLevel();
+
 }

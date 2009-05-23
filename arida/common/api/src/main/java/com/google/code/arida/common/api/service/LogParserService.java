@@ -27,7 +27,7 @@ import com.google.code.arida.common.api.TimeLine;
  * @author kaeto23
  * 
  */
-public interface LogService {
+public interface LogParserService {
 	/**
 	 * Interpretes a given event and creates some entries for the database
 	 * 

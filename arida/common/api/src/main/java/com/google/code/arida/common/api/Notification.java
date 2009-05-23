@@ -32,7 +32,7 @@ public interface Notification extends Comment {
 	 * 
 	 * @return the receiver of the notification
 	 */
-	public Character getReceiver();
+	public PlayerCharacter getReceiver();
 
 	/**
 	 * Returns the type of the notification.

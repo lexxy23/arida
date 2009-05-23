@@ -29,7 +29,7 @@ public interface GuildMember {
 	 * 
 	 * @return the character
 	 */
-	public Character getCharacter();
+	public PlayerCharacter getCharacter();
 
 	/**
 	 * Returns the rang of the member

@@ -18,7 +18,8 @@
 package com.google.code.arida.common.api;
 
 /**
- * An event template.
+ * An event template. This template typically is read-only (except when
+ * created). Values can be overridden by the {@link Event} itself.
  * 
  * @author kaeto23
  * 
@@ -53,4 +54,18 @@ public interface EventTemplate {
 	 * @return a possible allowed count for the given class role
 	 */
 	public int getCountOfRole(ClassRole r);
+
+	/**
+	 * Returns the minimum level for a player character to join.
+	 * 
+	 * @return the minimum level, or -1 if not applicable or not necessary
+	 */
+	public int getMinLevel();
+
+	/**
+	 * Returns the maximum level for a player character to join.
+	 * 
+	 * @return the maximum level, or -1 if not applicable or not necessary
+	 */
+	public int getMaxLevel();
 }

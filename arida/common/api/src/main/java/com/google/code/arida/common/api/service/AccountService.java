@@ -24,7 +24,7 @@ import java.util.List;
 import java.util.Set;
 
 import com.google.code.arida.common.api.Account;
-import com.google.code.arida.common.api.Character;
+import com.google.code.arida.common.api.PlayerCharacter;
 
 
 /**
@@ -70,7 +70,7 @@ public interface AccountService {
 	 *            the id of the game
 	 * @return an empty list, or a list of characters
 	 */
-	public List<Character> getAllChars(long accountId, long gameId);
+	public List<PlayerCharacter> getAllChars(long accountId, long gameId);
 
 	/**
 	 * Adds a character to the given account
@@ -83,7 +83,7 @@ public interface AccountService {
 	 *            the game id
 	 * @return TRUE if the character has been created, otherwise FALSE
 	 */
-	public boolean addChar(long accountId, Character c, long gameId);
+	public boolean addChar(long accountId, PlayerCharacter c, long gameId);
 
 	/**
 	 * Updates a character
@@ -92,7 +92,7 @@ public interface AccountService {
 	 *            the character to update
 	 * @return TRUE if update was successful, otherwise FALSE
 	 */
-	public boolean updateChar(Character c);
+	public boolean updateChar(PlayerCharacter c);
 
 	/**
 	 * Deletes an account and all of the characters etc. of this account
@@ -119,7 +119,7 @@ public interface AccountService {
 	 *            the id of the character
 	 * @return null, or the character
 	 */
-	public Character getCharacterById(long id);
+	public PlayerCharacter getCharacterById(long id);
 
 	/**
 	 * Returns all characters with the given name
@@ -128,5 +128,5 @@ public interface AccountService {
 	 *            a regular expression of the name
 	 * @return a set of characters, or an empty set
 	 */
-	public Set<Character> findCharacterByName(String name);
+	public Set<PlayerCharacter> findCharacterByName(String name);
 }

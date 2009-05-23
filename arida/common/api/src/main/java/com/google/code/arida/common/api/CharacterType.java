@@ -21,7 +21,8 @@ import java.util.Locale;
 import java.util.Set;
 
 /**
- * The type or class of a character
+ * The type or class of a character. Implementations of this interface must not
+ * add player-dependable information.
  * 
  * @author kaeto23
  * 

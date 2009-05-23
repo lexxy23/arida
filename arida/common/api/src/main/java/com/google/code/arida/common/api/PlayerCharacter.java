@@ -17,13 +17,16 @@
  */
 package com.google.code.arida.common.api;
 
+import java.util.List;
+
 /**
- * A raid character.
+ * A player character. This is a character that is played by a player (so, no
+ * NPC).
  * 
  * @author kaeto23
  * 
  */
-public interface Character {
+public interface PlayerCharacter {
 	/**
 	 * Returns the name of the character
 	 * 
@@ -39,11 +42,11 @@ public interface Character {
 	public long getId();
 
 	/**
-	 * Returns the type of the character
+	 * Returns the types of this character
 	 * 
-	 * @return the type of the character
+	 * @return the list of character types this char has
 	 */
-	public CharacterType getType();
+	public List<CharacterType> getTypes();
 
 	/**
 	 * Returns the guild or clan of this character
@@ -73,5 +76,5 @@ public interface Character {
 	 * 
 	 * @return null, or the new character
 	 */
-	public Character getRenamedCharacter();
+	public PlayerCharacter getRenamedCharacter();
 }

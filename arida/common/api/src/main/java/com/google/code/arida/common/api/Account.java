@@ -41,11 +41,12 @@ public interface Account {
 	public String getOpenId();
 
 	/**
-	 * A list of characters of this account
+	 * A list of characters of this account. This will return any known
+	 * characters, for every supported game.
 	 * 
 	 * @return an empty list, or a list of characters
 	 */
-	public List<Character> getChars();
+	public List<PlayerCharacter> getChars();
 
 	/**
 	 * Returns the locked state of this account

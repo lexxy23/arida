@@ -61,7 +61,7 @@ public interface Event {
 	 * 
 	 * @return the leader of this event
 	 */
-	public Character getLeader();
+	public PlayerCharacter getLeader();
 
 	/**
 	 * Returns the event template to use
@@ -115,5 +115,19 @@ public interface Event {
 	 *         indicates a forbidden role, and a negative number means no limit
 	 */
 	public int getCountOfRole(ClassRole r);
+
+	/**
+	 * Returns the minimum level for a player character to join.
+	 * 
+	 * @return the minimum level, or -1 if not applicable or not necessary
+	 */
+	public int getMinLevel();
+
+	/**
+	 * Returns the maximum level for a player character to join.
+	 * 
+	 * @return the maximum level, or -1 if not applicable or not necessary
+	 */
+	public int getMaxLevel();
 
 }

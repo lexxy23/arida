@@ -45,7 +45,7 @@ public interface Participation {
 	 * 
 	 * @return the character of this event
 	 */
-	public Character getCharacter();
+	public PlayerCharacter getCharacter();
 
 	/**
 	 * Returns the possible role of this event.

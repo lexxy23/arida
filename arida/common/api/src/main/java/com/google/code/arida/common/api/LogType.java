@@ -31,5 +31,9 @@ public enum LogType {
 	 * EQDKP 1.5 Logfile type. This is usually a XML file containing wipes,
 	 * loot, players etc.
 	 */
-	EQDKP1_5;
+	EQDKP1_5,
+	/**
+	 * The log format for Runes of Magic
+	 */
+	RoM_RAIDLOGGER;
 }

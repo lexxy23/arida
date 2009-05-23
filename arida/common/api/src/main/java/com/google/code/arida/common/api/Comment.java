@@ -39,7 +39,7 @@ public interface Comment {
 	 * 
 	 * @return the author of the comment
 	 */
-	public Character getAuthor();
+	public PlayerCharacter getAuthor();
 
 	/**
 	 * Returns the created date

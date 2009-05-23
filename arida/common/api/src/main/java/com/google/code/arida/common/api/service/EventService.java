@@ -23,7 +23,7 @@ package com.google.code.arida.common.api.service;
 import java.util.Date;
 import java.util.List;
 
-import com.google.code.arida.common.api.Character;
+import com.google.code.arida.common.api.PlayerCharacter;
 import com.google.code.arida.common.api.Event;
 import com.google.code.arida.common.api.EventTarget;
 
@@ -50,7 +50,7 @@ public interface EventService {
 	 *            a possible description
 	 * @return the event, or null in case of an error
 	 */
-	public Event createEvent(Date start, Date end, Character leader,
+	public Event createEvent(Date start, Date end, PlayerCharacter leader,
 			EventTarget t, String descr);
 
 	/**

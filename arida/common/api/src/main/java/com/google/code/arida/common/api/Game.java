@@ -21,7 +21,9 @@ import java.util.Locale;
 import java.util.Set;
 
 /**
- * A game
+ * A game. Implementations of this class must not contain any player-dependable
+ * information. It is considered that the implementation contains only abstract
+ * information about the game.
  * 
  * @author kaeto23
  * 
@@ -42,7 +44,8 @@ public interface Game {
 	public String getTitle();
 
 	/**
-	 * Returns a possible shortcode for the game
+	 * Returns a possible shortcode for the game. This short code is also used
+	 * in the frontend to load appropriate graphics.
 	 * 
 	 * @return null, or a possible short code for the game
 	 */

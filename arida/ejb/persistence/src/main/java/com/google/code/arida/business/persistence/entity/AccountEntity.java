@@ -23,7 +23,7 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 import com.google.code.arida.common.api.Account;
-import com.google.code.arida.common.api.Character;
+import com.google.code.arida.common.api.PlayerCharacter;
 import com.google.code.arida.common.api.NotificationType;
 
 
@@ -45,7 +45,7 @@ public class AccountEntity implements Account {
 	}
 
 	@Override
-	public List<Character> getChars() {
+	public List<PlayerCharacter> getChars() {
 		// TODO Auto-generated method stub
 		return null;
 	}

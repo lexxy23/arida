@@ -15,33 +15,31 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+/**
+ * 
+ */
 package com.google.code.arida.common.api;
 
 /**
- * A raid member
+ * A player character type. This interface is especially for Runes of Magic
+ * where a player character can have multiple (read: two) classes. This
+ * interface also tells the level of the player character.
  * 
  * @author kaeto23
  * 
  */
-public interface RaidMember {
+public interface PlayerCharacterType {
 	/**
-	 * Returns the id of the entry
+	 * Returns the type of the players's character.
 	 * 
-	 * @return the id of the entry
+	 * @return the type
 	 */
-	public long getId();
+	public CharacterType getType();
 
 	/**
-	 * Returns the role of this character
+	 * Returns the level of the player char type
 	 * 
-	 * @return the role of this character
+	 * @return the level, or -1 if not applicable
 	 */
-	public RaidRoles getRole();
-
-	/**
-	 * Returns the raid character.
-	 * 
-	 * @return the raid character
-	 */
-	public PlayerCharacter getCharacter();
+	public int getLevel();
 }

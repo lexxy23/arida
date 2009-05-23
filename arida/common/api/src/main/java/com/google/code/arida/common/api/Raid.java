@@ -61,21 +61,21 @@ public interface Raid {
 	 * 
 	 * @return the lead character of this order
 	 */
-	public Character getLeader();
+	public PlayerCharacter getLeader();
 
 	/**
 	 * Returns the raid order officers.
 	 * 
 	 * @return an empty list, or a set of raid officers
 	 */
-	public Set<Character> getOfficers();
+	public Set<PlayerCharacter> getOfficers();
 
 	/**
 	 * Returns all known members of the raid order.
 	 * 
 	 * @return all known members
 	 */
-	public Set<Character> getMembers();
+	public Set<PlayerCharacter> getMembers();
 
 	/**
 	 * Returns the basic type of this order.

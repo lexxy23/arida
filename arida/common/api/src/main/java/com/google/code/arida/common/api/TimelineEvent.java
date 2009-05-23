@@ -24,7 +24,7 @@ import java.util.Date;
 import java.util.Set;
 
 /**
- * A timeline event
+ * A timeline event. A boss kill, the kill of an enemy.
  * 
  * @author kaeto23
  * 
@@ -42,7 +42,7 @@ public interface TimelineEvent {
 	 * 
 	 * @return a set of characters, or an empty set
 	 */
-	public Set<Character> getAffectedCharacters();
+	public Set<PlayerCharacter> getAffectedCharacters();
 
 	/**
 	 * Returns a possible set of items being dropped in case of a boss fight, or
