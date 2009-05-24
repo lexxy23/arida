@@ -17,5 +17,6 @@
 		<module>persistence</module>
 		<module>rar</module>
 		<module>reporting</module>
+		<module>remoting</module>
 	</modules>
 </project>
