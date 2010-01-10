@@ -1,7 +1,8 @@
 <project
 	xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
+>
 	<name>Arida EAR</name>
 	<description>The EAR, ready to deploy into a JEE container</description>
 	<parent>
@@ -12,6 +13,49 @@
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>arida-ear</artifactId>
 	<packaging>ear</packaging>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-ear-plugin</artifactId>
+				<!-- 
+				<version>2.4</version>
+				-->
+				<configuration>
+					<defaultLibBundleDir>lib</defaultLibBundleDir>
+					<modules>
+						<rarModule>
+							<groupId>com.google.code.arida</groupId>
+							<artifactId>arida-business-rar</artifactId>
+						</rarModule>
+						<ejbModule>
+							<groupId>com.google.code.arida</groupId>
+							<artifactId>arida-business-impl</artifactId>
+						</ejbModule>
+						<ejbClientModule>
+							<groupId>com.google.code.arida</groupId>
+							<artifactId>arida-ext-client</artifactId>
+						</ejbClientModule>
+						<webModule>
+							<groupId>com.google.code.arida</groupId>
+							<artifactId>arida-guild-webapp</artifactId>
+							<contextRoot>/g</contextRoot>
+						</webModule>
+						<webModule>
+							<groupId>com.google.code.arida</groupId>
+							<artifactId>arida-planer-webapp</artifactId>
+							<contextRoot>/p</contextRoot>
+						</webModule>
+						<webModule>
+							<groupId>com.google.code.arida</groupId>
+							<artifactId>arida-reporting-webapp</artifactId>
+							<contextRoot>/reports</contextRoot>
+						</webModule>
+					</modules>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 	<dependencies>
 		<dependency>
 			<groupId>com.google.code.arida</groupId>
@@ -55,48 +99,5 @@
 			<version>0.0.1-SNAPSHOT</version>
 			<optional>true</optional>
 		</dependency>
-		<dependency>
-			<groupId>com.google.code.arida</groupId>
-			<artifactId>arida-remoting-webservices</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
 	</dependencies>
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-ear-plugin</artifactId>
-				<version>2.3.2</version>
-				<configuration>
-					<modules>
-						<webModule>
-							<groupId>com.google.code.arida</groupId>
-							<artifactId>arida-reporting-webapp</artifactId>
-							<contextRoot>reports</contextRoot>
-						</webModule>
-						<webModule>
-							<groupId>com.google.code.arida</groupId>
-							<artifactId>arida-planer-webapp</artifactId>
-							<contextRoot>raidplan</contextRoot>
-						</webModule>
-						<webModule>
-							<groupId>com.google.code.arida</groupId>
-							<artifactId>arida-guild-webapp</artifactId>
-							<contextRoot>clans</contextRoot>
-						</webModule>
-						<!-- 
-						<ejbModule>
-							<groupId>com.google.code.arida</groupId>
-							<artifactId>arida-business-impl</artifactId>
-						</ejbModule>
-						-->
-					</modules>
-					<!-- 
-					<fileNameMapping>full</fileNameMapping>
-					-->
-					<defaultLibBundleDir>lib</defaultLibBundleDir>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
 </project>
