@@ -13,7 +13,7 @@
 	<parent>
 		<artifactId>arida-base-pom</artifactId>
 		<groupId>com.google.code.arida</groupId>
-		<version>0.0.2</version>
+		<version>0.0.3-SNAPSHOT</version>
 	</parent>
 	<modules>
 		<module>common</module>
@@ -23,6 +23,7 @@
 		<module>ejb</module>
 		<module>aspects</module>
 	</modules>
+	<inceptionYear>2010</inceptionYear>
 	<build>
 		<plugins>
 			<plugin>

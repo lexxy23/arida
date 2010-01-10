@@ -23,26 +23,18 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 import com.google.code.arida.common.api.Account;
-import com.google.code.arida.common.api.PlayerCharacter;
 import com.google.code.arida.common.api.NotificationType;
-
+import com.google.code.arida.common.api.PlayerCharacter;
 
 /**
- * The accounts
+ * The accounts.
  * 
- * @author kaeto23
- * 
+ * @author Dirk Strauss
+ * @version 1.0
  */
 @Entity(name = "Account")
 @Table(name = "arida_accounts")
 public class AccountEntity implements Account {
-
-	/**
-	 * 
-	 */
-	public AccountEntity() {
-		// TODO Auto-generated constructor stub
-	}
 
 	@Override
 	public List<PlayerCharacter> getChars() {

@@ -20,10 +20,10 @@ package com.google.code.arida.common.api;
 import java.util.List;
 
 /**
- * A user account
+ * A user account.
  * 
- * @author kaeto23
- * 
+ * @author Dirk Strauss
+ * @version 1.0
  */
 public interface Account {
 	/**
@@ -31,14 +31,14 @@ public interface Account {
 	 * 
 	 * @return the id of the entry
 	 */
-	public long getId();
+	long getId();
 
 	/**
 	 * Returns the openId of this account
 	 * 
 	 * @return the openId of this account
 	 */
-	public String getOpenId();
+	String getOpenId();
 
 	/**
 	 * A list of characters of this account. This will return any known
@@ -46,14 +46,14 @@ public interface Account {
 	 * 
 	 * @return an empty list, or a list of characters
 	 */
-	public List<PlayerCharacter> getChars();
+	List<PlayerCharacter> getChars();
 
 	/**
 	 * Returns the locked state of this account
 	 * 
 	 * @return the locked state of this account
 	 */
-	public boolean isLocked();
+	boolean isLocked();
 
 	/**
 	 * Returns a notification information for the given type
@@ -63,5 +63,5 @@ public interface Account {
 	 * @return null, or the notification info. Maybe an email address, an irc
 	 *         address, a MSISDN etc.
 	 */
-	public String getNotificationInfo(NotificationType t);
+	String getNotificationInfo(NotificationType t);
 }
