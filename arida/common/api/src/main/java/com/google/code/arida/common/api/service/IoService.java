@@ -15,42 +15,17 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.google.code.arida.common.api;
+/**
+ * 
+ */
+package com.google.code.arida.common.api.service;
 
-import java.util.Locale;
+import java.util.Properties;
 
 /**
- * The role of a class. This can be tank, MeleeDD or healer. Whatever the game
- * has to offer
+ * @author kaeto23
  * 
- * @author Dirk Strauss
- * @version 1.0
  */
-public interface ClassRole {
-	/**
-	 * Returns the id of the entry
-	 * 
-	 * @return the id of the entry
-	 */
-	long getId();
-
-	/**
-	 * Returns the name of the role
-	 * 
-	 * @param l
-	 *            the language of the title
-	 * 
-	 * @return the name of the role
-	 */
-	String getTitle(Locale l);
-
-	/**
-	 * Returns a possible description of the role
-	 * 
-	 * @param l
-	 *            the language of the title
-	 * 
-	 * @return null, or a description of the role
-	 */
-	String getDescription(Locale l);
+public interface IoService {
+	Properties loadProperties(String path);
 }

@@ -23,8 +23,8 @@ import java.util.Set;
 /**
  * The raid group. Also known as the Order.
  * 
- * @author kaeto23
- * 
+ * @author Dirk Strauss
+ * @version 1.0
  */
 public interface Raid {
 	/**

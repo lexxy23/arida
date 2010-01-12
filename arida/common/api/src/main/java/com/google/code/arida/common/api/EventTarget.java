@@ -25,8 +25,8 @@ import java.util.Locale;
  * with a set of event targets. But more targets can be added manually via the
  * admin console
  * 
- * @author kaeto23
- * 
+ * @author Dirk Strauss
+ * @version 1.0
  */
 public interface EventTarget {
 	/**

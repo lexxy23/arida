@@ -32,10 +32,6 @@
 							<groupId>com.google.code.arida</groupId>
 							<artifactId>arida-business-impl</artifactId>
 						</ejbModule>
-						<ejbClientModule>
-							<groupId>com.google.code.arida</groupId>
-							<artifactId>arida-ext-client</artifactId>
-						</ejbClientModule>
 						<webModule>
 							<groupId>com.google.code.arida</groupId>
 							<artifactId>arida-guild-webapp</artifactId>

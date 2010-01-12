@@ -22,6 +22,7 @@
 		<module>webapps</module>
 		<module>ejb</module>
 		<module>aspects</module>
+		<module>int-tests</module>
 	</modules>
 	<inceptionYear>2010</inceptionYear>
 	<build>

@@ -25,8 +25,8 @@ import java.util.Set;
  * information. It is considered that the implementation contains only abstract
  * information about the game.
  * 
- * @author kaeto23
- * 
+ * @author Dirk Strauss
+ * @version 1.0
  */
 public interface Game {
 	/**
@@ -34,14 +34,14 @@ public interface Game {
 	 * 
 	 * @return the id of the entry
 	 */
-	public long getId();
+	long getId();
 
 	/**
 	 * Returns the title of the game
 	 * 
 	 * @return the title of the game
 	 */
-	public String getTitle();
+	String getTitle();
 
 	/**
 	 * Returns a possible shortcode for the game. This short code is also used
@@ -49,14 +49,14 @@ public interface Game {
 	 * 
 	 * @return null, or a possible short code for the game
 	 */
-	public String getShortCode();
+	String getShortCode();
 
 	/**
 	 * Returns all known character types of this game
 	 * 
 	 * @return all known character types of this game
 	 */
-	public Set<CharacterType> getTypes();
+	Set<CharacterType> getTypes();
 
 	/**
 	 * Returns the name of a group of characters according to the game
@@ -65,12 +65,12 @@ public interface Game {
 	 *            the locale
 	 * @return something like Guild (in WoW) or Clan (in CS)
 	 */
-	public String getGuildTitle(Locale l);
+	String getGuildTitle(Locale l);
 
 	/**
 	 * Returns a list of possible ingame targets (instances, battlefields etc)
 	 * 
 	 * @return an empty list, or a list of event targets
 	 */
-	public Set<EventTarget> getGameTargets();
+	Set<EventTarget> getGameTargets();
 }

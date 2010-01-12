@@ -23,13 +23,13 @@ package com.google.code.arida.common.api;
 /**
  * The type of a log file string.
  * 
- * @author kaeto23
- * 
+ * @author Dirk Strauss
+ * @version 1.0
  */
 public enum LogType {
 	/**
 	 * EQDKP 1.5 Logfile type. This is usually a XML file containing wipes,
-	 * loot, players etc.
+	 * loot, players etc. Produced by the WoW Addon RaidTracker.
 	 */
 	EQDKP1_5,
 	/**

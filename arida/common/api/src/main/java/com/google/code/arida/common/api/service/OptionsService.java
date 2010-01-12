@@ -15,42 +15,25 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.google.code.arida.common.api;
+/**
+ * 
+ */
+package com.google.code.arida.common.api.service;
 
 import java.util.Locale;
 
 /**
- * The role of a class. This can be tank, MeleeDD or healer. Whatever the game
- * has to offer
+ * A service for managing online options.
  * 
  * @author Dirk Strauss
- * @version 1.0
+ *@version 1.0
  */
-public interface ClassRole {
-	/**
-	 * Returns the id of the entry
-	 * 
-	 * @return the id of the entry
-	 */
-	long getId();
+public interface OptionsService {
+	String getValue(String key);
 
-	/**
-	 * Returns the name of the role
-	 * 
-	 * @param l
-	 *            the language of the title
-	 * 
-	 * @return the name of the role
-	 */
-	String getTitle(Locale l);
+	boolean setValue(String key, String val);
 
-	/**
-	 * Returns a possible description of the role
-	 * 
-	 * @param l
-	 *            the language of the title
-	 * 
-	 * @return null, or a description of the role
-	 */
-	String getDescription(Locale l);
+	boolean setValueI18n(Locale l, String k, String v);
+
+	String getValueI18n(Locale l, String k);
 }
