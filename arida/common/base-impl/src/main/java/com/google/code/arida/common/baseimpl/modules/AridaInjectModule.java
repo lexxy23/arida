@@ -17,27 +17,42 @@
  */
 package com.google.code.arida.common.baseimpl.modules;
 
+import com.google.arida.i18n.I18nService;
+import com.google.code.arida.common.api.EventTarget;
+import com.google.code.arida.common.api.Game;
+import com.google.code.arida.common.api.internal.IoService;
 import com.google.code.arida.common.api.service.AuthenticationService;
+import com.google.code.arida.common.api.service.Converter;
+import com.google.code.arida.common.baseimpl.ConverterImpl;
+import com.google.code.arida.common.baseimpl.EventTargetDto;
+import com.google.code.arida.common.baseimpl.IoServiceImpl;
+import com.google.code.arida.common.baseimpl.games.WoW;
 import com.google.code.arida.common.baseimpl.svc.AuthenticationServiceImpl;
+import com.google.code.arida.i18n.impl.I18nServiceImpl;
 import com.google.inject.Binder;
 import com.google.inject.Module;
 import com.google.inject.Scopes;
-
+import com.google.inject.name.Names;
 
 /**
- * The inject module for binding interfaces to implementations
+ * The inject module for binding interfaces to implementations.
  * 
- * @author kaeto23
- * 
+ * @author Dirk Strauss
+ * @version 1.0
  */
 public class AridaInjectModule implements Module {
 	/**
 	 * {@inheritDoc}
 	 */
 	@Override
-	public void configure(Binder arg0) {
+	public void configure(final Binder arg0) {
 		arg0.bind(AuthenticationService.class).to(
 				AuthenticationServiceImpl.class).in(Scopes.SINGLETON);
+		arg0.bind(Converter.class).to(ConverterImpl.class);
+		arg0.bind(Game.class).annotatedWith(Names.named("WoW")).to(WoW.class);
+		arg0.bind(EventTarget.class).to(EventTargetDto.class);
+		arg0.bind(I18nService.class).to(I18nServiceImpl.class);
+		arg0.bind(IoService.class).to(IoServiceImpl.class);
 	}
 
 }

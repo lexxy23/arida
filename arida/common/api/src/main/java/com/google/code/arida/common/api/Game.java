@@ -41,7 +41,7 @@ public interface Game {
 	 * 
 	 * @return the title of the game
 	 */
-	String getTitle();
+	String getTitle(Locale l);
 
 	/**
 	 * Returns a possible shortcode for the game. This short code is also used
@@ -56,7 +56,7 @@ public interface Game {
 	 * 
 	 * @return all known character types of this game
 	 */
-	Set<CharacterType> getTypes();
+	Set<CharacterType> getTypes(Locale l);
 
 	/**
 	 * Returns the name of a group of characters according to the game
@@ -72,5 +72,5 @@ public interface Game {
 	 * 
 	 * @return an empty list, or a list of event targets
 	 */
-	Set<EventTarget> getGameTargets();
+	Set<EventTarget> getEventTargets(Locale l);
 }

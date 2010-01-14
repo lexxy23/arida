@@ -17,45 +17,50 @@
  */
 package com.google.code.arida.common.api;
 
-import java.util.Locale;
+import java.io.Serializable;
 import java.util.Set;
 
 /**
  * The type or class of a character. Implementations of this interface must not
- * add player-dependable information.
+ * add player-dependable information. Some examples are warrior, dk, medic,
+ * sniper etc.
  * 
- * @author kaeto23
- * 
+ * @author Dirk Strauss
+ * @version 1.0
  */
-public interface CharacterType {
+public interface CharacterType extends Serializable {
 	/**
 	 * Returns the id of the entry
 	 * 
 	 * @return the id of the entry
 	 */
-	public long getId();
+	long getId();
 
 	/**
 	 * Returns the title of the character type. Something like Priest or Warrior
 	 * 
-	 * @param l
-	 *            the locale to use for the title
-	 * 
 	 * @return the title of the character type
 	 */
-	public String getTitle(Locale l);
+	String getTitle();
+
+	/**
+	 * Returns the description of the character.
+	 * 
+	 * @return a description
+	 */
+	String getDescription();
 
 	/**
 	 * Returns a list of possible types of this type
 	 * 
 	 * @return returns a set of classifiers for this type
 	 */
-	public Set<ClassRole> getAllowedRoles();
+	Set<ClassRole> getAllowedRoles();
 
 	/**
 	 * Returns the game this type belongs to
 	 * 
 	 * @return the game
 	 */
-	public Game getGame();
+	Game getGame();
 }

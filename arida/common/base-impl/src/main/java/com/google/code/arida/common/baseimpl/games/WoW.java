@@ -20,18 +20,19 @@
  */
 package com.google.code.arida.common.baseimpl.games;
 
-import java.io.IOException;
-import java.io.InputStream;
 import java.util.HashSet;
 import java.util.Locale;
-import java.util.Properties;
 import java.util.ResourceBundle;
 import java.util.Set;
-import java.util.logging.Logger;
 
 import com.google.code.arida.common.api.CharacterType;
+import com.google.code.arida.common.api.ClassRole;
 import com.google.code.arida.common.api.EventTarget;
-import com.google.code.arida.common.api.Game;
+import com.google.code.arida.common.api.service.Converter;
+import com.google.code.arida.common.baseimpl.CharacterTypeDto;
+import com.google.code.arida.common.baseimpl.ClassRoleDto;
+import com.google.code.arida.common.baseimpl.EventTargetDto;
+import com.google.inject.Inject;
 import com.google.inject.Singleton;
 
 /**
@@ -41,43 +42,59 @@ import com.google.inject.Singleton;
  * @version 1.0
  */
 @Singleton
-public class WoW implements Game {
-	private static final String RESOURCE = "/com/google/code/arida/common/baseimpl/game-wow";
-	private ResourceBundle rb = null;
-	private Properties props = null;
+public class WoW extends AbstractGame {
 	/**
-	 * A logger.
+	 * A list of event targets.
 	 */
-	private static final transient Logger LOG = Logger.getLogger(WoW.class
-			.getName());
+	private Set<EventTarget> targets;
+	/**
+	 * A list of character types.
+	 */
+	private Set<CharacterType> types;
+	/**
+	 * The resource file to load for any WoW related information.
+	 */
+	private static final String MAINRESOURCE = "/com/google/code/arida/common/baseimpl/game-wow-keys.properties";
+	/**
+	 * A number converter.
+	 */
+	@Inject
+	private Converter conv;
 
+	/**
+	 * Initialises the game support for World of Warcraft.
+	 */
 	public WoW() {
-		props = new Properties();
-		InputStream is = getClass()
-				.getResourceAsStream(
-						"/com/google/code/arida/common/baseimpl/game-wow-keys.properties");
-		if (is != null) {
-			try {
-				props.load(is);
-			} catch (IOException e) {
-				LOG.throwing(WoW.class.getName(), "<init>", e);
-			}
-		}
-
+		super("wow", MAINRESOURCE);
 	}
 
 	/**
 	 * {@inheritDoc}
 	 */
 	@Override
-	public Set<EventTarget> getGameTargets() {
-		String targets = props.getProperty("game.targets");
+	public Set<EventTarget> getEventTargets(Locale l) {
+		String targetsStr = props.getProperty("game.targets");
 		Set<EventTarget> rc = new HashSet<EventTarget>();
-		if (targets == null || targets.length() <= 0) {
-			LOG.info("Nothing found!");
+		if (targetsStr == null || targetsStr.length() <= 0) {
+			LOG.info("Nothing found in properties!");
 			return rc;
 		}
-		return null;
+		String[] targetIds = targetsStr.split(",");
+		for (String targetId : targetIds) {
+			StringBuffer baseKey = new StringBuffer("game.targets.")
+					.append(targetId);
+			String titleKey = baseKey.toString() + ".title";
+			EventTargetDto dto = new EventTargetDto();
+			dto.setTitle(i18n.getTranslation(titleKey, "wow", l));
+			dto.setDescr(i18n.getTranslation(baseKey.toString() + ".descr",
+					"wow", l));
+			dto.setShortCode(targetId);
+			dto.setMinLevel(conv.toInt(props.getProperty(baseKey.toString()
+					+ ".minlevel"), 0));
+			rc.add(dto);
+		}
+		targets = rc;
+		return targets;
 	}
 
 	/**
@@ -85,7 +102,11 @@ public class WoW implements Game {
 	 */
 	@Override
 	public String getGuildTitle(Locale l) {
-		return null;
+		if (l == null) {
+			l = Locale.ENGLISH;
+		}
+		ResourceBundle rb = i18n.getResource("wow", l);
+		return rb.getString("game.guildTitle");
 	}
 
 	/**
@@ -93,7 +114,6 @@ public class WoW implements Game {
 	 */
 	@Override
 	public long getId() {
-		// TODO Auto-generated method stub
 		return 0;
 	}
 
@@ -101,24 +121,58 @@ public class WoW implements Game {
 	 * {@inheritDoc}
 	 */
 	@Override
-	public String getShortCode() {
-		return "wow";
+	public String getTitle(Locale l) {
+		if (l == null) {
+			l = Locale.GERMAN;
+		}
+		ResourceBundle rb = i18n.getResource("wow", l);
+		return rb.getString("game.title");
 	}
 
 	/**
 	 * {@inheritDoc}
 	 */
 	@Override
-	public String getTitle() {
-		return "World of Warcraft";
+	public Set<CharacterType> getTypes(Locale l) {
+		String charTypesStr = props.getProperty("game.chartypes");
+		if (charTypesStr == null || charTypesStr.length() <= 0) {
+			return types;
+		}
+		String[] charTypeIds = charTypesStr.split(",");
+		ResourceBundle rb = i18n.getResource("wow", l);
+		for (String charTypeId : charTypeIds) {
+			String baseKey = "game.types." + charTypeId + ".";
+			CharacterTypeDto type = new CharacterTypeDto();
+			type.setGame(this);
+			type.setTitle(rb.getString(baseKey + "title"));
+			type.setDescription(rb.getString(baseKey) + "descr");
+			String rolesStr = rb.getString(baseKey) + "roles";
+			String[] roles = rolesStr.split(",");
+			for (String role : roles) {
+				type.addClassRole(findRoleByCode(role));
+			}
+			types.add(type);
+		}
+		return types;
 	}
 
-	/**
-	 * {@inheritDoc}
-	 */
-	@Override
-	public Set<CharacterType> getTypes() {
-		// TODO Auto-generated method stub
+	private Set<ClassRole> loadRoles(Locale l) {
+		Set<ClassRole> roles = new HashSet<ClassRole>();
+		String rolesStr = props.getProperty("game.charroles");
+		ResourceBundle rb = i18n.getResource("wow", l);
+		String[] roleIds = rolesStr.split(",");
+		String baseKey = "game.role.";
+		for (String roleId : roleIds) {
+			ClassRoleDto r = new ClassRoleDto();
+			r.setDescription(rb.getString(baseKey + roleId + ".descr"));
+			r.setTitle(rb.getString(baseKey + roleId + ".title"));
+			r.setShortcode(roleId);
+			roles.add(r);
+		}
+		return roles;
+	}
+
+	private ClassRole findRoleByCode(String s) {
 		return null;
 	}
 

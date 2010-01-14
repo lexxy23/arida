@@ -17,7 +17,7 @@
  */
 package com.google.code.arida.common.api;
 
-import java.util.Locale;
+import java.io.Serializable;
 
 /**
  * A raid target. An instance or battlefield, or something like that. This is
@@ -28,7 +28,7 @@ import java.util.Locale;
  * @author Dirk Strauss
  * @version 1.0
  */
-public interface EventTarget {
+public interface EventTarget extends Serializable {
 	/**
 	 * Returns the id of the entry.
 	 * 
@@ -44,7 +44,7 @@ public interface EventTarget {
 	 * 
 	 * @return the title of the target
 	 */
-	public String getTitle(Locale l);
+	public String getTitle();
 
 	/**
 	 * Returns a possible short code for the given event target.
@@ -61,7 +61,7 @@ public interface EventTarget {
 	 * 
 	 * @return a possible description, or null
 	 */
-	public String getDescr(Locale l);
+	public String getDescr();
 
 	/**
 	 * Returns the minimum player character level for this target to get

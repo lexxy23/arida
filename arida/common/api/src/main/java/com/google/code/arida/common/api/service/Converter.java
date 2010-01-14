@@ -15,49 +15,26 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.google.code.arida.common.api;
-
-import java.io.Serializable;
+/**
+ * 
+ */
+package com.google.code.arida.common.api.service;
 
 /**
- * The role of a class. This can be tank, MeleeDD or healer. Whatever the game
- * has to offer.
+ * A converter.
  * 
  * @author Dirk Strauss
  * @version 1.0
  */
-public interface ClassRole extends Serializable {
+public interface Converter {
 	/**
-	 * Returns the id of the entry
+	 * Performs an integer conversion of the given string.
 	 * 
-	 * @return the id of the entry
+	 * @param s
+	 *            the string which is expected to be a int value
+	 * @param def
+	 *            a default value in case the conversion fails
+	 * @return the default value, or the parsed int value
 	 */
-	long getId();
-
-	/**
-	 * Returns the name of the role
-	 * 
-	 * @param l
-	 *            the language of the title
-	 * 
-	 * @return the name of the role
-	 */
-	String getTitle();
-
-	/**
-	 * Returns a possible description of the role
-	 * 
-	 * @param l
-	 *            the language of the title
-	 * 
-	 * @return null, or a description of the role
-	 */
-	String getDescription();
-
-	/**
-	 * Returns a short code for this role.
-	 * 
-	 * @return a short code for this role
-	 */
-	String getShortcode();
+	int toInt(String s, int def);
 }

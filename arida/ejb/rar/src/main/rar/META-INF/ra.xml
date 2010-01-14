@@ -25,4 +25,10 @@
 	version="1.5"
 >
 	<vendor-name>vendor-name</vendor-name>
+	<eis-type>rar</eis-type>
+	<resourceadapter-version>1.5</resourceadapter-version>
+	<license>
+		<license-required>false</license-required>
+	</license>
+	<resourceadapter></resourceadapter>
 </connector>

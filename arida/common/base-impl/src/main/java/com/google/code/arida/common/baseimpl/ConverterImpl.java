@@ -15,49 +15,38 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.google.code.arida.common.api;
+/**
+ * 
+ */
+package com.google.code.arida.common.baseimpl;
 
-import java.io.Serializable;
+import com.google.code.arida.common.api.service.Converter;
+import com.google.inject.Singleton;
 
 /**
- * The role of a class. This can be tank, MeleeDD or healer. Whatever the game
- * has to offer.
+ * The base impl for a converter.
  * 
  * @author Dirk Strauss
  * @version 1.0
  */
-public interface ClassRole extends Serializable {
-	/**
-	 * Returns the id of the entry
-	 * 
-	 * @return the id of the entry
-	 */
-	long getId();
+@Singleton
+public class ConverterImpl implements Converter {
 
 	/**
-	 * Returns the name of the role
-	 * 
-	 * @param l
-	 *            the language of the title
-	 * 
-	 * @return the name of the role
+	 * {@inheritDoc}
 	 */
-	String getTitle();
+	@Override
+	public int toInt(String s, int def) {
+		int rc = def;
+		if (s == null || s.length() <= 0) {
+			return rc;
+		}
+		try {
+			rc = Integer.parseInt(s);
+		} catch (NumberFormatException e) {
+			// silently ignored: we have a default value
+		}
+		return rc;
+	}
 
-	/**
-	 * Returns a possible description of the role
-	 * 
-	 * @param l
-	 *            the language of the title
-	 * 
-	 * @return null, or a description of the role
-	 */
-	String getDescription();
-
-	/**
-	 * Returns a short code for this role.
-	 * 
-	 * @return a short code for this role
-	 */
-	String getShortcode();
 }
