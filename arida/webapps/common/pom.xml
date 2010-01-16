@@ -4,7 +4,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
 >
 	<name>Arida Common Web Components</name>
-	<description>Here are basic JSF templates etc. for usage in all arida web archives</description>
+	<description>Here are basic JSF templates etc. for usage in all arida
+		web archives</description>
 	<parent>
 		<artifactId>arida-webapps</artifactId>
 		<groupId>com.google.code.arida</groupId>
@@ -18,16 +19,52 @@
 			<artifactId>yui</artifactId>
 			<version>2.5.0</version>
 			<type>zip</type>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.sun.jersey</groupId>
 			<artifactId>jersey-server</artifactId>
 			<version>1.0.3</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.sun.grizzly</groupId>
 			<artifactId>grizzly-servlet-webserver</artifactId>
 			<version>1.8.3</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.faces</groupId>
+			<artifactId>jsf-impl</artifactId>
+			<version>2.0.2</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.faces</groupId>
+			<artifactId>jsf-api</artifactId>
+			<version>2.0</version>
+			<type>jar</type>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.portlet</groupId>
+			<artifactId>portlet-api</artifactId>
+			<version>2.0</version>
+			<type>jar</type>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-api</artifactId>
+			<version>6.0</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+			<type>jar</type>
+			<scope>compile</scope>
 		</dependency>
 	</dependencies>
 	<build>

@@ -1,6 +1,6 @@
 /**
  * Arida Raid and Clan Management
- * Copyright (C) 2009  Dirk Strauss
+ * Copyright (C) 2009,2010  Dirk Strauss
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,6 +17,7 @@
  */
 package com.google.code.arida.common.api;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -25,7 +26,7 @@ import java.util.Date;
  * @author kaeto23
  * 
  */
-public interface Participation {
+public interface Participation extends Serializable {
 	/**
 	 * Returns the date the member decided to participate
 	 * 

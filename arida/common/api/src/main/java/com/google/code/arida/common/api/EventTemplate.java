@@ -1,6 +1,6 @@
 /**
  * Arida Raid and Clan Management
- * Copyright (C) 2009  Dirk Strauss
+ * Copyright (C) 2009,2010  Dirk Strauss
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,6 +17,8 @@
  */
 package com.google.code.arida.common.api;
 
+import java.io.Serializable;
+
 /**
  * An event template. This template typically is read-only (except when
  * created). Values can be overridden by the {@link Event} itself.
@@ -24,7 +26,7 @@ package com.google.code.arida.common.api;
  * @author kaeto23
  * 
  */
-public interface EventTemplate {
+public interface EventTemplate extends Serializable {
 	/**
 	 * Returns the target of the event
 	 * 

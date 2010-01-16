@@ -1,6 +1,6 @@
 /**
  * Arida Raid and Clan Management
- * Copyright (C) 2009  Dirk Strauss
+ * Copyright (C) 2009,2010  Dirk Strauss
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,13 +17,15 @@
  */
 package com.google.code.arida.common.api;
 
+import java.io.Serializable;
+
 /**
  * The member of a guild
  * 
  * @author kaeto23
  * 
  */
-public interface GuildMember {
+public interface GuildMember extends Serializable {
 	/**
 	 * Returns the character of the guild or clan
 	 * 

@@ -1,6 +1,6 @@
 /**
  * Arida Raid and Clan Management
- * Copyright (C) 2009  Dirk Strauss
+ * Copyright (C) 2009,2010  Dirk Strauss
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,6 +17,7 @@
  */
 package com.google.code.arida.common.api;
 
+import java.io.Serializable;
 import java.net.URL;
 import java.util.Set;
 
@@ -26,7 +27,7 @@ import java.util.Set;
  * @author Dirk Strauss
  * @version 1.0
  */
-public interface Raid {
+public interface Raid extends Serializable {
 	/**
 	 * This ID typically reflects the raid order name. A title like Circle of
 	 * Phoenix may return COP

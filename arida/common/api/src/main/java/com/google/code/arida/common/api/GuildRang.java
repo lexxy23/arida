@@ -1,6 +1,6 @@
 /**
  * Arida Raid and Clan Management
- * Copyright (C) 2009  Dirk Strauss
+ * Copyright (C) 2009,2010  Dirk Strauss
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,6 +17,8 @@
  */
 package com.google.code.arida.common.api;
 
+import java.io.Serializable;
+
 /**
  * A rang of a character within a clan or guild. Usually, a character can have a
  * given rang within a guild which expresses partly the access level of the
@@ -25,7 +27,7 @@ package com.google.code.arida.common.api;
  * @author kaeto23
  * 
  */
-public interface GuildRang {
+public interface GuildRang extends Serializable {
 	/**
 	 * Returns the id of the entry
 	 * 
