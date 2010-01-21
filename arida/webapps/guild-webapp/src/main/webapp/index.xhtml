@@ -21,14 +21,19 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:f="http://java.sun.com/jsf/core"
-	xmlns:arida="http://java.sun.com/jsf/composite/arida"
+	xmlns:arida="http://java.sun.com/jsf/composite/aridacommon"
 	xmlns:h="http://java.sun.com/jsf/html">
 <h:head>
+	<f:loadBundle basename="com.google.code.arida.i18n.arida" var="i18n"/>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>Insert title here</title>
+	<title>
+	#{i18n["arida.title"]}
+	</title>
 </h:head>
 <h:body>
 	<arida:arida-header />
-	<h:graphicImage value=”#{resource[‘arida:arida-icon.png’]}” />
+	<h:graphicImage name="arida-icon48.png" library="aridacommon" />
+	<h:graphicImage name="arida-icon48black.png" library="aridacommon" />
+	<h:graphicImage name="arida-lineout16.png" library="aridacommon" />
 </h:body>
 </html>

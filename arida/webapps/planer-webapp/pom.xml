@@ -60,7 +60,7 @@
 		</dependency>
 		<dependency>
 			<groupId>com.google.code.arida</groupId>
-			<artifactId>arida-wow-game-template</artifactId>
+			<artifactId>arida-game-template-wow</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
