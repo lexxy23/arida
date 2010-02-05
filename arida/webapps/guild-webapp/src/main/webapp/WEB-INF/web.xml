@@ -19,7 +19,7 @@
 	id="WebApp_ID"
 	version="2.5"
 >
-	<display-name>raid-guild-webapp</display-name>
+	<display-name>Arida Guilds Webapp</display-name>
 	<welcome-file-list>
 		<welcome-file>index.jsf</welcome-file>
 	</welcome-file-list>
