@@ -22,7 +22,6 @@
 		<module>ejb</module>
 		<module>aspects</module>
 		<module>int-tests</module>
-		<module>build-tools</module>
 	</modules>
 	<inceptionYear>2009</inceptionYear>
 	<build>
