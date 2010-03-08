@@ -14,5 +14,6 @@
 	<modules>
 		<module>webservices</module>
 		<module>ws-client</module>
+		<module>xmpp</module>
 	</modules>
 </project>
