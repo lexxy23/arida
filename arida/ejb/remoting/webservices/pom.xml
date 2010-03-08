@@ -10,6 +10,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>arida-remoting-webservices</artifactId>
+	<description>The SOAP remote interfaces and contracts.</description>
 	<dependencies>
 		<dependency>
 			<groupId>com.google.code.arida</groupId>

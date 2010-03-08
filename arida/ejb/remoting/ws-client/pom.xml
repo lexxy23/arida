@@ -3,13 +3,14 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<name>Arida Remoting Webservice Client</name>
+	<name>Arida Remoting Webservices Client</name>
 	<parent>
 		<groupId>com.google.code.arida</groupId>
 		<artifactId>arida-business-remoting</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>arida-remoting-ws-client</artifactId>
+	<description>The client that can be downloaded by other services to access arida remotely.</description>
 	<dependencies>
 		<dependency>
 			<groupId>com.google.code.arida</groupId>
