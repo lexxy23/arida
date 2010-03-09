@@ -11,9 +11,14 @@
 	</parent>
 	<artifactId>arida-business-remoting</artifactId>
 	<packaging>pom</packaging>
+	<description>The remote facade to work with arida remotely.</description>
 	<modules>
 		<module>webservices</module>
 		<module>ws-client</module>
 		<module>xmpp</module>
+		<module>gwave</module>
+		<module>api</module>
+		<module>facebook</module>
+		<module>twitter</module>
 	</modules>
 </project>
