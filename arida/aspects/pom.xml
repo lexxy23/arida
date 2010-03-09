@@ -10,7 +10,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
-	<artifactId>arida-aspects</artifactId>
+	<artifactId>arida-interceptors</artifactId>
 	<dependencies>
 		<dependency>
 			<groupId>org.aspectj</groupId>

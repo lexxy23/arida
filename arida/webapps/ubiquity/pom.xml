@@ -5,7 +5,7 @@
 >
 	<name>Arida Ubiquity</name>
 	<parent>
-		<artifactId>arida-webapps</artifactId>
+		<artifactId>arida-frontend</artifactId>
 		<groupId>com.google.code.arida</groupId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>

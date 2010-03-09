@@ -20,5 +20,6 @@
 		<module>api</module>
 		<module>facebook</module>
 		<module>twitter</module>
+		<module>gbuzz</module>
 	</modules>
 </project>

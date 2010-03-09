@@ -7,7 +7,7 @@
 	<description>Here are basic JSF templates etc. for usage in all arida
 		web archives</description>
 	<parent>
-		<artifactId>arida-webapps</artifactId>
+		<artifactId>arida-frontend</artifactId>
 		<groupId>com.google.code.arida</groupId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
