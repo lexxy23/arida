@@ -21,5 +21,8 @@
 		<module>facebook</module>
 		<module>twitter</module>
 		<module>gbuzz</module>
+		<module>myspace</module>
+		<module>posterous</module>
+		<module>publishers</module>
 	</modules>
 </project>
