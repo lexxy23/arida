@@ -1,0 +1,305 @@
+<raidlog>
+	<head>
+		<export>
+			<name>EQdkp Plus XML</name>
+			<version>1.0</version>
+		</export>
+		<tracker>
+			<name>Raid Tracker</name>
+			<version>2.2.27</version>
+		</tracker>
+		<gameinfo>
+			<game>World of Warcraft</game>
+			<language>deDE</language>
+			<charactername>Ashika</charactername>
+		</gameinfo>
+	</head>
+	<raiddata>
+		<zones>
+			<zone>
+				<enter>1268574148</enter>
+				<leave>1268586453</leave>
+				<name>Icecrown Citadel</name>
+				<difficulty>1</difficulty>
+			</zone>
+		</zones>
+		<bosskills>
+			<bosskill>
+				<name>Lord Marrowgar</name>
+				<time>1268576491</time>
+			</bosskill>
+			<bosskill>
+				<name>Lady Deathwhisper</name>
+				<time>1268577262</time>
+			</bosskill>
+			<bosskill>
+				<name>Deathbringer Saurfang</name>
+				<time>1268578442</time>
+			</bosskill>
+			<bosskill>
+				<name>Festergut</name>
+				<time>1268583350</time>
+			</bosskill>
+		</bosskills>
+		<members>
+			<member>
+				<name>Zeferino</name>
+				<race>Gnome</race>
+				<guild>Der heilige Orden</guild>
+				<sex>2</sex>
+				<class>WARLOCK</class>
+				<level>80</level>
+				<times>
+					<time
+						type='join'>1268574148</time>
+					<time
+						type='leave'>1268586453</time>
+				</times>
+			</member>
+			<member>
+				<name>Sharrath</name>
+				<race>Draenei</race>
+				<guild>Renaissance</guild>
+				<sex>2</sex>
+				<class>PRIEST</class>
+				<level>80</level>
+				<times>
+					<time
+						type='join'>1268574148</time>
+					<time
+						type='leave'>1268586453</time>
+				</times>
+			</member>
+			<member>
+				<name>Applemô</name>
+				<race>NightElf</race>
+				<guild>Der heilige Orden</guild>
+				<sex>2</sex>
+				<class>DRUID</class>
+				<level>80</level>
+				<times>
+					<time
+						type='join'>1268574481</time>
+					<time
+						type='leave'>1268575047</time>
+					<time
+						type='join'>1268575225</time>
+					<time
+						type='leave'>1268586453</time>
+				</times>
+			</member>
+			<member>
+				<name>Tálla</name>
+				<race>NightElf</race>
+				<guild>Der heilige Orden</guild>
+				<sex>2</sex>
+				<class>ROGUE</class>
+				<level>80</level>
+				<times>
+					<time
+						type='join'>1268574268</time>
+					<time
+						type='leave'>1268586358</time>
+				</times>
+			</member>
+			<member>
+				<name>Kasori</name>
+				<race>Draenei</race>
+				<guild>Der heilige Orden</guild>
+				<sex>3</sex>
+				<class>SHAMAN</class>
+				<level>80</level>
+				<times>
+					<time
+						type='join'>1268574461</time>
+					<time
+						type='leave'>1268575047</time>
+					<time
+						type='join'>1268575239</time>
+					<time
+						type='leave'>1268586453</time>
+				</times>
+			</member>
+			<member>
+				<name>Sápphírá</name>
+				<race>NightElf</race>
+				<guild>Der heilige Orden</guild>
+				<sex>3</sex>
+				<class>PRIEST</class>
+				<level>80</level>
+				<times>
+					<time
+						type='join'>1268576008</time>
+					<time
+						type='leave'>1268586453</time>
+				</times>
+			</member>
+			<member>
+				<name>Folcmar</name>
+				<race>Human</race>
+				<guild>Der heilige Orden</guild>
+				<sex>2</sex>
+				<class>WARRIOR</class>
+				<level>80</level>
+				<times>
+					<time
+						type='join'>1268574148</time>
+					<time
+						type='leave'>1268586453</time>
+				</times>
+			</member>
+			<member>
+				<name>Lúuna</name>
+				<race>Human</race>
+				<guild>Der heilige Orden</guild>
+				<sex>3</sex>
+				<class>PRIEST</class>
+				<level>80</level>
+				<times>
+					<time
+						type='join'>1268574148</time>
+					<time
+						type='leave'>1268586453</time>
+				</times>
+			</member>
+			<member>
+				<name>Aeonaria</name>
+				<race>Gnome</race>
+				<guild>Der heilige Orden</guild>
+				<sex>3</sex>
+				<class>MAGE</class>
+				<level>80</level>
+				<times>
+					<time
+						type='join'>1268575047</time>
+					<time
+						type='leave'>1268586453</time>
+				</times>
+			</member>
+			<member>
+				<name>Wergerus</name>
+				<race>Draenei</race>
+				<guild>Der heilige Orden</guild>
+				<sex>2</sex>
+				<class>PALADIN</class>
+				<level>80</level>
+				<times>
+					<time
+						type='join'>1268574300</time>
+					<time
+						type='leave'>1268586453</time>
+				</times>
+			</member>
+			<member>
+				<name>Megashira</name>
+				<race>Draenei</race>
+				<guild>Der heilige Orden</guild>
+				<sex>2</sex>
+				<class>WARRIOR</class>
+				<level>80</level>
+				<times>
+					<time
+						type='join'>1268574319</time>
+					<time
+						type='leave'>1268586453</time>
+				</times>
+			</member>
+		</members>
+		<items>
+			<item>
+				<name>Pygmäenschultern des Banditen</name>
+				<time>1268575414</time>
+				<member>Folcmar</member>
+				<itemid>36153:0:0:0:0:0:-40:1287782472:80</itemid>
+			</item>
+			<item>
+				<name>Wesirsschuhe des Wals</name>
+				<time>1268575879</time>
+				<member>Zeferino</member>
+				<itemid>36052:0:0:0:0:0:-8:-2062745522:80</itemid>
+			</item>
+			<item>
+				<name>Verderbte versilberte Gamaschen</name>
+				<time>1268576534</time>
+				<member>disenchanted</member>
+				<itemid>50775:0:0:0:0:0:0:-1856081536:80</itemid>
+			</item>
+			<item>
+				<name>Knochenbrecherszepter</name>
+				<time>1268576544</time>
+				<member>Wergerus</member>
+				<itemid>50760:0:0:0:0:0:0:-2124516992:80</itemid>
+				<cost>0</cost>
+			</item>
+			<item>
+				<name>Seelenloser Zauberstab des Herbeirufers</name>
+				<time>1268576723</time>
+				<member>Wergerus</member>
+				<itemid>36668:0:0:0:0:0:-39:733478946:80</itemid>
+			</item>
+			<item>
+				<name>Spinnenlordgürtel des Falken</name>
+				<time>1268576774</time>
+				<member>Kasori</member>
+				<itemid>36275:0:0:0:0:0:-11:1331494990:80</itemid>
+			</item>
+			<item>
+				<name>Handschutz von Frost und Graupel</name>
+				<time>1268577289</time>
+				<member>disenchanted</member>
+				<itemid>50777:0:0:0:0:0:0:679587776:80</itemid>
+			</item>
+			<item>
+				<name>Baton des Geißelfürsten</name>
+				<time>1268577313</time>
+				<member>Sápphírá</member>
+				<itemid>50781:0:0:0:0:0:0:948023232:80</itemid>
+			</item>
+			<item>
+				<name>Armschienen des Eiskronenbollwerks</name>
+				<time>1268577950</time>
+				<member>disenchanted</member>
+				<itemid>50789:0:0:0:0:0:0:1290754560:80</itemid>
+			</item>
+			<item>
+				<name>Eisverstärkter Vrykulhelm</name>
+				<time>1268577963</time>
+				<member>Kasori</member>
+				<itemid>50797:0:0:0:0:0:0:1559190016:80</itemid>
+				<cost>0</cost>
+			</item>
+			<item>
+				<name>Klingengekerbter Knochenpanzer</name>
+				<time>1268578473</time>
+				<member>Folcmar</member>
+				<itemid>50801:0:0:0:0:0:0:378641280:80</itemid>
+			</item>
+			<item>
+				<name>Todgeschmiedete Beinplatten</name>
+				<time>1268578493</time>
+				<member>Folcmar</member>
+				<itemid>50808:0:0:0:0:0:0:647076736:80</itemid>
+				<cost>0</cost>
+			</item>
+			<item>
+				<name>Wesirskapuze des Herbeirufers</name>
+				<time>1268582471</time>
+				<member>Folcmar</member>
+				<itemid>36055:0:0:0:0:0:-39:-1911160728:80</itemid>
+			</item>
+			<item>
+				<name>Taldrons lange vernachlässigte Stiefel</name>
+				<time>1268583374</time>
+				<member>disenchanted</member>
+				<itemid>50812:0:0:0:0:0:0:-1999480448:80</itemid>
+			</item>
+			<item>
+				<name>Abrakadaver</name>
+				<time>1268583396</time>
+				<member>Zeferino</member>
+				<itemid>50966:0:0:0:0:0:0:-1731044992:80</itemid>
+				<cost>0</cost>
+			</item>
+		</items>
+	</raiddata>
+</raidlog>
