@@ -24,5 +24,6 @@
 		<module>myspace</module>
 		<module>posterous</module>
 		<module>publishers</module>
+		<module>irc</module>
 	</modules>
 </project>
