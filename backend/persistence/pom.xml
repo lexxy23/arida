@@ -1,0 +1,37 @@
+<project
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
+>
+	<name>Arida Business Persistence</name>
+	<description>Here are all persistence entites (DB DTOs)</description>
+	<parent>
+		<artifactId>arida-business</artifactId>
+		<groupId>com.google.code.arida</groupId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>arida-business-persistence</artifactId>
+	<dependencies>
+		<dependency>
+			<groupId>com.google.code.arida</groupId>
+			<artifactId>arida-business-rar</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<type>rar</type>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.persistence</groupId>
+			<artifactId>persistence-api</artifactId>
+			<version>1.0</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.google.code.arida</groupId>
+			<artifactId>arida-common-api</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+	<build>
+	</build>
+</project>
