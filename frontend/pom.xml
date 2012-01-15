@@ -1,11 +1,11 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <name>Arida Frontend</name>
-  <version>1.0.0.M2-SNAPSHOT</version>
   <description>All frontend related projects</description>
   <parent>
-    <artifactId>arida-base-pom</artifactId>
-    <groupId>com.google.code.arida</groupId>
-    <version>0.3.1</version>
+    <artifactId>arida-project</artifactId>
+    <groupId>ds2.arida</groupId>
+    <version>0.1-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <artifactId>arida-frontend</artifactId>
@@ -14,44 +14,21 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>com.google.code.arida</groupId>
+        <groupId>ds2.arida.common</groupId>
         <artifactId>arida-i18n</artifactId>
-        <version>${common.version}</version>
+        <version>0.1-SNAPSHOT</version>
         <type>jar</type>
         <scope>provided</scope>
       </dependency>
       <dependency>
-        <groupId>com.google.code.arida</groupId>
+        <groupId>ds2.arida.common</groupId>
         <artifactId>arida-common-api</artifactId>
-        <version>${common.version}</version>
+        <version>0.1-SNAPSHOT</version>
         <type>jar</type>
-        <scope>provided</scope>
-      </dependency>
-      <dependency>
-        <groupId>javax.faces</groupId>
-        <artifactId>jsf-api</artifactId>
-        <version>2.0</version>
-        <type>jar</type>
-        <scope>provided</scope>
-      </dependency>
-      <dependency>
-        <groupId>javax.servlet</groupId>
-        <artifactId>jstl</artifactId>
-        <version>1.2</version>
-        <type>jar</type>
-        <scope>provided</scope>
-      </dependency>
-      <dependency>
-        <groupId>com.sun.faces</groupId>
-        <artifactId>jsf-impl</artifactId>
-        <version>2.0.2</version>
         <scope>provided</scope>
       </dependency>
     </dependencies>
   </dependencyManagement>
-  <properties>
-    <common.version>1.0.0.M1</common.version>
-  </properties>
   <modules>
     <module>common</module>
     <module>games</module>
@@ -64,11 +41,5 @@
     <developerConnection>scm:svn:https://arida.googlecode.com/svn/frontend/trunk/</developerConnection>
     <url>http://code.google.com/p/arida/source/browse/frontend/trunk/</url>
   </scm>
-  <distributionManagement>
-    <site>
-      <id>ds2.sites</id>
-      <name>DS/2 Maven Site</name>
-      <url>dav:https://dev.cerberus.ds2/mavenrepo/site/arida/frontend/${project.version}</url>
-    </site>
-  </distributionManagement>
+  <groupId>ds2.arida.frontend</groupId>
 </project>

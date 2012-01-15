@@ -49,5 +49,6 @@
   </distributionManagement>
   <modules>
     <module>api</module>
+    <module>frontend</module>
   </modules>
 </project>
