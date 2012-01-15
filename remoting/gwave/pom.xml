@@ -1,0 +1,13 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>arida-business-remoting</artifactId>
+    <groupId>com.google.code.arida</groupId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <groupId>com.google.code.arida</groupId>
+  <artifactId>arida-remoting-gwave</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Arida Remoting Google Wave</name>
+  <description>The Google Wave remoting bridge</description>
+</project>
