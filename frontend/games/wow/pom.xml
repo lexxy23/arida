@@ -1,0 +1,19 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <name>Arida Frontend Templates - WoW</name>
+  <description>Icons, layout etc. for World of Warcraft</description>
+  <parent>
+    <artifactId>arida-frontend-templates</artifactId>
+    <groupId>com.google.code.arida</groupId>
+    <version>1.0.0.M2-SNAPSHOT</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>arida-frontend-templates-wow</artifactId>
+  <build>
+  </build>
+  <dependencies>
+    <dependency>
+      <groupId>com.google.code.arida</groupId>
+      <artifactId>arida-common-api</artifactId>
+    </dependency>
+  </dependencies>
+</project>

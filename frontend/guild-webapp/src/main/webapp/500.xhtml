@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Arida Raid and Clan Management
+    Copyright (C) 2009-2011  Dirk Strauss
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:h="http://java.sun.com/jsf/html"
+  xmlns:ui="http://java.sun.com/jsf/facelets"
+  xmlns:f="http://java.sun.com/jsf/core"
+  xmlns:arida="http://java.sun.com/jsf/composite/aridacommon">
+<h:head>
+  <f:loadBundle basename="com.google.code.arida.i18n.arida" var="i18n" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="shortcut icon"
+    href="#{resource['aridacommon:arida-lineout16border.png']}"
+    type="image/png"></link>
+  <title><ui:insert name="windowTitle">
+        #{aridaFE["errorTitle"]}
+        -
+        #{i18n["arida.title"]}
+      </ui:insert></title>
+</h:head>
+
+<h:body>
+  <h:outputStylesheet library="arida-css-default" name="styles.css"
+    target="body" />
+
+  <div class="pageHeading">
+  <div class="pageLogo"><h:graphicImage library="aridacommon"
+    name="arida-icon48.png" /></div>
+  <div class="pageHeaderFill"><ui:insert name="adv">Werbung/Banner</ui:insert>
+  </div>
+  </div>
+  <div class="actionHeading">
+  <div class="quickActions"><ui:insert name="quickActions">Quick actions DropMenu</ui:insert>
+  </div>
+  <arida:userStateButton />
+  <div class="clanGameBar"><arida:printGameLogo /> <span><ui:insert
+    name="clanName">Clan Name</ui:insert></span></div>
+  </div>
+  <div class="menuAndContent">
+  <div class="menuLeft">
+
+  <div class="clanLinks"></div>
+  </div>
+  <div class="menuRight"></div>
+
+  <div class="content">
+  <div class="websiteTicker"><ui:insert name="websiteTicker">
+    ticker messages
+  </ui:insert></div>
+  <ui:insert name="content">
+  <h1>#{aridaFE["error.500.title"]}</h1>
+  <p>
+  #{aridaFE["error.500.descr"]}
+  </p>
+  </ui:insert></div>
+
+
+  </div>
+  <div class="pageFooter"><ui:insert name="footer">
+    <arida:printFooter />
+  </ui:insert></div>
+</h:body>
+</html>

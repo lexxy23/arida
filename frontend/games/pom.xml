@@ -1,0 +1,15 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<name>Arida Frontend Templates</name>
+	<description>Here are icons, templates, stylesheets etc. for various games</description>
+	<parent>
+		<artifactId>arida-frontend</artifactId>
+		<groupId>com.google.code.arida</groupId>
+		<version>1.0.0.M2-SNAPSHOT</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>arida-frontend-templates</artifactId>
+	<packaging>pom</packaging>
+	<modules>
+		<module>wow</module>
+	</modules>
+</project>
