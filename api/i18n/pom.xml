@@ -1,0 +1,22 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>arida-common</artifactId>
+    <groupId>com.google.code.arida</groupId>
+    <version>0.0.4-SNAPSHOT</version>
+  </parent>
+  <artifactId>arida-i18n</artifactId>
+  <name>Arida I18N</name>
+  <description>The internationalization files for translating arida into several languages.</description>
+  <scm>
+    <connection>scm:svn:http://arida.googlecode.com/svn/api/trunk/i18n</connection>
+    <developerConnection>scm:svn:https://arida.googlecode.com/svn/api/trunk/i18n</developerConnection>
+    <url>http://code.google.com/p/arida/source/browse/api/trunk/i18n</url>
+  </scm>
+  <dependencies>
+  	<dependency>
+  		<groupId>junit</groupId>
+  		<artifactId>junit</artifactId>
+  	</dependency>
+  </dependencies>
+</project>

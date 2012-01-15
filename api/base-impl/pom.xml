@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <name>Arida Common Base Implementation</name>
+  <parent>
+    <artifactId>arida-common</artifactId>
+    <groupId>com.google.code.arida</groupId>
+    <version>0.0.4-SNAPSHOT</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>arida-common-baseimpl</artifactId>
+  <description>The basic implementations for the some API services.</description>
+  <dependencies>
+    <dependency>
+      <groupId>com.google.code.arida</groupId>
+      <artifactId>arida-common-api</artifactId>
+      <version>0.0.4-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.google.code.arida</groupId>
+      <artifactId>arida-i18n</artifactId>
+      <version>0.0.4-SNAPSHOT</version>
+      <type>jar</type>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-jdk14</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>javax.inject</groupId>
+      <artifactId>javax.inject</artifactId>
+    </dependency>
+  </dependencies>
+  <scm>
+    <connection>scm:svn:http://arida.googlecode.com/svn/api/trunk/base-impl</connection>
+    <developerConnection>scm:svn:https://arida.googlecode.com/svn/api/trunk/base-impl</developerConnection>
+    <url>http://code.google.com/p/arida/source/browse/api/trunk/base-impl</url>
+  </scm>
+</project>
