@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<game-details
+	xmlns="http://www.ds2/ns/arida-gameconfig"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.ds2/ns/arida-gameconfig arida-gameconfig.xsd "
+	id="wow"
+>
+	<name
+		language="de"
+	>World of Warcraft</name>
+	<name
+		language="en"
+	>World of Warcraft</name>
+	<type>MMORPG</type>
+	<logoUri>wow-logo.png</logoUri>
+	<guildTitle
+		language="de"
+	>Gilde</guildTitle>
+	<guildTitle
+		language="en"
+	>guild</guildTitle>
+	<events
+		id="icc25h"
+	>
+		<name
+			language="de"
+		>Eiskronenzitadelle, 25er Heroisch</name>
+		<description
+			language="de"
+		>Die Eiskronenzitadelle, Nordend.</description>
+		<minLevel>80</minLevel>
+		<type>RAID</type>
+	</events>
+	<events
+		id="icc25"
+	>
+		<name
+			language="de"
+		>Eiskronenzitadelle, 25</name>
+		<description
+			language="de"
+		>Die Eiskronenzitadelle für 25 Spieler</description>
+		<minLevel>80</minLevel>
+		<type>RAID</type>
+	</events>
+	<role
+		id="tank"
+	>
+		<name
+			language="de"
+		>Tank</name>
+		<description
+			language="de"
+		>
+			Der Typ, der vorne dran steht.
+		</description>
+		<logoUri>tank.png</logoUri>
+	</role>
+	<role
+		id="melee"
+	>
+		<name
+			language="de"
+		>Nahkämpfer</name>
+		<description
+			language="de"
+		>description</description>
+		<logoUri>melee.png</logoUri>
+	</role>
+	<role
+		id="caster"
+	>
+		<name
+			language="de"
+		>Caster</name>
+		<description
+			language="de"
+		>Ein Magier, oder Schattenpriester. Allgemein, ein Schadensausteiler mit Magie-Ambitionen.</description>
+	</role>
+	<characterType
+		id="warrior"
+	>
+		<name
+			language="de"
+		>Krieger</name>
+		<description
+			language="de"
+		>Der Nahkämpfer schlechthin.</description>
+		<logoUri>warrior.png</logoUri>
+		<allowedRole>tank</allowedRole>
+	</characterType>
+</game-details>

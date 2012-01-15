@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<game-details
+	xmlns="http://www.ds2/ns/arida-gameconfig"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.ds2/ns/arida-gameconfig arida-gameconfig.xsd "
+	id="rom"
+>
+	<name language="de">Runes of Magic</name>
+	<name language="EN">Runes of Magic</name>
+	<type>MMORPG</type>
+	<logoUri>/rom-logo.png</logoUri>
+	<guildTitle language="EN">guild</guildTitle>
+</game-details>

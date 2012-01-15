@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema
+	targetNamespace="http://www.ds2/ns/arida-gameconfig"
+	elementFormDefault="qualified"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://www.ds2/ns/arida-gameconfig"
+>
+	<xsd:complexType
+		name="GameType"
+	>
+        <xsd:annotation>
+        	<xsd:documentation>A set of game data.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+			<xsd:element
+				name="name"
+				type="tns:I18nType"
+				minOccurs="1"
+				maxOccurs="unbounded"
+			>
+                <xsd:annotation>
+                	<xsd:documentation>The name of the game.</xsd:documentation>
+                </xsd:annotation>
+			</xsd:element>
+			<xsd:element
+				name="type"
+				type="tns:GameTypesEnum"
+			>
+                <xsd:annotation>
+                	<xsd:documentation>The type of the game.</xsd:documentation>
+                </xsd:annotation>
+			</xsd:element>
+			<xsd:element
+				name="logoUri"
+				type="xsd:anyURI"
+			>
+                <xsd:annotation>
+                	<xsd:documentation>The URI to the logo of the game.</xsd:documentation>
+                </xsd:annotation>
+			</xsd:element>
+			<xsd:element
+				name="guildTitle"
+				type="tns:I18nType"
+				maxOccurs="unbounded"
+			>
+                <xsd:annotation>
+                	<xsd:documentation>Defines how a set of members for this game is called. For WoW, "guild" is the right one.</xsd:documentation>
+                </xsd:annotation>
+			</xsd:element>
+			<xsd:element
+				name="events"
+				type="tns:EventTargetType"
+				minOccurs="1"
+				maxOccurs="unbounded"
+			>
+                <xsd:annotation>
+                	<xsd:documentation>A set of possible event targets for this game.</xsd:documentation>
+                </xsd:annotation>
+			</xsd:element>
+			<xsd:element
+				name="role"
+				type="tns:ClassRoleType"
+				maxOccurs="unbounded"
+			>
+                <xsd:annotation>
+                	<xsd:documentation>A set of roles that a character can take over.</xsd:documentation>
+                </xsd:annotation>
+			</xsd:element>
+			<xsd:element
+				name="characterType"
+				type="tns:CharacterType"
+				maxOccurs="unbounded"
+			>
+                <xsd:annotation>
+                	<xsd:documentation>A set of character types, or character classes, that this game supports.</xsd:documentation>
+                </xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+		<xsd:attribute
+			name="id"
+			type="xsd:ID"
+			use="required"
+		>
+            <xsd:annotation>
+            	<xsd:documentation>The id of the game. Usually, this is the short code of the game (like wow, rom, cs etc.)</xsd:documentation>
+            </xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType
+		name="GameConfigType"
+	>
+        <xsd:annotation>
+        	<xsd:documentation>A set of game data.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+			<xsd:element
+				name="game"
+				type="tns:GameType"
+				minOccurs="1"
+				maxOccurs="unbounded"
+			>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:element
+		name="game-config"
+		type="tns:GameConfigType"
+	>
+		<xsd:annotation>
+			<xsd:documentation>An element to define a set of games.</xsd:documentation>
+		</xsd:annotation></xsd:element>
+	<xsd:simpleType
+		name="GameTypesEnum"
+	>
+        <xsd:annotation>
+        	<xsd:documentation>A set of game types.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction
+			base="xsd:string"
+		>
+			<xsd:enumeration
+				value="MMORPG"
+			></xsd:enumeration>
+			<xsd:enumeration
+				value="FPS"
+			></xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType
+		name="EventTargetType"
+	>
+        <xsd:annotation>
+        	<xsd:documentation>An event target.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+			<xsd:element
+				name="name"
+				type="tns:I18nType"
+				minOccurs="1"
+				maxOccurs="unbounded"
+			>
+                <xsd:annotation>
+                	<xsd:documentation>A human-readable name of the event target.</xsd:documentation>
+                </xsd:annotation>
+			</xsd:element>
+			<xsd:element
+				name="description"
+				type="tns:I18nType"
+				maxOccurs="unbounded"
+			>
+                <xsd:annotation>
+                	<xsd:documentation>A possible description of the event target.</xsd:documentation>
+                </xsd:annotation>
+			</xsd:element>
+			<xsd:element
+				name="minLevel"
+				type="xsd:int"
+				minOccurs="0"
+			>
+                <xsd:annotation>
+                	<xsd:documentation>The minimum level of a character to allowed to join.
+
+This is an optional information as there are some games who does not support such information!</xsd:documentation>
+                </xsd:annotation>
+			</xsd:element>
+			<xsd:element
+				name="type"
+				type="tns:EventTargetTypes"
+			>
+                <xsd:annotation>
+                	<xsd:documentation>The type of the event target.</xsd:documentation>
+                </xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+		<xsd:attribute
+			name="id"
+			type="xsd:ID"
+			use="required"
+		>
+            <xsd:annotation>
+            	<xsd:documentation>The id of the event target.</xsd:documentation>
+            </xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType
+		name="I18nType"
+	>
+        <xsd:annotation>
+        	<xsd:documentation>The internationalisation type. This type is to support the translation of various names and titles to their appropriate language.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleContent>
+			<xsd:extension
+				base="xsd:string"
+			>
+				<xsd:attributeGroup
+					ref="tns:I18nDeclaration" />
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType
+		name="CharacterType"
+	>
+        <xsd:annotation>
+        	<xsd:documentation>The type of a character. Usually, a class definition (sniper, priest, warrior etc.).</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+			<xsd:element
+				name="name"
+				type="tns:I18nType"
+				maxOccurs="unbounded"
+			>
+                <xsd:annotation>
+                	<xsd:documentation>The (human-readable) name of the character type.</xsd:documentation>
+                </xsd:annotation>
+			</xsd:element>
+			<xsd:element
+				name="description"
+				type="tns:I18nType"
+				maxOccurs="unbounded"
+			>
+                <xsd:annotation>
+                	<xsd:documentation>A possible description of the character type.</xsd:documentation>
+                </xsd:annotation>
+			</xsd:element>
+			<xsd:element
+				name="logoUri"
+				type="xsd:anyURI"
+			>
+                <xsd:annotation>
+                	<xsd:documentation>The URI to the logo icon of this character type.</xsd:documentation>
+                </xsd:annotation>
+			</xsd:element>
+			<xsd:element
+				name="allowedRole"
+				type="xsd:IDREF"
+				maxOccurs="unbounded"
+			>
+                <xsd:annotation>
+                	<xsd:documentation>A list of allowed roles for this character type.</xsd:documentation>
+                </xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+		<xsd:attribute
+			name="id"
+			type="xsd:ID"
+			use="required"
+		>
+            <xsd:annotation>
+            	<xsd:documentation>The id of the character type.
+
+Examples: priest, warrior, sniper, dk</xsd:documentation>
+            </xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType
+		name="ClassRoleType"
+	>
+        <xsd:annotation>
+        	<xsd:documentation>A class role. A role that a class can take over.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+			<xsd:element
+				name="name"
+				type="tns:I18nType"
+				maxOccurs="unbounded"
+			>
+                <xsd:annotation>
+                	<xsd:documentation>A human-readable name of the class role.</xsd:documentation>
+                </xsd:annotation>
+			</xsd:element>
+			<xsd:element
+				name="description"
+				type="tns:I18nType"
+				maxOccurs="unbounded"
+			>
+                <xsd:annotation>
+                	<xsd:documentation>A possible description of the class role.</xsd:documentation>
+                </xsd:annotation>
+			</xsd:element>
+			<xsd:element
+				name="logoUri"
+				type="xsd:anyURI"
+			>
+                <xsd:annotation>
+                	<xsd:documentation>A possible URI to the icon of this role.</xsd:documentation>
+                </xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+		<xsd:attribute
+			name="id"
+			type="xsd:ID"
+			use="required"
+		>
+            <xsd:annotation>
+            	<xsd:documentation>The id of the class role.</xsd:documentation>
+            </xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:element
+		name="game-details"
+		type="tns:GameType"
+	>
+		<xsd:annotation>
+			<xsd:documentation>An element to define a set of game details.</xsd:documentation>
+		</xsd:annotation></xsd:element>
+	<xsd:group
+		name="NameDescriptionGroup"
+	>
+        <xsd:annotation>
+        	<xsd:documentation>A group of elements to define a name/description set of information.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+			<xsd:element
+				name="name"
+				type="tns:I18nType"
+				maxOccurs="unbounded"
+			>
+			</xsd:element>
+			<xsd:element
+				name="description"
+				type="tns:I18nType"
+				maxOccurs="unbounded"
+			>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:group>
+	<xsd:attributeGroup
+		name="I18nDeclaration"
+	>
+        <xsd:annotation>
+        	<xsd:documentation>A group of attributes to define a locale information.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:attribute
+			name="language"
+			type="xsd:language"
+			use="required"
+		>
+            <xsd:annotation>
+            	<xsd:documentation>The language code. For germany, this is usually de, for any english speaking nation, en would be a good idea.</xsd:documentation>
+            </xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute
+			name="countryCode"
+			type="xsd:string"
+			use="optional"
+		>
+            <xsd:annotation>
+            	<xsd:documentation>The possible country code. For germany, de should be taken, or at for austria, or ch for suisse.</xsd:documentation>
+            </xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute
+			name="i18n_variant"
+			type="xsd:string"
+			use="optional"
+		>
+            <xsd:annotation>
+            	<xsd:documentation>A possible locale variant code. For now, this property is ignored.</xsd:documentation>
+            </xsd:annotation>
+		</xsd:attribute>
+	</xsd:attributeGroup>
+	<xsd:simpleType
+		name="EventTargetTypes"
+	>
+        <xsd:annotation>
+        	<xsd:documentation>An event target type.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction
+			base="xsd:string"
+		>
+			<xsd:enumeration
+				value="BATTLEGROUND"
+			></xsd:enumeration>
+			<xsd:enumeration
+				value="RAID"
+			></xsd:enumeration>
+			<xsd:enumeration
+				value="DUNGEON"
+			></xsd:enumeration>
+			<xsd:enumeration
+				value="MAP"
+			></xsd:enumeration>
+			<xsd:enumeration
+				value="PVP"
+			></xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>
