@@ -3,12 +3,12 @@
   <description>The EAR, ready to deploy into a JEE container</description>
   <parent>
     <artifactId>arida-deployment</artifactId>
-    <groupId>com.google.code.arida</groupId>
-    <version>0.0.2-SNAPSHOT</version>
+    <groupId>ds2.arida.deployment</groupId>
+    <version>0.1-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <artifactId>arida-deployment-ear</artifactId>
+  <artifactId>arida</artifactId>
   <packaging>ear</packaging>
   <build>
     <plugins>
@@ -19,7 +19,7 @@
           <defaultLibBundleDir>lib</defaultLibBundleDir>
           <modules>
             <webModule>
-              <groupId>com.google.code.arida</groupId>
+              <groupId>ds2.arida.frontend</groupId>
               <artifactId>arida-frontend-guild-webapp</artifactId>
               <contextRoot>/g</contextRoot>
             </webModule>
@@ -30,16 +30,19 @@
   </build>
   <dependencies>
     <dependency>
-      <groupId>com.google.code.arida</groupId>
+      <groupId>ds2.arida.common</groupId>
       <artifactId>arida-common-api</artifactId>
+      <version>0.1-SNAPSHOT</version>
     </dependency>
     <dependency>
-      <groupId>com.google.code.arida</groupId>
+      <groupId>ds2.arida.common</groupId>
       <artifactId>arida-i18n</artifactId>
+      <version>0.1-SNAPSHOT</version>
     </dependency>
     <dependency>
-      <groupId>com.google.code.arida</groupId>
+      <groupId>ds2.arida.frontend</groupId>
       <artifactId>arida-frontend-guild-webapp</artifactId>
+      <version>0.1-SNAPSHOT</version>
       <type>war</type>
     </dependency>
     <dependency>
