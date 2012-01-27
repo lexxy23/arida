@@ -10,8 +10,8 @@
   <modelVersion>4.0.0</modelVersion>
   <artifactId>arida-common-api</artifactId>
   <scm>
-    <connection>scm:svn:http://arida.googlecode.com/svn/api/trunk/api</connection>
-    <developerConnection>scm:svn:https://arida.googlecode.com/svn/api/trunk/api</developerConnection>
-    <url>http://code.google.com/p/arida/source/browse/api/trunk/api</url>
+    <developerConnection>scm:svn:https://arida.googlecode.com/svn/trunk/api/api</developerConnection>
+    <connection>scm:svn:https://arida.googlecode.com/svn/trunk/api/api</connection>
+    <url>http://code.google.com/p/arida/source/browse/trunk/api/api</url>
   </scm>
 </project>

@@ -48,4 +48,9 @@
       <artifactId>arida-common-api</artifactId>
     </dependency>
   </dependencies>
+  <scm>
+    <developerConnection>scm:svn:https://arida.googlecode.com/svn/trunk/frontend/guild-webapp</developerConnection>
+    <connection>scm:svn:https://arida.googlecode.com/svn/trunk/frontend/guild-webapp</connection>
+    <url>http://code.google.com/p/arida/source/browse/trunk/frontend/guild-webapp</url>
+  </scm>
 </project>

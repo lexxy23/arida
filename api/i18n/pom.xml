@@ -10,9 +10,9 @@
   <name>Arida I18N</name>
   <description>The internationalization files for translating arida into several languages.</description>
   <scm>
-    <connection>scm:svn:http://arida.googlecode.com/svn/api/trunk/i18n</connection>
-    <developerConnection>scm:svn:https://arida.googlecode.com/svn/api/trunk/i18n</developerConnection>
-    <url>http://code.google.com/p/arida/source/browse/api/trunk/i18n</url>
+    <developerConnection>scm:svn:https://arida.googlecode.com/svn/trunk/api/i18n</developerConnection>
+    <connection>scm:svn:https://arida.googlecode.com/svn/trunk/api/i18n</connection>
+    <url>http://code.google.com/p/arida/source/browse/trunk/api/i18n</url>
   </scm>
   <dependencies>
     <dependency>

@@ -15,4 +15,9 @@
       <artifactId>javaee-api</artifactId>
     </dependency>
   </dependencies>
+  <scm>
+    <developerConnection>scm:svn:https://arida.googlecode.com/svn/trunk/frontend/taglib</developerConnection>
+    <connection>scm:svn:https://arida.googlecode.com/svn/trunk/frontend/taglib</connection>
+    <url>http://code.google.com/p/arida/source/browse/trunk/frontend/taglib</url>
+  </scm>
 </project>

@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <name>Arida Deployment</name>
   <description>After all, the deployment data for the website.</description>
   <parent>
@@ -9,14 +10,13 @@
   <modelVersion>4.0.0</modelVersion>
   <artifactId>arida-deployment</artifactId>
   <packaging>pom</packaging>
-  <inceptionYear>2009</inceptionYear>
   <modules>
     <module>ear</module>
   </modules>
   <scm>
-    <connection>scm:svn:http://arida.googlecode.com/svn/deployment/trunk/</connection>
-    <developerConnection>scm:svn:https://arida.googlecode.com/svn/deployment/trunk/</developerConnection>
-    <url>http://code.google.com/p/arida/source/browse/deployment/trunk/</url>
+    <developerConnection>scm:svn:https://arida.googlecode.com/svn/trunk/deployment</developerConnection>
+    <connection>scm:svn:https://arida.googlecode.com/svn/trunk/deployment</connection>
+    <url>http://code.google.com/p/arida/source/browse/trunk/deployment</url>
   </scm>
   <dependencyManagement>
   </dependencyManagement>

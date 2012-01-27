@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <name>Arida Deployment EAR</name>
   <description>The EAR, ready to deploy into a JEE container</description>
   <parent>
@@ -51,4 +52,9 @@
       <scope>compile</scope>
     </dependency>
   </dependencies>
+  <scm>
+    <developerConnection>scm:svn:https://arida.googlecode.com/svn/trunk/deployment/ear</developerConnection>
+    <connection>scm:svn:https://arida.googlecode.com/svn/trunk/deployment/ear</connection>
+    <url>http://code.google.com/p/arida/source/browse/trunk/deployment/ear</url>
+  </scm>
 </project>

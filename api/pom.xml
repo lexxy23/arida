@@ -9,35 +9,15 @@
   <artifactId>arida-common</artifactId>
   <packaging>pom</packaging>
   <description>The base modules, the API, common implementations etc.</description>
-  <issueManagement>
-    <system>redmine</system>
-    <url>http://dev.kaeto23.de/redmine/projects/arida/issues</url>
-  </issueManagement>
-  <ciManagement>
-    <system>hudson</system>
-    <url>http://dev.kaeto23.de/hudson/job/Arida%20API%20Trunk/</url>
-  </ciManagement>
-  <inceptionYear>2009</inceptionYear>
   <scm>
-    <connection>scm:svn:http://arida.googlecode.com/svn/api/trunk/</connection>
-    <developerConnection>scm:svn:https://arida.googlecode.com/svn/api/trunk/</developerConnection>
-    <url>http://code.google.com/p/arida/source/browse/api/trunk/</url>
+    <developerConnection>scm:svn:https://arida.googlecode.com/svn/trunk/api</developerConnection>
+    <connection>scm:svn:https://arida.googlecode.com/svn/trunk/api</connection>
+    <url>http://code.google.com/p/arida/source/browse/trunk/api</url>
   </scm>
-  <organization>
-    <name>DS/2</name>
-    <url>http://ds-2.de/</url>
-  </organization>
   <modules>
     <module>api</module>
     <module>base-impl</module>
     <module>i18n</module>
   </modules>
-  <distributionManagement>
-    <site>
-      <id>ds2.sites</id>
-      <name>DS/2 Maven Site</name>
-      <url>dav:https://dev.cerberus.ds2/mavenrepo/site/arida/common/${project.version}</url>
-    </site>
-  </distributionManagement>
   <groupId>ds2.arida.common</groupId>
 </project>

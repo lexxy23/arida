@@ -10,7 +10,6 @@
   <modelVersion>4.0.0</modelVersion>
   <artifactId>arida-frontend</artifactId>
   <packaging>pom</packaging>
-  <inceptionYear>2009</inceptionYear>
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -37,9 +36,9 @@
     <module>taglib</module>
   </modules>
   <scm>
-    <connection>scm:svn:http://arida.googlecode.com/svn/frontend/trunk/</connection>
-    <developerConnection>scm:svn:https://arida.googlecode.com/svn/frontend/trunk/</developerConnection>
-    <url>http://code.google.com/p/arida/source/browse/frontend/trunk/</url>
+    <developerConnection>scm:svn:https://arida.googlecode.com/svn/trunk/frontend</developerConnection>
+    <connection>scm:svn:https://arida.googlecode.com/svn/trunk/frontend</connection>
+    <url>http://code.google.com/p/arida/source/browse/trunk/frontend</url>
   </scm>
   <groupId>ds2.arida.frontend</groupId>
 </project>

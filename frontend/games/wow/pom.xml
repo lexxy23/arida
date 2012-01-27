@@ -16,4 +16,9 @@
       <artifactId>arida-common-api</artifactId>
     </dependency>
   </dependencies>
+  <scm>
+    <developerConnection>scm:svn:https://arida.googlecode.com/svn/trunk/frontend/games/wow</developerConnection>
+    <connection>scm:svn:https://arida.googlecode.com/svn/trunk/frontend/games/wow</connection>
+    <url>http://code.google.com/p/arida/source/browse/trunk/frontend/games/wow</url>
+  </scm>
 </project>

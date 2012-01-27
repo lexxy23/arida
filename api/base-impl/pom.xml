@@ -36,8 +36,8 @@
     </dependency>
   </dependencies>
   <scm>
-    <connection>scm:svn:http://arida.googlecode.com/svn/api/trunk/base-impl</connection>
-    <developerConnection>scm:svn:https://arida.googlecode.com/svn/api/trunk/base-impl</developerConnection>
-    <url>http://code.google.com/p/arida/source/browse/api/trunk/base-impl</url>
+    <developerConnection>scm:svn:https://arida.googlecode.com/svn/trunk/api/base-impl</developerConnection>
+    <connection>scm:svn:https://arida.googlecode.com/svn/trunk/api/base-impl</connection>
+    <url>http://code.google.com/p/arida/source/browse/trunk/api/base-impl</url>
   </scm>
 </project>
