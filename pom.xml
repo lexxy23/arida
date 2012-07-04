@@ -4,7 +4,7 @@
   <parent>
     <groupId>ds2.base.oss</groupId>
     <artifactId>jee-base</artifactId>
-    <version>0.48</version>
+    <version>0.61</version>
   </parent>
   <groupId>ds2.arida</groupId>
   <artifactId>arida-project</artifactId>
@@ -18,8 +18,8 @@
     <license.header.author>Dirk Strauss</license.header.author>
     <license.header.projectName>Arida</license.header.projectName>
     <issueTrackerId>ARIDA</issueTrackerId>
-    <licenseHeaderTemplate>/oss/gpl-v3-header.txt</licenseHeaderTemplate>
     <siteProjectName>arida</siteProjectName>
+    <license.id>gpl_v3</license.id>
     <license.header.description>A guild and raid management portal</license.header.description>
   </properties>
   <url>http://code.google.com/p/arida/</url>
@@ -54,8 +54,8 @@
     <module>deployment</module>
   </modules>
   <scm>
-    <developerConnection>scm:svn:https://arida.googlecode.com/svn/trunk</developerConnection>
-    <connection>scm:svn:https://arida.googlecode.com/svn/trunk</connection>
+    <developerConnection>scm:git://git@sources.ds2/srv/git/arida</developerConnection>
+    <connection>scm:git://git@sources.ds2/srv/git/arida</connection>
     <url>http://code.google.com/p/arida/source/browse/trunk</url>
   </scm>
 </project>
