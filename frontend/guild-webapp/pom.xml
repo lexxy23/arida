@@ -47,6 +47,10 @@
       <groupId>ds2.arida.common</groupId>
       <artifactId>arida-common-api</artifactId>
     </dependency>
+    <dependency>
+      <groupId>com.lodgon.dalicore</groupId>
+      <artifactId>dalicore-social</artifactId>
+    </dependency>
   </dependencies>
   <scm>
     <developerConnection>scm:svn:https://arida.googlecode.com/svn/trunk/frontend/guild-webapp</developerConnection>

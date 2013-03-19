@@ -58,4 +58,13 @@
     <connection>scm:git://git@sources.ds2/srv/git/arida</connection>
     <url>http://code.google.com/p/arida/source/browse/trunk</url>
   </scm>
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.lodgon.dalicore</groupId>
+        <artifactId>dalicore-social</artifactId>
+        <version>1.0.0</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 </project>
