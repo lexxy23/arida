@@ -9,7 +9,7 @@
     <relativePath>../pom.xml</relativePath>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <artifactId>arida</artifactId>
+  <artifactId>arida-ear</artifactId>
   <packaging>ear</packaging>
   <build>
     <plugins>
@@ -47,8 +47,8 @@
       <type>war</type>
     </dependency>
     <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-jdk14</artifactId>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
       <scope>compile</scope>
     </dependency>
   </dependencies>
