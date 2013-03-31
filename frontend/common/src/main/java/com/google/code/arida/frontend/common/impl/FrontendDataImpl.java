@@ -1,6 +1,6 @@
-/**
- * Arida Raid and Clan Management
- * Copyright (C) 2009-2011  Dirk Strauss
+/*
+ * Arida - A guild and raid management portal
+ * Copyright (C) 2013  Dirk Strauss
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,21 +20,26 @@
  */
 package com.google.code.arida.frontend.common.impl;
 
-import javax.inject.Singleton;
+import javax.enterprise.context.ApplicationScoped;
 
 import com.google.code.arida.frontend.common.api.FrontendData;
 
 /**
- * @author Kaeto23
+ * Some known data about the location of the frontends.
  * 
+ * @author Dirk Strauss
+ * @version 0.1
  */
-@Singleton
+@ApplicationScoped
 public class FrontendDataImpl implements FrontendData {
     
+    /**
+     * The context path.
+     */
     private String contextPath;
     
     /**
-     * 
+     * Inits the service.
      */
     public FrontendDataImpl() {
         // TODO Auto-generated constructor stub
@@ -46,7 +51,7 @@ public class FrontendDataImpl implements FrontendData {
     }
     
     @Override
-    public void setContextPath(String s) {
+    public void setContextPath(final String s) {
         contextPath = s;
     }
     

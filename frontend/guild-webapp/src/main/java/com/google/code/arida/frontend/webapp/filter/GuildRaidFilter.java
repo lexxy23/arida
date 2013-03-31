@@ -1,6 +1,6 @@
-/**
- * Arida Raid and Clan Management
- * Copyright (C) 2009-2011  Dirk Strauss
+/*
+ * Arida - A guild and raid management portal
+ * Copyright (C) 2013  Dirk Strauss
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,7 +21,8 @@ import java.io.IOException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import javax.ejb.EJB;
+import javax.inject.Inject;
+import javax.servlet.DispatcherType;
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
 import javax.servlet.FilterConfig;
@@ -46,21 +47,30 @@ import com.google.code.arida.frontend.common.api.RequestAttributes;
  * A filter to load a guild by a given name, and then forwarding the request to
  * the JSF implementation.
  * 
- * @author Kaeto23
- * 
+ * @author Dirk Strauss
+ * @version 0.1
  */
-@WebFilter(urlPatterns = "/*")
+@WebFilter(urlPatterns = "/*", dispatcherTypes = DispatcherType.REQUEST)
 public class GuildRaidFilter implements Filter {
     /**
      * A logger.
      */
     private static final Logger LOG = LoggerFactory
         .getLogger(GuildRaidFilter.class);
-    private static final Pattern guildTagPattern = Pattern
+    /**
+     * The pattern for a guild tag.
+     */
+    private static final Pattern GUILDTAGPATTERN = Pattern
         .compile(RaidAdminService.GUILDTAGPATTERN.pattern());
-    @EJB
+    /**
+     * The guild service.
+     */
+    @Inject
     private GuildService guildSvc;
-    @EJB
+    /**
+     * The raid service.
+     */
+    @Inject
     private RaidService raidSvc;
     
     /**
@@ -76,13 +86,13 @@ public class GuildRaidFilter implements Filter {
     }
     
     @Override
-    public void doFilter(ServletRequest arg0, ServletResponse arg1,
-        FilterChain arg2) throws IOException, ServletException {
+    public void doFilter(final ServletRequest arg0, final ServletResponse arg1,
+        final FilterChain arg2) throws IOException, ServletException {
         HttpServletRequest req = (HttpServletRequest) arg0;
         String reqUri = req.getRequestURI();
-        LOG.info("reqUri is {}", reqUri);
+        LOG.debug("reqUri is {}", reqUri);
         if (isWebpageRequest(reqUri)) {
-            Matcher m = guildTagPattern.matcher(reqUri);
+            Matcher m = GUILDTAGPATTERN.matcher(reqUri);
             if (!m.find()) {
                 throw new ServletException(
                     "Could not find the given guild or clan!");
@@ -104,23 +114,30 @@ public class GuildRaidFilter implements Filter {
                 req.getRequestDispatcher("/c/index.jsf");
             dispatcher.forward(arg0, arg1);
         } else {
-            LOG.info("pass through {}", reqUri);
+            LOG.debug("pass through {}", reqUri);
             arg2.doFilter(arg0, arg1);
         }
     }
     
-    private boolean isWebpageRequest(String reqUri) {
-        LOG.info("Entering with {}", reqUri);
+    /**
+     * Simple check if the incoming request is for a real web page.
+     * 
+     * @param reqUri
+     *            the request uri
+     * @return TRUE if it's for a web page, otherwise FALSE
+     */
+    private static boolean isWebpageRequest(final String reqUri) {
+        LOG.debug("Entering with {}", reqUri);
         boolean rc = true;
         if (reqUri.indexOf("javax.faces.resource") > 0) {
             rc = false;
         }
-        LOG.info("Exiting with {}", rc);
+        LOG.debug("Exiting with {}", Boolean.valueOf(rc));
         return rc;
     }
     
     @Override
-    public void init(FilterConfig arg0) throws ServletException {
+    public void init(final FilterConfig arg0) throws ServletException {
         LOG.info("Powering up");
     }
     

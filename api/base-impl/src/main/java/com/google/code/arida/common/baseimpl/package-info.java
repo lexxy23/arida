@@ -1,6 +1,6 @@
-/**
- * Arida Raid and Clan Management
- * Copyright (C) 2009-2011  Dirk Strauss
+/*
+ * Arida - A guild and raid management portal
+ * Copyright (C) 2013  Dirk Strauss
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -16,40 +16,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 /**
- * 
+ * Any basic implementations.
  */
 package com.google.code.arida.common.baseimpl;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.logging.Logger;
-
-import com.google.code.arida.common.api.internal.IoService;
-
-/**
- * @author kaeto23
- * 
- */
-public class IoServiceImpl implements IoService {
-	/**
-	 * A logger.
-	 */
-	private static final Logger log = Logger.getLogger(IoServiceImpl.class
-			.getName());
-
-	/**
-	 * {@inheritDoc}
-	 */
-	@Override
-	public void close(final InputStream is) {
-		if (is == null) {
-			log.warning("No inputstream given!");
-		}
-		try {
-			is.close();
-		} catch (IOException e) {
-			log.info(e.getLocalizedMessage());
-		}
-	}
-
-}

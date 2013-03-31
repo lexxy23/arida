@@ -1,6 +1,6 @@
-/**
- * Arida Raid and Clan Management
- * Copyright (C) 2009-2011  Dirk Strauss
+/*
+ * Arida - A guild and raid management portal
+ * Copyright (C) 2013  Dirk Strauss
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -25,15 +25,17 @@ import java.io.InputStream;
 /**
  * The io service support.
  * 
- * @author kaeto23
- * 
+ * @author Dirk Strauss
+ * @version 0.1
+ * @deprecated Better use the DS2 OSS Core IoService.
  */
+@Deprecated
 public interface IoService {
-	/**
-	 * Closes the given input stream.
-	 * 
-	 * @param is
-	 *            the input stream to close
-	 */
-	void close(InputStream is);
+    /**
+     * Closes the given input stream.
+     * 
+     * @param is
+     *            the input stream to close
+     */
+    void close(InputStream is);
 }

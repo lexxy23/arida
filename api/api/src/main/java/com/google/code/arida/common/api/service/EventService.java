@@ -1,6 +1,6 @@
-/**
- * Arida Raid and Clan Management
- * Copyright (C) 2009-2011  Dirk Strauss
+/*
+ * Arida - A guild and raid management portal
+ * Copyright (C) 2013  Dirk Strauss
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,63 +23,62 @@ package com.google.code.arida.common.api.service;
 import java.util.Date;
 import java.util.List;
 
-import com.google.code.arida.common.api.PlayerCharacter;
 import com.google.code.arida.common.api.Event;
 import com.google.code.arida.common.api.EventTarget;
-
+import com.google.code.arida.common.api.PlayerCharacter;
 
 /**
- * Service for managing raid events
+ * Service for managing raid events.
  * 
- * @author kaeto23
- * 
+ * @author Dirk Strauss
+ * @version 0.1
  */
 public interface EventService {
-	/**
-	 * Creates an event
-	 * 
-	 * @param start
-	 *            the start date
-	 * @param end
-	 *            the end date
-	 * @param leader
-	 *            the raid leader
-	 * @param t
-	 *            the event target
-	 * @param descr
-	 *            a possible description
-	 * @return the event, or null in case of an error
-	 */
-	public Event createEvent(Date start, Date end, PlayerCharacter leader,
-			EventTarget t, String descr);
-
-	/**
-	 * Updates a given event
-	 * 
-	 * @param e
-	 *            the event to update
-	 * @return TRUE if update was successful, otherwise FALSE
-	 */
-	public boolean updateEvent(Event e);
-
-	/**
-	 * Deletes the event with the given event id
-	 * 
-	 * @param eventId
-	 *            the event id
-	 * @return TRUE if deletion was successful, otherwise FALSE
-	 */
-	public boolean deleteEvent(long eventId);
-
-	/**
-	 * Finds an event based on the given criteria
-	 * 
-	 * @param startDate
-	 *            the possible start date
-	 * @param raidId
-	 *            the id of the raid. Must be set.
-	 * @return an empty list, or a list of possible raid events. Usually, the
-	 *         count of this list may not exceed a constant count.
-	 */
-	public List<Event> findByCriteria(Date startDate, long raidId);
+    /**
+     * Creates an event.
+     * 
+     * @param start
+     *            the start date
+     * @param end
+     *            the end date
+     * @param leader
+     *            the raid leader
+     * @param t
+     *            the event target
+     * @param descr
+     *            a possible description
+     * @return the event, or null in case of an error
+     */
+    Event createEvent(Date start, Date end, PlayerCharacter leader,
+        EventTarget t, String descr);
+    
+    /**
+     * Updates a given event.
+     * 
+     * @param e
+     *            the event to update
+     * @return TRUE if update was successful, otherwise FALSE
+     */
+    boolean updateEvent(Event e);
+    
+    /**
+     * Deletes the event with the given event id.
+     * 
+     * @param eventId
+     *            the event id
+     * @return TRUE if deletion was successful, otherwise FALSE
+     */
+    boolean deleteEvent(long eventId);
+    
+    /**
+     * Finds an event based on the given criteria.
+     * 
+     * @param startDate
+     *            the possible start date
+     * @param raidId
+     *            the id of the raid. Must be set.
+     * @return an empty list, or a list of possible raid events. Usually, the
+     *         count of this list may not exceed a constant count.
+     */
+    List<Event> findByCriteria(Date startDate, long raidId);
 }

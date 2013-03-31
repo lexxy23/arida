@@ -1,6 +1,6 @@
-/**
- * Arida Raid and Clan Management
- * Copyright (C) 2009-2011  Dirk Strauss
+/*
+ * Arida - A guild and raid management portal
+ * Copyright (C) 2013  Dirk Strauss
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -27,14 +27,16 @@ import java.util.Properties;
  * 
  * @author Dirk Strauss
  * @version 1.0
+ * @deprecated Better use the IoService from the DS2 OSS Core.
  */
+@Deprecated
 public interface PropertiesLoaderService {
-	/**
-	 * Loads the properties from the given classpath.
-	 * 
-	 * @param path
-	 *            the classpath (usually /com/google/arida.properties etc.)
-	 * @return the loaded properties, or an empty properties object.
-	 */
-	Properties loadProperties(String path);
+    /**
+     * Loads the properties from the given classpath.
+     * 
+     * @param path
+     *            the classpath (usually /com/google/arida.properties etc.)
+     * @return the loaded properties, or an empty properties object.
+     */
+    Properties loadProperties(String path);
 }

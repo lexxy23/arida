@@ -1,6 +1,6 @@
-/**
- * Arida Raid and Clan Management
- * Copyright (C) 2009-2011  Dirk Strauss
+/*
+ * Arida - A guild and raid management portal
+ * Copyright (C) 2013  Dirk Strauss
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -28,21 +28,21 @@ import java.io.Serializable;
  */
 public interface ClassRole extends Serializable {
     /**
-     * Returns the id of the entry
+     * Returns the id of the entry.
      * 
      * @return the id of the entry
      */
     long getId();
     
     /**
-     * Returns the name of the role
+     * Returns the name of the role.
      * 
      * @return the name of the role
      */
     String getTitle();
     
     /**
-     * Returns a possible description of the role
+     * Returns a possible description of the role.
      * 
      * @return null, or a description of the role
      */

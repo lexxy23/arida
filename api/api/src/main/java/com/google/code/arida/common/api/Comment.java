@@ -1,6 +1,6 @@
-/**
- * Arida Raid and Clan Management
- * Copyright (C) 2009-2011  Dirk Strauss
+/*
+ * Arida - A guild and raid management portal
+ * Copyright (C) 2013  Dirk Strauss
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,51 +21,51 @@ import java.util.Date;
 import java.util.Locale;
 
 /**
- * A comment to an event or member
+ * A comment to an event or member.
  * 
- * @author kaeto23
- * 
+ * @author Dirk Strauss
+ * @version 0.1
  */
 public interface Comment {
-	/**
-	 * Returns the id of the entry
-	 * 
-	 * @return the id of the entry
-	 */
-	public long getId();
-
-	/**
-	 * Returns the author of the comment
-	 * 
-	 * @return the author of the comment
-	 */
-	public PlayerCharacter getAuthor();
-
-	/**
-	 * Returns the created date
-	 * 
-	 * @return the created date
-	 */
-	public Date getCreated();
-
-	/**
-	 * Returns a possible update date
-	 * 
-	 * @return null, or the update date
-	 */
-	public Date getUpdated();
-
-	/**
-	 * Returns the type of the comment
-	 * 
-	 * @return the type of the comment
-	 */
-	public CommentContentType getContentType();
-
-	/**
-	 * Returns the language of the comment.
-	 * 
-	 * @return the language of the comment
-	 */
-	public Locale getCommentLanguage();
+    /**
+     * Returns the id of the entry.
+     * 
+     * @return the id of the entry
+     */
+    long getId();
+    
+    /**
+     * Returns the author of the comment.
+     * 
+     * @return the author of the comment
+     */
+    PlayerCharacter getAuthor();
+    
+    /**
+     * Returns the created date.
+     * 
+     * @return the created date
+     */
+    Date getCreated();
+    
+    /**
+     * Returns a possible update date.
+     * 
+     * @return null, or the update date
+     */
+    Date getUpdated();
+    
+    /**
+     * Returns the type of the comment.
+     * 
+     * @return the type of the comment
+     */
+    CommentContentType getContentType();
+    
+    /**
+     * Returns the language of the comment.
+     * 
+     * @return the language of the comment
+     */
+    Locale getCommentLanguage();
 }

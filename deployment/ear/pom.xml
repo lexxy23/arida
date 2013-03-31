@@ -56,6 +56,11 @@
       <artifactId>logback-core</artifactId>
       <scope>compile</scope>
     </dependency>
+    <dependency>
+      <groupId>ds2.arida.deployment</groupId>
+      <artifactId>arida-deployment-localmocks</artifactId>
+      <version>0.1-SNAPSHOT</version>
+    </dependency>
   </dependencies>
   <scm>
     <developerConnection>scm:svn:https://arida.googlecode.com/svn/trunk/deployment/ear</developerConnection>

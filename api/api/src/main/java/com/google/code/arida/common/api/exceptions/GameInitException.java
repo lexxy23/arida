@@ -1,6 +1,6 @@
-/**
- * Arida Raid and Clan Management
- * Copyright (C) 2009-2011  Dirk Strauss
+/*
+ * Arida - A guild and raid management portal
+ * Copyright (C) 2013  Dirk Strauss
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -27,33 +27,32 @@ package com.google.code.arida.common.api.exceptions;
  * @version 1.0
  */
 public class GameInitException extends AridaException {
-
-	/**
-	 * The svuid.
-	 */
-	private static final long serialVersionUID = -6056225354856011260L;
-
-	/**
-	 * Inits the exception with the given message.
-	 * 
-	 * @param message
-	 *            the message
-	 */
-	public GameInitException(final String message) {
-		super(message);
-	}
-
-	/**
-	 * Inits the exception with the given message and cause.
-	 * 
-	 * @param message
-	 *            the message
-	 * @param cause
-	 *            the cause of the problem
-	 */
-	public GameInitException(final String message, final Throwable cause) {
-		super(message, cause);
-		// TODO Auto-generated constructor stub
-	}
-
+    
+    /**
+     * The svuid.
+     */
+    private static final long serialVersionUID = -6056225354856011260L;
+    
+    /**
+     * Inits the exception with the given message.
+     * 
+     * @param message
+     *            the message
+     */
+    public GameInitException(final String message) {
+        super(AridaErrorCode.GameInitFailed, message);
+    }
+    
+    /**
+     * Inits the exception with the given message and cause.
+     * 
+     * @param message
+     *            the message
+     * @param cause
+     *            the cause of the problem
+     */
+    public GameInitException(final String message, final Throwable cause) {
+        super(AridaErrorCode.GameInitFailed, message, cause);
+    }
+    
 }

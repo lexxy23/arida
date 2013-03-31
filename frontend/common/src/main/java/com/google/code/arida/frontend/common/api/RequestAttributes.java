@@ -1,6 +1,6 @@
-/**
- * Arida Raid and Clan Management
- * Copyright (C) 2009-2011  Dirk Strauss
+/*
+ * Arida - A guild and raid management portal
+ * Copyright (C) 2013  Dirk Strauss
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,9 +21,19 @@
 package com.google.code.arida.frontend.common.api;
 
 /**
- * @author Kaeto23
+ * The known request attribute types.
  * 
+ * @author Dirk Strauss
+ * @version 0.1
  */
 public enum RequestAttributes {
-    GUILD, RAID;
+    /**
+     * Requesting a guild.
+     */
+    GUILD,
+    /**
+     * Requesting a raid.
+     * 
+     */
+    RAID;
 }

@@ -12,6 +12,7 @@
   <packaging>pom</packaging>
   <modules>
     <module>ear</module>
+    <module>localmocks</module>
   </modules>
   <scm>
     <developerConnection>scm:svn:https://arida.googlecode.com/svn/trunk/deployment</developerConnection>

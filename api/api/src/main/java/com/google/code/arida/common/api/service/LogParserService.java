@@ -1,6 +1,6 @@
-/**
- * Arida Raid and Clan Management
- * Copyright (C) 2009-2011  Dirk Strauss
+/*
+ * Arida - A guild and raid management portal
+ * Copyright (C) 2013  Dirk Strauss
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -24,29 +24,29 @@ import com.google.code.arida.common.api.TimeLine;
  * This service interprets a given event log and creates appropriate entries in
  * the database.
  * 
- * @author kaeto23
- * 
+ * @author Dirk Strauss
+ * @version 0.1
  */
 public interface LogParserService {
-	/**
-	 * Interpretes a given event and creates some entries for the database
-	 * 
-	 * @param eventLog
-	 *            the eventLog. This string can be anything considered a log
-	 *            file.
-	 * @param test
-	 *            test flag to indicate that no real db entry should be made
-	 */
-	public void interpreteEvent(String eventLog, boolean test);
-
-	/**
-	 * Parses a log file string and creates a timeline of events
-	 * 
-	 * @param eventLog
-	 *            the log file string
-	 * @param l
-	 *            the log type
-	 * @return null, or a timeline with a list of events
-	 */
-	public TimeLine parseLog(String eventLog, LogType l);
+    /**
+     * Interpretes a given event and creates some entries for the database.
+     * 
+     * @param eventLog
+     *            the eventLog. This string can be anything considered a log
+     *            file.
+     * @param test
+     *            test flag to indicate that no real db entry should be made
+     */
+    void interpreteEvent(String eventLog, boolean test);
+    
+    /**
+     * Parses a log file string and creates a timeline of events.
+     * 
+     * @param eventLog
+     *            the log file string
+     * @param l
+     *            the log type
+     * @return null, or a timeline with a list of events
+     */
+    TimeLine parseLog(String eventLog, LogType l);
 }

@@ -3,4 +3,5 @@ target
 .project
 .checkstyle
 .settings
-
+build
+nb-configuration.xml

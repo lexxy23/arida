@@ -14,7 +14,7 @@
   <description>The whole arida modules etc.</description>
   <inceptionYear>2009</inceptionYear>
   <properties>
-    <license.header.year>2012</license.header.year>
+    <license.header.year>2013</license.header.year>
     <license.header.author>Dirk Strauss</license.header.author>
     <license.header.projectName>Arida</license.header.projectName>
     <issueTrackerId>ARIDA</issueTrackerId>
@@ -64,6 +64,16 @@
         <groupId>com.lodgon.dalicore</groupId>
         <artifactId>dalicore-social</artifactId>
         <version>1.0.0</version>
+      </dependency>
+      <dependency>
+        <groupId>ds2.oss.core</groupId>
+        <artifactId>ds2-oss-core-api</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>ds2.oss.core</groupId>
+        <artifactId>ds2-oss-core-base</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
       </dependency>
     </dependencies>
   </dependencyManagement>

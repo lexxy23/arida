@@ -1,6 +1,6 @@
-/**
- * Arida Raid and Clan Management
- * Copyright (C) 2009-2011  Dirk Strauss
+/*
+ * Arida - A guild and raid management portal
+ * Copyright (C) 2013  Dirk Strauss
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,14 +21,16 @@
 package com.google.code.arida.common.api.service;
 
 /**
- * @author kaeto23
+ * Internal data version service.
  * 
+ * @author Dirk Strauss
+ * @version 0.1
  */
 public interface InfoService {
-	/**
-	 * Returns the version of the web site
-	 * 
-	 * @return the version of the web site
-	 */
-	public String getVersion();
+    /**
+     * Returns the version of the web site.
+     * 
+     * @return the version of the web site
+     */
+    String getVersion();
 }

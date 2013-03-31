@@ -1,6 +1,6 @@
-/**
- * Arida Raid and Clan Management
- * Copyright (C) 2009-2011  Dirk Strauss
+/*
+ * Arida - A guild and raid management portal
+ * Copyright (C) 2013  Dirk Strauss
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -27,13 +27,13 @@ package com.google.code.arida.common.api;
  * @version 1.0
  */
 public enum LogType {
-	/**
-	 * EQDKP 1.5 Logfile type. This is usually a XML file containing wipes,
-	 * loot, players etc. Produced by the WoW Addon RaidTracker.
-	 */
-	EQDKP1_5,
-	/**
-	 * The log format for Runes of Magic
-	 */
-	RoM_RAIDLOGGER;
+    /**
+     * EQDKP 1.5 Logfile type. This is usually a XML file containing wipes,
+     * loot, players etc. Produced by the WoW Addon RaidTracker.
+     */
+    EQDKP1_5,
+    /**
+     * The log format for Runes of Magic.
+     */
+    RoM_RAIDLOGGER;
 }

@@ -1,6 +1,6 @@
-/**
- * Arida Raid and Clan Management
- * Copyright (C) 2009-2011  Dirk Strauss
+/*
+ * Arida - A guild and raid management portal
+ * Copyright (C) 2013  Dirk Strauss
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -25,9 +25,16 @@ import java.util.List;
 import com.google.code.arida.common.api.WebtickerData;
 
 /**
- * @author Kaeto23
+ * A web ticker service. Not yet used.
  * 
+ * @author Dirk Strauss
+ * @version 0.1
  */
 public interface WebtickerService {
+    /**
+     * Returns the known ticker data.
+     * 
+     * @return the ticker data
+     */
     List<WebtickerData> getData();
 }
