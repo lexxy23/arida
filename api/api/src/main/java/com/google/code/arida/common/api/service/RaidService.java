@@ -32,6 +32,9 @@ public interface RaidService {
     /**
      * Returns the raid (or clan) based on the given name.
      * 
+     * @param name
+     *            the raid id
+     * 
      * @return the raid, or null if not found.
      */
     Raid getRaidByOrderId(String name);

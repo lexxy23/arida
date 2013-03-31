@@ -27,37 +27,31 @@ import java.io.Serializable;
  * @version 1.0
  */
 public interface ClassRole extends Serializable {
-	/**
-	 * Returns the id of the entry
-	 * 
-	 * @return the id of the entry
-	 */
-	long getId();
-
-	/**
-	 * Returns the name of the role
-	 * 
-	 * @param l
-	 *            the language of the title
-	 * 
-	 * @return the name of the role
-	 */
-	String getTitle();
-
-	/**
-	 * Returns a possible description of the role
-	 * 
-	 * @param l
-	 *            the language of the title
-	 * 
-	 * @return null, or a description of the role
-	 */
-	String getDescription();
-
-	/**
-	 * Returns a short code for this role.
-	 * 
-	 * @return a short code for this role
-	 */
-	String getShortcode();
+    /**
+     * Returns the id of the entry
+     * 
+     * @return the id of the entry
+     */
+    long getId();
+    
+    /**
+     * Returns the name of the role
+     * 
+     * @return the name of the role
+     */
+    String getTitle();
+    
+    /**
+     * Returns a possible description of the role
+     * 
+     * @return null, or a description of the role
+     */
+    String getDescription();
+    
+    /**
+     * Returns a short code for this role.
+     * 
+     * @return a short code for this role
+     */
+    String getShortcode();
 }
