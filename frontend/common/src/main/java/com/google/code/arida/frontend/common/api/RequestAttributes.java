@@ -21,14 +21,14 @@
 package com.google.code.arida.frontend.common.api;
 
 /**
- * The known request attribute types.
+ * The known request attribute types. Usually put into the request scope.
  * 
  * @author Dirk Strauss
  * @version 0.1
  */
 public enum RequestAttributes {
     /**
-     * Requesting a guild.
+     * The requested guild.
      */
     GUILD,
     /**

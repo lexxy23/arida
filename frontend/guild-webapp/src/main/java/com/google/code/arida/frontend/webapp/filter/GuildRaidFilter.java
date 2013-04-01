@@ -60,8 +60,8 @@ public class GuildRaidFilter implements Filter {
     /**
      * The pattern for a guild tag.
      */
-    private static final Pattern GUILDTAGPATTERN = Pattern
-        .compile(RaidAdminService.GUILDTAGPATTERN.pattern());
+    private static final Pattern GUILDTAGPATTERN = Pattern.compile("^/g/c/"
+        + RaidAdminService.GUILDTAGPATTERN.pattern() + "/");
     /**
      * The guild service.
      */
@@ -97,8 +97,12 @@ public class GuildRaidFilter implements Filter {
                 throw new ServletException(
                     "Could not find the given guild or clan!");
             }
-            String guildName = m.group();
-            LOG.warn("guildName is {}", guildName);
+            String g1 = m.group();
+            Matcher guildNameMatcher =
+                RaidAdminService.GUILDTAGPATTERN.matcher(g1);
+            guildNameMatcher.find();
+            String guildName = guildNameMatcher.group();
+            LOG.debug("guildName is {}", guildName);
             Guild guild = guildSvc.getGuildByTag(guildName);
             if (guild == null) {
                 Raid r = raidSvc.getRaidByOrderId(guildName);
@@ -128,9 +132,14 @@ public class GuildRaidFilter implements Filter {
      */
     private static boolean isWebpageRequest(final String reqUri) {
         LOG.debug("Entering with {}", reqUri);
-        boolean rc = true;
+        boolean rc = false;
         if (reqUri.indexOf("javax.faces.resource") > 0) {
             rc = false;
+        } else {
+            Matcher m = GUILDTAGPATTERN.matcher(reqUri);
+            if (m.find()) {
+                rc = true;
+            }
         }
         LOG.debug("Exiting with {}", Boolean.valueOf(rc));
         return rc;
