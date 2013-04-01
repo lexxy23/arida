@@ -20,7 +20,7 @@
  */
 package com.google.code.arida.common.baseimpl;
 
-import javax.inject.Singleton;
+import javax.enterprise.context.ApplicationScoped;
 
 import com.google.code.arida.common.api.service.Converter;
 
@@ -30,16 +30,16 @@ import com.google.code.arida.common.api.service.Converter;
  * @author Dirk Strauss
  * @version 1.0
  */
-@Singleton
+@ApplicationScoped
 public class ConverterImpl implements Converter {
     
     /**
      * {@inheritDoc}
      */
     @Override
-    public int toInt(String s, int def) {
+    public int toInt(final String s, final int def) {
         int rc = def;
-        if (s == null || s.length() <= 0) {
+        if ((s == null) || (s.length() <= 0)) {
             return rc;
         }
         try {
