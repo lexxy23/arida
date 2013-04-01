@@ -19,25 +19,20 @@
 
 -->
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-  xmlns:h="http://java.sun.com/jsf/html"
-  xmlns:ui="http://java.sun.com/jsf/facelets"
-  xmlns:f="http://java.sun.com/jsf/core"
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html"
+  xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:f="http://java.sun.com/jsf/core"
   xmlns:arida="http://java.sun.com/jsf/composite/aridacommon">
 <h:head>
   <f:loadBundle basename="com.google.code.arida.i18n.arida" var="i18n" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <link rel="shortcut icon"
-    href="#{resource['aridacommon:arida-lineout16border.png']}"
-    type="image/png"></link>
+  <link rel="shortcut icon" href="#{resource['aridacommon:arida-lineout16border.png']}" type="image/png"></link>
   <title><ui:insert name="windowTitle">
         #{aridaFE["homeTitle"]}
         -
         #{i18n["arida.title"]}
       </ui:insert></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" type="text/css"
-    href="#{resource['webjars/bootstrap/2.3.1/css/bootstrap.css']}" />
+  <link rel="stylesheet" type="text/css" href="#{resource['webjars/bootstrap/2.3.1/css/bootstrap.css']}" />
   <h:outputScript name="webjars/jquery/1.9.1/jquery.js" />
   <h:outputScript name="webjars/bootstrap/2.3.1/js/bootstrap.js" />
 </h:head>
@@ -46,61 +41,77 @@
   <!--  
 	<h:outputScript library="javascript" name="util.js" target="head" />
 	-->
-  <h:outputStylesheet library="arida-css-default" name="styles.css"
-    target="body" />
-
-  <div class="pageHeading">
-    <div class="pageLogo">
-      <h:graphicImage library="aridacommon" name="arida-icon48.png" />
-      <arida:printClanLogo />
-    </div>
-    <div class="pageHeaderFill">
-      <ui:insert name="adv">Werbung/Banner</ui:insert>
-    </div>
-  </div>
-  <div class="actionHeading">
-    <div class="quickActions">
-      <ui:insert name="quickActions">Quick actions DropMenu</ui:insert>
-    </div>
-    <arida:userStateButton />
-    <div class="clanGameBar">
-      <arida:printGameLogo />
-      <span><ui:insert name="clanName">Clan Name</ui:insert></span>
-    </div>
-  </div>
-  <div class="menuAndContent">
-    <div class="menuLeft">
-
-      <div class="clanLinks">
-        <h:outputLink value="events.jsf">Events</h:outputLink>
-        <h:outputLink value="board.jsf">Forum</h:outputLink>
+  <h:outputStylesheet library="arida-css-default" name="styles.css" target="body" />
+  <div class="container">
+    <div class="row logoBar">
+      <div class="span1">
+        <h:graphicImage library="aridacommon" name="arida-icon48.png" />
+        <arida:printClanLogo />
       </div>
-      <ui:insert name="menuLeft">
+      <div class="span11">
+        <ui:insert name="adv">Werbung/Banner</ui:insert>
+      </div>
+    </div>
+    <div class="row actionBar">
+      <div class="span1">
+        <ui:insert name="quickActions">
+          <div class="btn-group">
+            <button class="btn btn-mini btn-primary dropdown-toggle" data-toggle="dropdown">
+              Quick action <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>Home</li>
+            </ul>
+          </div>
+        </ui:insert>
+      </div>
+      <div class="span1">
+        <arida:printGameLogo />
+      </div>
+      <div class="span9">
+        <span><ui:insert name="clanName">Clan Name</ui:insert></span>
+      </div>
+      <div class="span1 pull-right">
+        <arida:userStateButton />
+      </div>
+    </div>
+    <div class="row contentBar">
+      <div class="span1">
+
+        <div class="clanLinks">
+          <h:outputLink value="events.jsf">Events</h:outputLink>
+          <h:outputLink value="board.jsf">Forum</h:outputLink>
+        </div>
+        <ui:insert name="menuLeft">
 	Space für Pagelets
 	</ui:insert>
-    </div>
-    <div class="menuRight">
-      <ui:insert name="menuRight">rightMenu</ui:insert>
-    </div>
-
-    <div class="content">
-      <div class="websiteTicker">
-        <div class="alert alert-info">
-          <button type="button" class="close" data-dismiss="alert">x</button>
-          <ui:insert name="websiteTicker">ticker messages</ui:insert>
-        </div>
       </div>
-      <ui:insert name="content">
+
+
+      <div class="span10">
+        <div class="websiteTicker">
+          <div class="alert alert-info">
+            <button type="button" class="close" data-dismiss="alert">x</button>
+            <ui:insert name="websiteTicker">ticker messages</ui:insert>
+          </div>
+        </div>
+        <ui:insert name="content">
 	Some content
 	</ui:insert>
+      </div>
+      <div class="span1">
+        <ui:insert name="menuRight">rightMenu</ui:insert>
+      </div>
+
+
     </div>
-
-
-  </div>
-  <div class="pageFooter">
-    <ui:insert name="footer">
-      <arida:printFooter />
-    </ui:insert>
+    <div class="row footerBar">
+      <div class="span12">
+        <ui:insert name="footer">
+          <arida:printFooter />
+        </ui:insert>
+      </div>
+    </div>
   </div>
 </h:body>
 </html>

@@ -32,12 +32,21 @@
 
 <body>
 
-<cc:interface name="userStateButton"
-  displayName="Prints a login or logout link" expert="true"
-  hidden="false" preferred="true">
-</cc:interface>
-<cc:implementation>
-  <div class="userState">Login/Out</div>
-</cc:implementation>
+  <cc:interface name="userStateButton"
+    displayName="Prints a login or logout link" expert="true"
+    hidden="false" preferred="true">
+  </cc:interface>
+  <cc:implementation>
+    <div class="btn-group">
+      <button class="btn btn-mini btn-inverse">Login</button>
+      <button class="btn btn-mini btn-inverse dropdown-toggle" data-toggle="dropdown">
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li>Login</li>
+      </ul>
+    </div>
+
+  </cc:implementation>
 </body>
 </html>
