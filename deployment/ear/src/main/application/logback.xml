@@ -20,10 +20,10 @@
 -->
 <configuration debug="true">
   <contextName>arida</contextName>
-  <property name="logLevel" value="info" />
+  <property name="logLevel" value="INFO" />
   <if condition='property("HOSTNAME").contains("stg")'>
     <then>
-      <property name="logLevel" value="debug" />
+      <property name="logLevel" value="DEBUG" />
     </then>
   </if>
   <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
@@ -46,7 +46,7 @@
     </layout>
   </appender>
   <logger name="com.google.code.arida" level="${logLevel}" />
-  <root level="info">
+  <root level="INFO">
     <appender-ref ref="STDOUT" />
     <appender-ref ref="LOGFILE" />
   </root>

@@ -42,6 +42,10 @@
     <servlet-name>faces</servlet-name>
     <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
   </servlet>
+   <servlet>
+    <servlet-name>ViewStatusMessages</servlet-name>
+    <servlet-class>ch.qos.logback.classic.ViewStatusMessagesServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
     <servlet-name>faces</servlet-name>
     <url-pattern>/f/*</url-pattern>
@@ -53,6 +57,10 @@
   <servlet-mapping>
     <servlet-name>faces</servlet-name>
     <url-pattern>*.jsf</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewStatusMessages</servlet-name>
+    <url-pattern>/lbClassicStatus</url-pattern>
   </servlet-mapping>
   <context-param>
     <param-name>javax.faces.PROJECT_STAGE</param-name>
