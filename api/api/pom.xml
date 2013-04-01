@@ -14,4 +14,10 @@
     <connection>scm:svn:https://arida.googlecode.com/svn/trunk/api/api</connection>
     <url>http://code.google.com/p/arida/source/browse/trunk/api/api</url>
   </scm>
+  <dependencies>
+    <dependency>
+      <groupId>ds2.oss.core</groupId>
+      <artifactId>ds2-oss-core-api</artifactId>
+    </dependency>
+  </dependencies>
 </project>

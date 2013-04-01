@@ -1,6 +1,6 @@
 /*
  * Arida - A guild and raid management portal
- * Copyright (C) 2013  Dirk Strauss
+ * Copyright (C) 2009-2013  Dirk Strauss
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,7 +17,7 @@
  */
 package com.google.code.arida.common.api;
 
-import java.io.Serializable;
+import ds2.oss.core.api.Persistable;
 
 /**
  * The role of a class. This can be tank, MeleeDD or healer. Whatever the game
@@ -26,13 +26,7 @@ import java.io.Serializable;
  * @author Dirk Strauss
  * @version 1.0
  */
-public interface ClassRole extends Serializable {
-    /**
-     * Returns the id of the entry.
-     * 
-     * @return the id of the entry
-     */
-    long getId();
+public interface ClassRole extends Persistable<Long> {
     
     /**
      * Returns the name of the role.

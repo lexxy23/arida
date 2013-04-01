@@ -1,6 +1,6 @@
 /*
  * Arida - A guild and raid management portal
- * Copyright (C) 2013  Dirk Strauss
+ * Copyright (C) 2009-2013  Dirk Strauss
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -18,36 +18,36 @@
 package com.google.code.arida.common.api;
 
 /**
- * The role types of order members
+ * The role types of order members.
  * 
- * @author kaeto23
- * 
+ * @author dstrauss
+ * @version 0.1
  */
 public enum RaidRoles {
-	/**
-	 * The leader of the order
-	 */
-	Leader,
-	/**
-	 * The member is an officer. Supporting the leader
-	 */
-	Officer,
-	/**
-	 * The typical member of an order
-	 */
-	Member,
-	/**
-	 * This role applies on any new members
-	 */
-	Guest,
-	/**
-	 * An inactive order role means that the associated account may be dropping
-	 * interest in the order
-	 */
-	InActive,
-	/**
-	 * The account is offline. The raid member should be not mentioned in any
-	 * tables or statistics.
-	 */
-	Offline;
+    /**
+     * The leader of the order.
+     */
+    Leader,
+    /**
+     * The member is an officer. Supporting the leader.
+     */
+    Officer,
+    /**
+     * The typical member of an order.
+     */
+    Member,
+    /**
+     * This role applies on any new members.
+     */
+    Guest,
+    /**
+     * An inactive order role means that the associated account may be dropping
+     * interest in the order.
+     */
+    Inactive,
+    /**
+     * The account is offline. The raid member should be not mentioned in any
+     * tables or statistics.
+     */
+    Offline;
 }

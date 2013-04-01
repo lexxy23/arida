@@ -1,6 +1,6 @@
 /*
  * Arida - A guild and raid management portal
- * Copyright (C) 2013  Dirk Strauss
+ * Copyright (C) 2009-2013  Dirk Strauss
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,91 +34,114 @@ import com.google.code.arida.common.api.Game;
  * @version 1.0
  */
 public class CharacterTypeDto implements CharacterType {
-	/**
-	 * The svuid.
-	 */
-	private static final long serialVersionUID = -3124430708178337797L;
-	private Set<ClassRole> allowedRoles = null;
-	private Game game;
-	private long id;
-	private String title;
-	private String description;
-
-	public CharacterTypeDto() {
-		allowedRoles = new HashSet<ClassRole>();
-	}
-
-	public void addClassRole(ClassRole r) {
-		allowedRoles.add(r);
-	}
-
-	/**
-	 * {@inheritDoc}
-	 */
-	@Override
-	public Set<ClassRole> getAllowedRoles() {
-		return allowedRoles;
-	}
-
-	/**
-	 * {@inheritDoc}
-	 */
-	@Override
-	public Game getGame() {
-		return game;
-	}
-
-	/**
-	 * {@inheritDoc}
-	 */
-	@Override
-	public long getId() {
-		return id;
-	}
-
-	/**
-	 * {@inheritDoc}
-	 */
-	@Override
-	public String getTitle() {
-		return title;
-	}
-
-	/**
-	 * @param game
-	 *            the game to set
-	 */
-	public synchronized void setGame(Game game) {
-		this.game = game;
-	}
-
-	/**
-	 * @param id
-	 *            the id to set
-	 */
-	public synchronized void setId(long id) {
-		this.id = id;
-	}
-
-	/**
-	 * @param title
-	 *            the title to set
-	 */
-	public synchronized void setTitle(String title) {
-		this.title = title;
-	}
-
-	@Override
-	public String getDescription() {
-		return description;
-	}
-
-	/**
-	 * @param description
-	 *            the description to set
-	 */
-	public synchronized void setDescription(String description) {
-		this.description = description;
-	}
-
+    /**
+     * The svuid.
+     */
+    private static final long serialVersionUID = -3124430708178337797L;
+    /**
+     * The allowed roles.
+     */
+    private final Set<ClassRole> allowedRoles;
+    /**
+     * The game.
+     */
+    private Game game;
+    /**
+     * The internal id.
+     */
+    private Long id;
+    /**
+     * The title.
+     */
+    private String title;
+    /**
+     * The description.
+     */
+    private String description;
+    
+    public CharacterTypeDto() {
+        allowedRoles = new HashSet<ClassRole>();
+    }
+    
+    public void addClassRole(final ClassRole r) {
+        allowedRoles.add(r);
+    }
+    
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public Set<ClassRole> getAllowedRoles() {
+        return allowedRoles;
+    }
+    
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public Game getGame() {
+        return game;
+    }
+    
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public Long getId() {
+        return id;
+    }
+    
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public String getTitle() {
+        return title;
+    }
+    
+    /**
+     * Sets the game.
+     * 
+     * @param game
+     *            the game to set
+     */
+    public synchronized void setGame(final Game game) {
+        this.game = game;
+    }
+    
+    /**
+     * Sets the id.
+     * 
+     * @param id
+     *            the id to set
+     */
+    public synchronized void setId(final Long id) {
+        this.id = id;
+    }
+    
+    /**
+     * Sets the title.
+     * 
+     * @param title
+     *            the title to set
+     */
+    public synchronized void setTitle(final String title) {
+        this.title = title;
+    }
+    
+    @Override
+    public String getDescription() {
+        return description;
+    }
+    
+    /**
+     * Sets the description.
+     * 
+     * @param description
+     *            the description to set
+     */
+    public synchronized void setDescription(final String description) {
+        this.description = description;
+    }
+    
 }

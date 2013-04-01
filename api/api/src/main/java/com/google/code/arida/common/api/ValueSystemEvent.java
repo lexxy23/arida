@@ -1,6 +1,6 @@
 /*
  * Arida - A guild and raid management portal
- * Copyright (C) 2013  Dirk Strauss
+ * Copyright (C) 2009-2013  Dirk Strauss
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,49 +23,49 @@ package com.google.code.arida.common.api;
 /**
  * The events for giving value points on.
  * 
- * @author kaeto23
- * 
+ * @author dstrauss
+ * @version 0.1
  */
 public enum ValueSystemEvent {
-	/**
-	 * On regular intervals. You need to tell what an interval is
-	 */
-	OnRegularInterval,
-	/**
-	 * The initial number for new raid members
-	 */
-	InitialPoints,
-	/**
-	 * The amount of value points when a raid member is invited early
-	 */
-	OnEarlyInvite,
-	/**
-	 * when the event officially starts
-	 */
-	OnEventStart,
-	/**
-	 * when the event officially ends (i.e. map win)
-	 */
-	OnEventEnd,
-	/**
-	 * when a raid boss is killed successfully
-	 */
-	OnBossKill,
-	/**
-	 * when the raid first kills a boss
-	 */
-	OnRaidFirstBossKill,
-	/**
-	 * On fragging an enemy (PVP)
-	 */
-	OnEnemyFrag,
-	/**
-	 * Points on defusing the bomb (PVP)
-	 */
-	OnDefusing,
-	/**
-	 * On returning the flag to the base (PVP)
-	 */
-	OnReturningFlag;
-
+    /**
+     * On regular intervals. You need to tell what an interval is.
+     */
+    OnRegularInterval,
+    /**
+     * The initial number for new raid members.
+     */
+    InitialPoints,
+    /**
+     * The amount of value points when a raid member is invited early.
+     */
+    OnEarlyInvite,
+    /**
+     * when the event officially starts.
+     */
+    OnEventStart,
+    /**
+     * when the event officially ends (i.e. map win)
+     */
+    OnEventEnd,
+    /**
+     * when a raid boss is killed successfully.
+     */
+    OnBossKill,
+    /**
+     * when the raid first kills a boss.
+     */
+    OnRaidFirstBossKill,
+    /**
+     * On fragging an enemy (PVP).
+     */
+    OnEnemyFrag,
+    /**
+     * Points on defusing the bomb (PVP).
+     */
+    OnDefusing,
+    /**
+     * On returning the flag to the base (PVP, Capture the flag).
+     */
+    OnReturningFlag;
+    
 }

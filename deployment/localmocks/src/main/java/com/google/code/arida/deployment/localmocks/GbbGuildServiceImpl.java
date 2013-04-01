@@ -1,6 +1,6 @@
 /*
  * Arida - A guild and raid management portal
- * Copyright (C) 2013  Dirk Strauss
+ * Copyright (C) 2009-2013  Dirk Strauss
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -66,8 +66,8 @@ public class GbbGuildServiceImpl implements GuildService {
                 }
                 
                 @Override
-                public long getId() {
-                    return 1;
+                public Long getId() {
+                    return Long.valueOf(1);
                 }
                 
                 @Override

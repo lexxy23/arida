@@ -1,6 +1,6 @@
 /*
  * Arida - A guild and raid management portal
- * Copyright (C) 2013  Dirk Strauss
+ * Copyright (C) 2009-2013  Dirk Strauss
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -29,75 +29,75 @@ import com.google.code.arida.common.api.ClassRole;
  * @version 1.0
  */
 public class ClassRoleDto implements ClassRole {
-
-	/**
-	 * The svuid.
-	 */
-	private static final long serialVersionUID = -8677679251914059533L;
-	private String description;
-	private long id;
-	private String title;
-	private String shortcode;
-
-	/**
-	 * {@inheritDoc}
-	 */
-	@Override
-	public String getDescription() {
-		return description;
-	}
-
-	/**
-	 * {@inheritDoc}
-	 */
-	@Override
-	public long getId() {
-		return id;
-	}
-
-	/**
-	 * {@inheritDoc}
-	 */
-	@Override
-	public String getTitle() {
-		return title;
-	}
-
-	/**
-	 * @param description
-	 *            the description to set
-	 */
-	public synchronized void setDescription(String description) {
-		this.description = description;
-	}
-
-	/**
-	 * @param id
-	 *            the id to set
-	 */
-	public synchronized void setId(long id) {
-		this.id = id;
-	}
-
-	/**
-	 * @param title
-	 *            the title to set
-	 */
-	public synchronized void setTitle(String title) {
-		this.title = title;
-	}
-
-	@Override
-	public String getShortcode() {
-		return shortcode;
-	}
-
-	/**
-	 * @param shortcode
-	 *            the shortcode to set
-	 */
-	public synchronized void setShortcode(String shortcode) {
-		this.shortcode = shortcode;
-	}
-
+    
+    /**
+     * The svuid.
+     */
+    private static final long serialVersionUID = -8677679251914059533L;
+    private String description;
+    private Long id;
+    private String title;
+    private String shortcode;
+    
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public String getDescription() {
+        return description;
+    }
+    
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public Long getId() {
+        return id;
+    }
+    
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public String getTitle() {
+        return title;
+    }
+    
+    /**
+     * @param description
+     *            the description to set
+     */
+    public synchronized void setDescription(final String description) {
+        this.description = description;
+    }
+    
+    /**
+     * @param id
+     *            the id to set
+     */
+    public synchronized void setId(final Long id) {
+        this.id = id;
+    }
+    
+    /**
+     * @param title
+     *            the title to set
+     */
+    public synchronized void setTitle(final String title) {
+        this.title = title;
+    }
+    
+    @Override
+    public String getShortcode() {
+        return shortcode;
+    }
+    
+    /**
+     * @param shortcode
+     *            the shortcode to set
+     */
+    public synchronized void setShortcode(final String shortcode) {
+        this.shortcode = shortcode;
+    }
+    
 }

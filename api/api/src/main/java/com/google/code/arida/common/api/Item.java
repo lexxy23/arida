@@ -1,6 +1,6 @@
 /*
  * Arida - A guild and raid management portal
- * Copyright (C) 2013  Dirk Strauss
+ * Copyright (C) 2009-2013  Dirk Strauss
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -19,35 +19,31 @@ package com.google.code.arida.common.api;
 
 import java.util.Locale;
 
+import ds2.oss.core.api.Persistable;
+
 /**
  * An item. Basically, this can be everything starting from ammunition up to set
  * items.
  * 
- * @author kaeto23
- * 
+ * @author dstrauss
+ * @version 0.1
  */
-public interface Item {
-	/**
-	 * Returns the id of the entry
-	 * 
-	 * @return the id of the entry
-	 */
-	public long getId();
-
-	/**
-	 * Returns the item id according to the game
-	 * 
-	 * @return the item id according to the game
-	 */
-	public String getGameItemId();
-
-	/**
-	 * Returns the name of the item
-	 * 
-	 * @param l
-	 *            the locale to get the title for
-	 * 
-	 * @return the name of the item
-	 */
-	public String getTitle(Locale l);
+public interface Item extends Persistable<Long> {
+    
+    /**
+     * Returns the item id according to the game.
+     * 
+     * @return the item id according to the game
+     */
+    String getGameItemId();
+    
+    /**
+     * Returns the name of the item.
+     * 
+     * @param l
+     *            the locale to get the title for
+     * 
+     * @return the name of the item
+     */
+    String getTitle(Locale l);
 }

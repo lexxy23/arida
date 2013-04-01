@@ -1,6 +1,6 @@
 /*
  * Arida - A guild and raid management portal
- * Copyright (C) 2013  Dirk Strauss
+ * Copyright (C) 2009-2013  Dirk Strauss
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,26 +17,26 @@
  */
 package com.google.code.arida.common.api;
 
-import java.io.Serializable;
+import ds2.oss.core.api.Persistable;
 
 /**
- * The member of a guild
+ * The member of a guild.
  * 
- * @author kaeto23
- * 
+ * @author dstrauss
+ * @version 0.1
  */
-public interface GuildMember extends Serializable {
-	/**
-	 * Returns the character of the guild or clan
-	 * 
-	 * @return the character
-	 */
-	public PlayerCharacter getCharacter();
-
-	/**
-	 * Returns the rang of the member
-	 * 
-	 * @return the rang
-	 */
-	public GuildRang getRang();
+public interface GuildMember extends Persistable<Long> {
+    /**
+     * Returns the character of the guild or clan.
+     * 
+     * @return the character
+     */
+    PlayerCharacter getCharacter();
+    
+    /**
+     * Returns the rang of the member.
+     * 
+     * @return the rang
+     */
+    GuildRang getRang();
 }

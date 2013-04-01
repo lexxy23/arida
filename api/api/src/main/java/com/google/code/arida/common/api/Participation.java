@@ -1,6 +1,6 @@
 /*
  * Arida - A guild and raid management portal
- * Copyright (C) 2013  Dirk Strauss
+ * Copyright (C) 2009-2013  Dirk Strauss
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,55 +17,41 @@
  */
 package com.google.code.arida.common.api;
 
-import java.io.Serializable;
-import java.util.Date;
+import ds2.oss.core.api.CreatedModifiedAware;
 
 /**
- * A member of an event
+ * A member of an event.
  * 
- * @author kaeto23
- * 
+ * @author dstrauss
+ * @version 0.1
  */
-public interface Participation extends Serializable {
-	/**
-	 * Returns the date the member decided to participate
-	 * 
-	 * @return the created date
-	 */
-	public Date getCreated();
-
-	/**
-	 * Returns the date the member changed the state of the participation
-	 * 
-	 * @return null, or the date
-	 */
-	public Date getUpdated();
-
-	/**
-	 * Returns the character of the event.
-	 * 
-	 * @return the character of this event
-	 */
-	public PlayerCharacter getCharacter();
-
-	/**
-	 * Returns the possible role of this event.
-	 * 
-	 * @return the possible role of this event, or null if not chosen
-	 */
-	public ClassRole getRole();
-
-	/**
-	 * Returns the participation type of the member
-	 * 
-	 * @return the participation type
-	 */
-	public ParticipationType getParticipationType();
-
-	/**
-	 * Returns a note of the member
-	 * 
-	 * @return null, or a note of the member
-	 */
-	public String getNote();
+public interface Participation extends CreatedModifiedAware {
+    
+    /**
+     * Returns the character of the event.
+     * 
+     * @return the character of this event
+     */
+    PlayerCharacter getCharacter();
+    
+    /**
+     * Returns the possible role of this event.
+     * 
+     * @return the possible role of this event, or null if not chosen
+     */
+    ClassRole getRole();
+    
+    /**
+     * Returns the participation type of the member.
+     * 
+     * @return the participation type
+     */
+    ParticipationType getParticipationType();
+    
+    /**
+     * Returns a note of the member.
+     * 
+     * @return null, or a note of the member
+     */
+    String getNote();
 }

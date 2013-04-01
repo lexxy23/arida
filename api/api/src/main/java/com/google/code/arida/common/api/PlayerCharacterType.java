@@ -1,6 +1,6 @@
 /*
  * Arida - A guild and raid management portal
- * Copyright (C) 2013  Dirk Strauss
+ * Copyright (C) 2009-2013  Dirk Strauss
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -25,21 +25,21 @@ package com.google.code.arida.common.api;
  * where a player character can have multiple (read: two) classes. This
  * interface also tells the level of the player character.
  * 
- * @author kaeto23
- * 
+ * @author dstrauss
+ * @version 0.1
  */
 public interface PlayerCharacterType {
-	/**
-	 * Returns the type of the players's character.
-	 * 
-	 * @return the type
-	 */
-	public CharacterType getType();
-
-	/**
-	 * Returns the level of the player char type
-	 * 
-	 * @return the level, or -1 if not applicable
-	 */
-	public int getLevel();
+    /**
+     * Returns the type of the players's character.
+     * 
+     * @return the type
+     */
+    CharacterType getType();
+    
+    /**
+     * Returns the level of the player char type.
+     * 
+     * @return the level, or -1 if not applicable
+     */
+    int getLevel();
 }

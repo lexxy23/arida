@@ -1,6 +1,6 @@
 /*
  * Arida - A guild and raid management portal
- * Copyright (C) 2013  Dirk Strauss
+ * Copyright (C) 2009-2013  Dirk Strauss
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,8 +17,9 @@
  */
 package com.google.code.arida.common.api;
 
-import java.io.Serializable;
 import java.util.Set;
+
+import ds2.oss.core.api.Persistable;
 
 /**
  * The type or class of a character. Implementations of this interface must not
@@ -28,13 +29,7 @@ import java.util.Set;
  * @author Dirk Strauss
  * @version 1.0
  */
-public interface CharacterType extends Serializable {
-    /**
-     * Returns the id of the entry.
-     * 
-     * @return the id of the entry
-     */
-    long getId();
+public interface CharacterType extends Persistable<Long> {
     
     /**
      * Returns the title of the character type. Something like Priest or Warrior

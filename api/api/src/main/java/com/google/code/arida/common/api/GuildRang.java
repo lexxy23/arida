@@ -1,6 +1,6 @@
 /*
  * Arida - A guild and raid management portal
- * Copyright (C) 2013  Dirk Strauss
+ * Copyright (C) 2009-2013  Dirk Strauss
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -24,28 +24,28 @@ import java.io.Serializable;
  * given rang within a guild which expresses partly the access level of the
  * character.
  * 
- * @author kaeto23
- * 
+ * @author dstrauss
+ * @version 0.1
  */
 public interface GuildRang extends Serializable {
-	/**
-	 * Returns the id of the entry
-	 * 
-	 * @return the id of the entry
-	 */
-	public long getId();
-
-	/**
-	 * Returns a possible order number for ordering the rangs
-	 * 
-	 * @return 0, or a possible order number
-	 */
-	public int getOrderNumber();
-
-	/**
-	 * Returns the title of the rang
-	 * 
-	 * @return the title of the rang
-	 */
-	public String getTitle();
+    /**
+     * Returns the id of the entry.
+     * 
+     * @return the id of the entry
+     */
+    long getId();
+    
+    /**
+     * Returns a possible order number for ordering the rangs.
+     * 
+     * @return 0, or a possible order number
+     */
+    int getOrderNumber();
+    
+    /**
+     * Returns the title of the rang.
+     * 
+     * @return the title of the rang
+     */
+    String getTitle();
 }

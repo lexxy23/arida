@@ -1,6 +1,6 @@
 /*
  * Arida - A guild and raid management portal
- * Copyright (C) 2013  Dirk Strauss
+ * Copyright (C) 2009-2013  Dirk Strauss
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -18,22 +18,22 @@
 package com.google.code.arida.common.api;
 
 /**
- * The types of comments
+ * The types of comments.
  * 
- * @author kaeto23
- * 
+ * @author dstrauss
+ * @version 0.1
  */
 public enum CommentContentType {
-	/**
-	 * The content should be xhtml compliant
-	 */
-	XHTML,
-	/**
-	 * The content is bbcode and needs translation
-	 */
-	BBCode,
-	/**
-	 * The content may be simple text
-	 */
-	Plain;
+    /**
+     * The content should be xhtml compliant.
+     */
+    XHTML,
+    /**
+     * The content is bbcode and needs translation.
+     */
+    BBCode,
+    /**
+     * The content may be simple text.
+     */
+    Plain;
 }

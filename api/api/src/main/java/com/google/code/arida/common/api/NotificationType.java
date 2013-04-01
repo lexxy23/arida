@@ -1,6 +1,6 @@
 /*
  * Arida - A guild and raid management portal
- * Copyright (C) 2013  Dirk Strauss
+ * Copyright (C) 2009-2013  Dirk Strauss
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,40 +21,40 @@ package com.google.code.arida.common.api;
  * A number of notification types. Usually, these types need an address or
  * something similar to finally work.
  * 
- * @author kaeto23
- * 
+ * @author dstrauss
+ * @version 0.1
  */
 public enum NotificationType {
-	/**
-	 * Internal handling of a notification
-	 */
-	Internal,
-	/**
-	 * An email notification
-	 */
-	Email,
-	/**
-	 * a SMS notification.
-	 */
-	SMS,
-	/**
-	 * a XMPP notification. Jabber, anyone?
-	 */
-	XMPP,
-	/**
-	 * a ICQ notification.
-	 */
-	ICQ,
-	/**
-	 * a MSN notification
-	 */
-	MSN,
-	/**
-	 * an IRC notification
-	 */
-	IRC,
-	/**
-	 * a Skype notification.
-	 */
-	Skype;
+    /**
+     * Internal handling of a notification.
+     */
+    Internal,
+    /**
+     * An email notification.
+     */
+    Email,
+    /**
+     * a SMS notification.
+     */
+    SMS,
+    /**
+     * a XMPP notification. Jabber, anyone?
+     */
+    XMPP,
+    /**
+     * a ICQ notification.
+     */
+    ICQ,
+    /**
+     * a MSN notification.
+     */
+    MSN,
+    /**
+     * an IRC notification.
+     */
+    IRC,
+    /**
+     * a Skype notification.
+     */
+    Skype;
 }

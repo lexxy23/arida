@@ -1,6 +1,6 @@
 /*
  * Arida - A guild and raid management portal
- * Copyright (C) 2013  Dirk Strauss
+ * Copyright (C) 2009-2013  Dirk Strauss
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -24,16 +24,16 @@ package com.google.code.arida.common.api;
  * Common information about when or how much value points are given on special
  * events.
  * 
- * @author kaeto23
- * 
+ * @author dstrauss
+ * @version 0.1
  */
 public interface ValueSystemInfo {
-	/**
-	 * Returns the points on given events.
-	 * 
-	 * @param e
-	 *            the event type
-	 * @return a number to give to a raid member
-	 */
-	public float getPointsOnEvent(ValueSystemEvent e);
+    /**
+     * Returns the points on given events.
+     * 
+     * @param e
+     *            the event type
+     * @return a number to give to a raid member
+     */
+    float getPointsOnEvent(ValueSystemEvent e);
 }

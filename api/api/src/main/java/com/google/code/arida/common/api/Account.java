@@ -1,6 +1,6 @@
 /*
  * Arida - A guild and raid management portal
- * Copyright (C) 2013  Dirk Strauss
+ * Copyright (C) 2009-2013  Dirk Strauss
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -19,19 +19,16 @@ package com.google.code.arida.common.api;
 
 import java.util.List;
 
+import ds2.oss.core.api.CreatedModifiedAware;
+import ds2.oss.core.api.Persistable;
+
 /**
  * A user account.
  * 
  * @author Dirk Strauss
  * @version 1.0
  */
-public interface Account {
-    /**
-     * the ID of the entry.
-     * 
-     * @return the id of the entry
-     */
-    long getId();
+public interface Account extends Persistable<Long>, CreatedModifiedAware {
     
     /**
      * Returns the openId of this account.

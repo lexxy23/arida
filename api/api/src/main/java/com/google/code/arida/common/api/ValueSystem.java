@@ -1,6 +1,6 @@
 /*
  * Arida - A guild and raid management portal
- * Copyright (C) 2013  Dirk Strauss
+ * Copyright (C) 2009-2013  Dirk Strauss
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,16 +23,16 @@ package com.google.code.arida.common.api;
 /**
  * The metrics for raid orders.
  * 
- * @author kaeto23
- * 
+ * @author dstrauss
+ * @version 0.1
  */
 public enum ValueSystem {
-	/**
-	 * The famous DKP system.
-	 */
-	DragonKillPoints,
-	/**
-	 * The EffortPoints GearPoints system
-	 */
-	EPGP;
+    /**
+     * The famous DKP system.
+     */
+    DragonKillPoints,
+    /**
+     * The EffortPoints GearPoints system.
+     */
+    EPGP, ZeroSum, LootList;
 }

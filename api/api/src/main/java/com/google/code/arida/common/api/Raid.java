@@ -1,6 +1,6 @@
 /*
  * Arida - A guild and raid management portal
- * Copyright (C) 2013  Dirk Strauss
+ * Copyright (C) 2009-2013  Dirk Strauss
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,81 +20,76 @@ package com.google.code.arida.common.api;
 import java.net.URL;
 import java.util.Set;
 
+import ds2.oss.core.api.Persistable;
+
 /**
  * The raid group. Also known as the Order.
  * 
  * @author Dirk Strauss
  * @version 1.0
  */
-public interface Raid extends Identifyable {
+public interface Raid extends Identifyable, Persistable<Long> {
     /**
      * This ID typically reflects the raid order name. A title like Circle of
      * Phoenix may return COP.
      * 
      * @return the order id
      */
-    public String getOrderId();
+    String getOrderId();
     
     /**
-     * returns the ID of the entry
-     * 
-     * @return the id of the entry
-     */
-    public long getId();
-    
-    /**
-     * Returns the title of the order
+     * Returns the title of the order.
      * 
      * @return the title of the order
      */
-    public String getTitle();
+    String getTitle();
     
     /**
-     * Returns the description of the order
+     * Returns the description of the order.
      * 
      * @return a small sub title of the order
      */
-    public String getDescr();
+    String getDescr();
     
     /**
      * Returns the lead character of this order.
      * 
      * @return the lead character of this order
      */
-    public PlayerCharacter getLeader();
+    PlayerCharacter getLeader();
     
     /**
      * Returns the raid order officers.
      * 
      * @return an empty list, or a set of raid officers
      */
-    public Set<PlayerCharacter> getOfficers();
+    Set<PlayerCharacter> getOfficers();
     
     /**
      * Returns all known members of the raid order.
      * 
      * @return all known members
      */
-    public Set<PlayerCharacter> getMembers();
+    Set<PlayerCharacter> getMembers();
     
     /**
      * Returns the basic type of this order.
      * 
      * @return the basic type of this order
      */
-    public ValueSystem getInitialValueType();
+    ValueSystem getInitialValueType();
     
     /**
      * Returns a possible forum url.
      * 
      * @return null, or a forum url of this raid
      */
-    public URL getForumUrl();
+    URL getForumUrl();
     
     /**
-     * Returns the game this raid belongs to
+     * Returns the game this raid belongs to.
      * 
      * @return null, or the game of this raid
      */
-    public Game getGame();
+    Game getGame();
 }

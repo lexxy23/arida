@@ -1,6 +1,6 @@
 /*
  * Arida - A guild and raid management portal
- * Copyright (C) 2013  Dirk Strauss
+ * Copyright (C) 2009-2013  Dirk Strauss
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,29 +17,36 @@
  */
 package com.google.code.arida.common.api;
 
+import ds2.oss.core.api.NumericEnumValue;
+
 /**
- * The state of an event
+ * The state of an event.
  * 
- * @author kaeto23
- * 
+ * @author dstrauss
+ * @version 0.1
  */
-public enum EventState {
-	/**
-	 * The Open state. Meaning that characters are allowed to join an event. Or
-	 * changing their state for this event.
-	 */
-	Open,
-	/**
-	 * The Closed state. No one, except the officers and the leader, can change
-	 * the event. The event may occur NOW.
-	 */
-	Closed,
-	/**
-	 * The event state is finished.
-	 */
-	Finished,
-	/**
-	 * The event is dropped for some reason
-	 */
-	Dropped;
+public enum EventState implements NumericEnumValue {
+    /**
+     * The Open state. Meaning that characters are allowed to join an event. Or
+     * changing their state for this event.
+     */
+    Open,
+    /**
+     * The Closed state. No one, except the officers and the leader, can change
+     * the event. The event may occur NOW.
+     */
+    Closed,
+    /**
+     * The event state is finished.
+     */
+    Finished,
+    /**
+     * The event is dropped for some reason.
+     */
+    Dropped;
+    
+    @Override
+    public int getNumericalValue() {
+        return 0;
+    }
 }

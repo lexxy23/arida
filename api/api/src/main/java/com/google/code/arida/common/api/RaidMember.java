@@ -1,6 +1,6 @@
 /*
  * Arida - A guild and raid management portal
- * Copyright (C) 2013  Dirk Strauss
+ * Copyright (C) 2009-2013  Dirk Strauss
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,31 +17,27 @@
  */
 package com.google.code.arida.common.api;
 
+import ds2.oss.core.api.Persistable;
+
 /**
- * A raid member
+ * A raid member.
  * 
- * @author kaeto23
- * 
+ * @author dstrauss
+ * @version 0.1
  */
-public interface RaidMember {
-	/**
-	 * Returns the id of the entry
-	 * 
-	 * @return the id of the entry
-	 */
-	public long getId();
-
-	/**
-	 * Returns the role of this character
-	 * 
-	 * @return the role of this character
-	 */
-	public RaidRoles getRole();
-
-	/**
-	 * Returns the raid character.
-	 * 
-	 * @return the raid character
-	 */
-	public PlayerCharacter getCharacter();
+public interface RaidMember extends Persistable<Long> {
+    
+    /**
+     * Returns the role of this character.
+     * 
+     * @return the role of this character
+     */
+    RaidRoles getRole();
+    
+    /**
+     * Returns the raid character.
+     * 
+     * @return the raid character
+     */
+    PlayerCharacter getCharacter();
 }

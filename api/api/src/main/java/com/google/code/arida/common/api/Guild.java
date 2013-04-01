@@ -1,6 +1,6 @@
 /*
  * Arida - A guild and raid management portal
- * Copyright (C) 2013  Dirk Strauss
+ * Copyright (C) 2009-2013  Dirk Strauss
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -19,45 +19,41 @@ package com.google.code.arida.common.api;
 
 import java.util.List;
 
+import ds2.oss.core.api.Persistable;
+
 /**
  * A guild or a clan.
  * 
- * @author kaeto23
- * 
+ * @author dstrauss
+ * @version 0.1
  */
-public interface Guild extends Identifyable {
-    /**
-     * Returns the id of the entry
-     * 
-     * @return the id of the entry
-     */
-    public long getId();
+public interface Guild extends Identifyable, Persistable<Long> {
     
     /**
-     * Returns a possible clan prefix
+     * Returns a possible clan prefix.
      * 
      * @return a clan prefix, or null
      */
-    public String getClanTag();
+    String getClanTag();
     
     /**
-     * Returns the name of the guild or clan
+     * Returns the name of the guild or clan.
      * 
      * @return the name
      */
-    public String getTitle();
+    String getTitle();
     
     /**
-     * Returns all known guild members
+     * Returns all known guild members.
      * 
      * @return all known guild members
      */
-    public List<GuildMember> getMembers();
+    List<GuildMember> getMembers();
     
     /**
-     * Returns the id of the game this clan belongs to
+     * Returns the id of the game this clan belongs to.
      * 
      * @return the id of the game
      */
-    public long getGameId();
+    long getGameId();
 }

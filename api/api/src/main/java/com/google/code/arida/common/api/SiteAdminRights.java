@@ -1,6 +1,6 @@
 /*
  * Arida - A guild and raid management portal
- * Copyright (C) 2013  Dirk Strauss
+ * Copyright (C) 2009-2013  Dirk Strauss
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,31 +20,31 @@ package com.google.code.arida.common.api;
 import javax.xml.bind.annotation.XmlEnum;
 
 /**
- * A set of site policies
+ * A set of site policies.
  * 
- * @author kaeto23
- * 
+ * @author dstrauss
+ * @version 0.1
  */
 @XmlEnum
 public enum SiteAdminRights {
-	/**
-	 * Allow raid creation
-	 */
-	AllowRaidCreation,
-	/**
-	 * Allow guild creation
-	 */
-	AllowGuildCreation,
-	/**
-	 * allow character creation
-	 */
-	AllowCharacterCreation,
-	/**
-	 * Allow event creation
-	 */
-	AllowEventCreation,
-	/**
-	 * Allow adding comments
-	 */
-	AllowCommentAdding;
+    /**
+     * Allow raid creation.
+     */
+    AllowRaidCreation,
+    /**
+     * Allow guild creation.
+     */
+    AllowGuildCreation,
+    /**
+     * allow character creation.
+     */
+    AllowCharacterCreation,
+    /**
+     * Allow event creation.
+     */
+    AllowEventCreation,
+    /**
+     * Allow adding comments.
+     */
+    AllowCommentAdding;
 }

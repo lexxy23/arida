@@ -1,6 +1,6 @@
 /*
  * Arida - A guild and raid management portal
- * Copyright (C) 2013  Dirk Strauss
+ * Copyright (C) 2009-2013  Dirk Strauss
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,8 +23,11 @@ package com.google.code.arida.common.api;
 import java.io.Serializable;
 
 /**
- * @author Kaeto23
+ * Dto contract for a taggable component. That is for using a specific tag name
+ * within a url to directly access this component.
  * 
+ * @author dstrauss
+ * @version 0.1
  */
 public interface Identifyable extends Serializable {
     /**
