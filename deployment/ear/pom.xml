@@ -62,9 +62,4 @@
       <version>0.1-SNAPSHOT</version>
     </dependency>
   </dependencies>
-  <scm>
-    <developerConnection>scm:svn:https://arida.googlecode.com/svn/trunk/deployment/ear</developerConnection>
-    <connection>scm:svn:https://arida.googlecode.com/svn/trunk/deployment/ear</connection>
-    <url>http://code.google.com/p/arida/source/browse/trunk/deployment/ear</url>
-  </scm>
 </project>

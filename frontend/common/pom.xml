@@ -24,9 +24,4 @@
       <artifactId>jstl</artifactId>
     </dependency>
   </dependencies>
-  <scm>
-    <developerConnection>scm:svn:https://arida.googlecode.com/svn/trunk/frontend/common</developerConnection>
-    <connection>scm:svn:https://arida.googlecode.com/svn/trunk/frontend/common</connection>
-    <url>http://code.google.com/p/arida/source/browse/trunk/frontend/common</url>
-  </scm>
 </project>

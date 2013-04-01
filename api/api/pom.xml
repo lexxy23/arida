@@ -9,11 +9,6 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <artifactId>arida-common-api</artifactId>
-  <scm>
-    <developerConnection>scm:svn:https://arida.googlecode.com/svn/trunk/api/api</developerConnection>
-    <connection>scm:svn:https://arida.googlecode.com/svn/trunk/api/api</connection>
-    <url>http://code.google.com/p/arida/source/browse/trunk/api/api</url>
-  </scm>
   <dependencies>
     <dependency>
       <groupId>ds2.oss.core</groupId>

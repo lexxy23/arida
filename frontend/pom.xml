@@ -45,10 +45,5 @@
     <module>ubiquity</module>
     <module>taglib</module>
   </modules>
-  <scm>
-    <developerConnection>scm:svn:https://arida.googlecode.com/svn/trunk/frontend</developerConnection>
-    <connection>scm:svn:https://arida.googlecode.com/svn/trunk/frontend</connection>
-    <url>http://code.google.com/p/arida/source/browse/trunk/frontend</url>
-  </scm>
   <groupId>ds2.arida.frontend</groupId>
 </project>
