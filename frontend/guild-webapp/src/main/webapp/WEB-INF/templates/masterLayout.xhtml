@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+
 <!--
 
     Arida - A guild and raid management portal
@@ -18,9 +18,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 -->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
   xmlns:h="http://java.sun.com/jsf/html"
   xmlns:ui="http://java.sun.com/jsf/facelets"
@@ -37,55 +35,72 @@
         -
         #{i18n["arida.title"]}
       </ui:insert></title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <link rel="stylesheet" type="text/css" href="#{facesContext.externalContext.requestContextPath}/resources/css/bootstrap.css"/>
-      <link rel="stylesheet" type="text/css" href="#{resource['webjars/bootstrap/2.3.1/css/bootstrap.css']}"/>
-      <h:outputScript name="webjars/jquery/1.9.1/jquery.js"/>
-        <h:outputScript name="webjars/bootstrap/2.3.1/js/bootstrap.js"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css"
+    href="#{resource['webjars/bootstrap/2.3.1/css/bootstrap.css']}" />
+  <h:outputScript name="webjars/jquery/1.9.1/jquery.js" />
+  <h:outputScript name="webjars/bootstrap/2.3.1/js/bootstrap.js" />
 </h:head>
 
 <h:body>
-  <!-- 
+  <!--  
 	<h:outputScript library="javascript" name="util.js" target="head" />
 	-->
   <h:outputStylesheet library="arida-css-default" name="styles.css"
     target="body" />
 
   <div class="pageHeading">
-  <div class="pageLogo"><h:graphicImage library="aridacommon"
-    name="arida-icon48.png" /> <arida:printClanLogo /></div>
-  <div class="pageHeaderFill"><ui:insert name="adv">Werbung/Banner</ui:insert>
-  </div>
+    <div class="pageLogo">
+      <h:graphicImage library="aridacommon" name="arida-icon48.png" />
+      <arida:printClanLogo />
+    </div>
+    <div class="pageHeaderFill">
+      <ui:insert name="adv">Werbung/Banner</ui:insert>
+    </div>
   </div>
   <div class="actionHeading">
-  <div class="quickActions"><ui:insert name="quickActions">Quick actions DropMenu</ui:insert>
-  </div>
-  <arida:userStateButton />
-  <div class="clanGameBar"><arida:printGameLogo /> <span><ui:insert
-    name="clanName">Clan Name</ui:insert></span></div>
+    <div class="quickActions">
+      <ui:insert name="quickActions">Quick actions DropMenu</ui:insert>
+    </div>
+    <arida:userStateButton />
+    <div class="clanGameBar">
+      <arida:printGameLogo />
+      <span><ui:insert name="clanName">Clan Name</ui:insert></span>
+    </div>
   </div>
   <div class="menuAndContent">
-  <div class="menuLeft">
+    <div class="menuLeft">
 
-  <div class="clanLinks"><h:outputLink value="events.jsf">Events</h:outputLink>
-  <h:outputLink value="board.jsf">Forum</h:outputLink></div>
-  <ui:insert name="menuLeft">
+      <div class="clanLinks">
+        <h:outputLink value="events.jsf">Events</h:outputLink>
+        <h:outputLink value="board.jsf">Forum</h:outputLink>
+      </div>
+      <ui:insert name="menuLeft">
 	Space für Pagelets
-	</ui:insert></div>
-  <div class="menuRight"><ui:insert name="menuRight">rightMenu</ui:insert></div>
+	</ui:insert>
+    </div>
+    <div class="menuRight">
+      <ui:insert name="menuRight">rightMenu</ui:insert>
+    </div>
 
-  <div class="content">
-  <div class="websiteTicker"><ui:insert name="websiteTicker">
-		ticker messages
-	</ui:insert></div>
-  <ui:insert name="content">
+    <div class="content">
+      <div class="websiteTicker">
+        <div class="alert alert-info">
+          <button type="button" class="close" data-dismiss="alert">x</button>
+          <ui:insert name="websiteTicker">ticker messages</ui:insert>
+        </div>
+      </div>
+      <ui:insert name="content">
 	Some content
-	</ui:insert></div>
+	</ui:insert>
+    </div>
 
 
   </div>
-  <div class="pageFooter"><ui:insert name="footer">
-    <arida:printFooter />
-  </ui:insert></div>
+  <div class="pageFooter">
+    <ui:insert name="footer">
+      <arida:printFooter />
+    </ui:insert>
+  </div>
 </h:body>
 </html>
