@@ -32,7 +32,7 @@
     </encoder>
   </appender>
   <appender name="LOGFILE" class="ch.qos.logback.core.RollingFileAppender">
-    <file>arida.log</file>
+    <file>${user.dir}/logs/arida.log</file>
     <append>true</append>
     <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
       <fileNamePattern>arida.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
