@@ -77,7 +77,7 @@ public class GbbGuildServiceImpl implements GuildService {
                 
                 @Override
                 public String getTitle() {
-                    return "Gummibaerchenbande";
+                    return "Gummib\u00e4rchenbande";
                 }
                 
                 @Override
