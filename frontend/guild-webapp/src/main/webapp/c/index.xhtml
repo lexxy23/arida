@@ -21,9 +21,15 @@
   xmlns:ui="http://java.sun.com/jsf/facelets"
   xmlns:arida="http://java.sun.com/jsf/composite/aridacommon"
   template="/WEB-INF/templates/masterLayout.xhtml"
-  xmlns:f="http://java.sun.com/jsf/core">
+  xmlns:f="http://java.sun.com/jsf/core"
+  xmlns:h="http://java.sun.com/jsf/html"
+  >
 
   <ui:define name="content">
     <p>This is the homepage of a clan or guild.</p>
+  </ui:define>
+  <ui:define name="clanName">
+    <h:outputText value="#{requestScope['GUILD'].title}" />
+    <h:outputText value="#{requestScope['RAID'].title}" />
   </ui:define>
 </ui:composition>
