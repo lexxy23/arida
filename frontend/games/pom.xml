@@ -14,9 +14,4 @@
     <module>wow</module>
   </modules>
   <groupId>ds2.arida.frontend.games</groupId>
-  <scm>
-    <developerConnection>scm:svn:https://arida.googlecode.com/svn/trunk/frontend/games</developerConnection>
-    <connection>scm:svn:https://arida.googlecode.com/svn/trunk/frontend/games</connection>
-    <url>http://code.google.com/p/arida/source/browse/trunk/frontend/games</url>
-  </scm>
 </project>

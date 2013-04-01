@@ -39,9 +39,4 @@
       <artifactId>cdi-api</artifactId>
     </dependency>
   </dependencies>
-  <scm>
-    <developerConnection>scm:svn:https://arida.googlecode.com/svn/trunk/api/base-impl</developerConnection>
-    <connection>scm:svn:https://arida.googlecode.com/svn/trunk/api/base-impl</connection>
-    <url>http://code.google.com/p/arida/source/browse/trunk/api/base-impl</url>
-  </scm>
 </project>

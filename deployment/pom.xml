@@ -14,11 +14,6 @@
     <module>ear</module>
     <module>localmocks</module>
   </modules>
-  <scm>
-    <developerConnection>scm:svn:https://arida.googlecode.com/svn/trunk/deployment</developerConnection>
-    <connection>scm:svn:https://arida.googlecode.com/svn/trunk/deployment</connection>
-    <url>http://code.google.com/p/arida/source/browse/trunk/deployment</url>
-  </scm>
   <dependencyManagement>
   </dependencyManagement>
   <groupId>ds2.arida.deployment</groupId>

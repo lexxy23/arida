@@ -9,11 +9,6 @@
   <artifactId>arida-common</artifactId>
   <packaging>pom</packaging>
   <description>The base modules, the API, common implementations etc.</description>
-  <scm>
-    <developerConnection>scm:svn:https://arida.googlecode.com/svn/trunk/api</developerConnection>
-    <connection>scm:svn:https://arida.googlecode.com/svn/trunk/api</connection>
-    <url>http://code.google.com/p/arida/source/browse/trunk/api</url>
-  </scm>
   <modules>
     <module>api</module>
     <module>base-impl</module>

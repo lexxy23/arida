@@ -19,9 +19,4 @@
       <artifactId>arida-common-api</artifactId>
     </dependency>
   </dependencies>
-  <scm>
-    <developerConnection>scm:svn:https://arida.googlecode.com/svn/trunk/frontend/ubiquity</developerConnection>
-    <connection>scm:svn:https://arida.googlecode.com/svn/trunk/frontend/ubiquity</connection>
-    <url>http://code.google.com/p/arida/source/browse/trunk/frontend/ubiquity</url>
-  </scm>
 </project>

@@ -9,11 +9,6 @@
   <artifactId>arida-i18n</artifactId>
   <name>Arida I18N</name>
   <description>The internationalization files for translating arida into several languages.</description>
-  <scm>
-    <developerConnection>scm:svn:https://arida.googlecode.com/svn/trunk/api/i18n</developerConnection>
-    <connection>scm:svn:https://arida.googlecode.com/svn/trunk/api/i18n</connection>
-    <url>http://code.google.com/p/arida/source/browse/trunk/api/i18n</url>
-  </scm>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
