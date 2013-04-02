@@ -14,6 +14,7 @@
   <description>The whole arida modules etc.</description>
   <inceptionYear>2009</inceptionYear>
   <properties>
+    <config.version>0.12-SNAPSHOT</config.version>
     <license.header.year>2009-2013</license.header.year>
     <license.header.author>Dirk Strauss</license.header.author>
     <license.header.projectName>Arida</license.header.projectName>
