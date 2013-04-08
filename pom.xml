@@ -4,7 +4,7 @@
   <parent>
     <groupId>ds2.base.oss</groupId>
     <artifactId>jee-base</artifactId>
-    <version>0.69-SNAPSHOT</version>
+    <version>0.69</version>
   </parent>
   <groupId>ds2.arida</groupId>
   <artifactId>arida-project</artifactId>
@@ -14,7 +14,6 @@
   <description>The whole arida modules etc.</description>
   <inceptionYear>2009</inceptionYear>
   <properties>
-    <config.version>0.12-SNAPSHOT</config.version>
     <license.header.year>2009-2013</license.header.year>
     <license.header.author>Dirk Strauss</license.header.author>
     <license.header.projectName>Arida</license.header.projectName>
