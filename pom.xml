@@ -23,6 +23,7 @@
     <license.header.description>A guild and raid management portal</license.header.description>
     <release.localCheckout>true</release.localCheckout>
     <mvn.releaseplugin.version>2.3.2</mvn.releaseplugin.version>
+    <ds2.oss.core.version>0.2-SNAPSHOT</ds2.oss.core.version>
   </properties>
   <url>http://code.google.com/p/arida/</url>
   <issueManagement>
@@ -71,12 +72,17 @@
       <dependency>
         <groupId>ds2.oss.core</groupId>
         <artifactId>ds2-oss-core-api</artifactId>
-        <version>0.1</version>
+        <version>${ds2.oss.core.version}</version>
       </dependency>
       <dependency>
         <groupId>ds2.oss.core</groupId>
         <artifactId>ds2-oss-core-base</artifactId>
-        <version>0.1</version>
+        <version>${ds2.oss.core.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>ds2.oss.core</groupId>
+        <artifactId>ds2-oss-core-interceptors</artifactId>
+        <version>${ds2.oss.core.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>

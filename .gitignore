@@ -5,3 +5,4 @@ target
 .settings
 build
 nb-configuration.xml
+login.properties

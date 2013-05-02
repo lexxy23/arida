@@ -8,4 +8,11 @@
   <artifactId>arida-persistence-api</artifactId>
   <name>Arida Persistence API</name>
   <description>The API to access the persistence layer.</description>
+  <dependencies>
+    <dependency>
+      <groupId>ds2.arida.common</groupId>
+      <artifactId>arida-common-api</artifactId>
+      <version>0.1-SNAPSHOT</version>
+    </dependency>
+  </dependencies>
 </project>

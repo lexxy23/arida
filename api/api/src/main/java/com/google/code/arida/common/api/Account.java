@@ -21,6 +21,7 @@ import java.util.List;
 
 import ds2.oss.core.api.CreatedModifiedAware;
 import ds2.oss.core.api.Persistable;
+import ds2.oss.core.api.StateAware;
 
 /**
  * A user account.
@@ -28,7 +29,11 @@ import ds2.oss.core.api.Persistable;
  * @author Dirk Strauss
  * @version 1.0
  */
-public interface Account extends Persistable<Long>, CreatedModifiedAware {
+public interface Account
+    extends
+    Persistable<Long>,
+    CreatedModifiedAware,
+    StateAware {
     
     /**
      * Returns the openId of this account.
