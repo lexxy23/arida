@@ -4,7 +4,7 @@
   <parent>
     <groupId>ds2.base.oss</groupId>
     <artifactId>jee-base</artifactId>
-    <version>0.70.1</version>
+    <version>0.72.1</version>
   </parent>
   <groupId>ds2.arida</groupId>
   <artifactId>arida-project</artifactId>
@@ -21,6 +21,8 @@
     <siteProjectName>arida</siteProjectName>
     <license.id>gpl_v3</license.id>
     <license.header.description>A guild and raid management portal</license.header.description>
+    <release.localCheckout>true</release.localCheckout>
+    <mvn.releaseplugin.version>2.3.2</mvn.releaseplugin.version>
   </properties>
   <url>http://code.google.com/p/arida/</url>
   <issueManagement>
@@ -52,6 +54,7 @@
     <module>api</module>
     <module>frontend</module>
     <module>deployment</module>
+    <module>persistence</module>
   </modules>
   <scm>
     <developerConnection>scm:git://git@sources.ds2/srv/git/arida</developerConnection>
@@ -68,12 +71,12 @@
       <dependency>
         <groupId>ds2.oss.core</groupId>
         <artifactId>ds2-oss-core-api</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>0.1</version>
       </dependency>
       <dependency>
         <groupId>ds2.oss.core</groupId>
         <artifactId>ds2-oss-core-base</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>0.1</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
