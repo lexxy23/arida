@@ -28,16 +28,16 @@ import ds2.oss.core.api.EntryStates;
  * @author dstrauss
  * 
  */
-public class PersistenceTest extends Arquillian {
+public class PersistenceIT extends Arquillian {
     private static final Logger LOG = LoggerFactory
-        .getLogger(PersistenceTest.class);
+        .getLogger(PersistenceIT.class);
     @Inject
     private AccountBean to;
     
     /**
      * 
      */
-    public PersistenceTest() {
+    public PersistenceIT() {
         // TODO Auto-generated constructor stub
     }
     
