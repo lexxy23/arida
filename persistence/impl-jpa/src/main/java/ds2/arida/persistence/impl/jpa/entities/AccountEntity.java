@@ -18,23 +18,38 @@ import ds2.oss.core.base.impl.CreatedModifiedAwareModule;
 import ds2.oss.core.base.impl.StateAwareModule;
 
 /**
- * Entity implementation class for Entity: Account
+ * Entity implementation class for Entity: Account.
  * 
+ * @author dstrauss
+ * @version 0.1
  */
 @Entity
 @Table(name = "AR_ACCOUNT")
 public class AccountEntity implements Account {
+    /**
+     * The svuid.
+     */
+    private static final long serialVersionUID = 1L;
     
     /**
      * The id of the entry.
      */
     @Id
     private long id;
-    private static final long serialVersionUID = 1L;
+    
+    /**
+     * The state module.
+     */
     @Embedded
     private final StateAwareModule state;
+    /**
+     * The date module.
+     */
     @Embedded
     private final CreatedModifiedAwareModule date;
+    /**
+     * The open id.
+     */
     @Column(name = "openid")
     private String openId;
     

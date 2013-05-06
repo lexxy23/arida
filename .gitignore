@@ -6,3 +6,4 @@ target
 build
 nb-configuration.xml
 login.properties
+test-output

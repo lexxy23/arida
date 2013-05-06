@@ -47,8 +47,8 @@ public class PersistenceIT extends Arquillian {
             ShrinkWrap
                 .create(JavaArchive.class, "example.jar")
                 .addPackages(true, "ds2.arida.persistence")
-                .addAsManifestResource("META-INF/persistence.xml",
-                    "test-persistence.xml")
+                .addAsManifestResource("test-persistence.xml",
+                    "persistence.xml")
                 // Enable CDI
                 .addAsManifestResource(EmptyAsset.INSTANCE,
                     ArchivePaths.create("beans.xml"));

@@ -19,21 +19,32 @@ import ds2.arida.persistence.impl.jpa.entities.AccountEntity;
 import ds2.oss.core.interceptors.LogCallings;
 
 /**
- * @author dstrauss
+ * The JPA implementation for accessing accounts.
  * 
+ * @author dstrauss
+ * @version 0.1
  */
 @Stateless
 @LogCallings
 public class AccountBean implements PersistenceSupport<Account, Long> {
+    /**
+     * A logger.
+     */
     private static final Logger LOG = LoggerFactory
         .getLogger(AccountBean.class);
+    /**
+     * The entity manager.
+     */
     @PersistenceContext(unitName = "aridaPU")
     private EntityManager em;
+    /**
+     * An entity converter.
+     */
     @Inject
     private EntityConverter conv;
     
     /**
-     * 
+     * INits the bean.
      */
     public AccountBean() {
         // TODO Auto-generated constructor stub
@@ -41,14 +52,14 @@ public class AccountBean implements PersistenceSupport<Account, Long> {
     
     @Override
     public Account create(final Account e) throws AridaException {
-        AccountEntity ae = new AccountEntity(e);
+        final AccountEntity ae = new AccountEntity(e);
         em.persist(ae);
         return conv.toDto(ae);
     }
     
     @Override
     public Account getById(final Long t) throws AridaException {
-        return null;
+        return conv.toDto(em.find(AccountEntity.class, t));
     }
     
 }

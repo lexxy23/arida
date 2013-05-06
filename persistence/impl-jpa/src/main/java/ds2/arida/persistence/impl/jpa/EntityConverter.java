@@ -12,8 +12,10 @@ import ds2.arida.persistence.api.ConverterSupport;
 import ds2.arida.persistence.impl.jpa.entities.AccountEntity;
 
 /**
- * @author dstrauss
+ * Implementation for the entity converter.
  * 
+ * @author dstrauss
+ * @version 0.1
  */
 @ApplicationScoped
 public class EntityConverter
@@ -21,7 +23,7 @@ public class EntityConverter
     ConverterSupport<Account, AccountEntity> {
     
     /**
-     * 
+     * Inits the bean.
      */
     public EntityConverter() {
         // TODO Auto-generated constructor stub
@@ -29,7 +31,7 @@ public class EntityConverter
     
     @Override
     public Account toDto(final AccountEntity ae) {
-        AccountXml rc = new AccountXml();
+        final AccountXml rc = new AccountXml();
         rc.setId(ae.getId());
         rc.setCreated(ae.getCreated());
         rc.setEntryState(ae.getEntryState());
