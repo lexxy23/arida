@@ -8,9 +8,6 @@ import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import com.google.code.arida.common.api.Account;
 import com.google.code.arida.common.api.exceptions.AridaException;
 
@@ -27,11 +24,6 @@ import ds2.oss.core.interceptors.LogCallings;
 @Stateless
 @LogCallings
 public class AccountBean implements PersistenceSupport<Account, Long> {
-    /**
-     * A logger.
-     */
-    private static final Logger LOG = LoggerFactory
-        .getLogger(AccountBean.class);
     /**
      * The entity manager.
      */
