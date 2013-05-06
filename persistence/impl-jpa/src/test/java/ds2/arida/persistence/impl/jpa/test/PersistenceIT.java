@@ -21,21 +21,29 @@ import com.google.code.arida.common.api.Account;
 import com.google.code.arida.common.api.dto.AccountXml;
 import com.google.code.arida.common.api.exceptions.AridaException;
 
-import ds2.arida.persistence.impl.jpa.AccountBean;
+import ds2.arida.persistence.api.AccountPersistence;
 import ds2.oss.core.api.EntryStates;
 
 /**
- * @author dstrauss
+ * Persistence test.
  * 
+ * @author dstrauss
+ * @version 0.1
  */
 public class PersistenceIT extends Arquillian {
+    /**
+     * A logger.
+     */
     private static final Logger LOG = LoggerFactory
         .getLogger(PersistenceIT.class);
+    /**
+     * The test object.
+     */
     @Inject
-    private AccountBean to;
+    private AccountPersistence to;
     
     /**
-     * 
+     * Inits the test.
      */
     public PersistenceIT() {
         // TODO Auto-generated constructor stub

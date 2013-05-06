@@ -11,7 +11,7 @@ import javax.persistence.PersistenceContext;
 import com.google.code.arida.common.api.Account;
 import com.google.code.arida.common.api.exceptions.AridaException;
 
-import ds2.arida.persistence.api.PersistenceSupport;
+import ds2.arida.persistence.api.AccountPersistence;
 import ds2.arida.persistence.impl.jpa.entities.AccountEntity;
 import ds2.oss.core.interceptors.LogCallings;
 
@@ -23,7 +23,7 @@ import ds2.oss.core.interceptors.LogCallings;
  */
 @Stateless
 @LogCallings
-public class AccountBean implements PersistenceSupport<Account, Long> {
+public class AccountBean implements AccountPersistence {
     /**
      * The entity manager.
      */
