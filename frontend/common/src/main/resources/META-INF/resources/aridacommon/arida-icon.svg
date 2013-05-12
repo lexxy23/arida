@@ -14,13 +14,13 @@
    height="48"
    id="svg2"
    version="1.1"
-   inkscape:version="0.47 r22583"
+   inkscape:version="0.48.2 r9819"
    sodipodi:docname="arida-icon.svg"
    style="display:inline"
    enable-background="new"
-   inkscape:export-filename="/Users/kaeto23/eclipseWs/Arida/arida/webapps/common/src/main/resources/META-INF/resources/aridacommon/arida-puncher128.png"
-   inkscape:export-xdpi="240"
-   inkscape:export-ydpi="240">
+   inkscape:export-filename="E:\Users\arida-lineout-512.png"
+   inkscape:export-xdpi="960"
+   inkscape:export-ydpi="960">
   <defs
      id="defs4">
     <linearGradient
@@ -281,17 +281,6 @@
        fx="29.784626"
        fy="4.8585491"
        r="2.3139014" />
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3670"
-       id="radialGradient3676"
-       cx="7.6771321"
-       cy="6.8609891"
-       fx="7.6771321"
-       fy="6.8609891"
-       r="24.000001"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-0.02156833,1.4669622,-1.4615058,-0.02148811,17.87009,-4.2536442)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3680"
@@ -328,15 +317,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="9.1458331"
-     inkscape:cx="32.473805"
+     inkscape:cx="11.535308"
      inkscape:cy="23.999999"
      inkscape:document-units="px"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer6"
      showgrid="false"
-     inkscape:window-width="1029"
-     inkscape:window-height="694"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-width="1317"
+     inkscape:window-height="794"
+     inkscape:window-x="221"
+     inkscape:window-y="52"
      inkscape:window-maximized="0"
      showguides="true"
      inkscape:guide-bbox="true" />
@@ -367,7 +356,7 @@
        sodipodi:cy="26.065117"
        sodipodi:rx="22.269768"
        sodipodi:ry="22.269768"
-       d="m 45.990698,26.065117 a 22.269768,22.269768 0 1 1 -44.5395357,0 22.269768,22.269768 0 1 1 44.5395357,0 z"
+       d="m 45.990698,26.065117 c 0,12.299253 -9.970515,22.269768 -22.269768,22.269768 -12.299253,0 -22.2697677,-9.970515 -22.2697677,-22.269768 0,-12.299253 9.9705147,-22.2697679 22.2697677,-22.2697679 12.299253,0 22.269768,9.9705149 22.269768,22.2697679 z"
        transform="matrix(1.0776942,0,0,1.0776942,-1.5639093,1000.272)" />
   </g>
   <g
@@ -390,9 +379,10 @@
   <g
      inkscape:groupmode="layer"
      id="layer6"
-     inkscape:label="blackBorder">
+     inkscape:label="blackBorder"
+     style="display:inline">
     <rect
-       style="fill:url(#radialGradient3676);stroke:url(#linearGradient3687);stroke-width:3.69230771000000013;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;fill-opacity:1"
+       style="fill:none;fill-opacity:1;stroke:url(#linearGradient3687);stroke-width:3.69230771000000010;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="rect2875"
        width="44.307693"
        height="44.307693"
@@ -405,21 +395,21 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="inscription"
-     style="display:inline;">
+     style="display:inline">
     <path
        style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:url(#linearGradient3707);fill-opacity:1;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
        d="m 31.112844,5.7343049 a 2.50025,2.50025 0 0 0 -0.78125,4.8437501 c 2.978434,1.130204 4.502376,5.24625 3.53125,8.4375 a 2.5008788,2.5008788 0 1 0 4.78125,1.46875 C 40.349048,14.881601 37.936966,8.1436985 32.081594,5.9218049 a 2.50025,2.50025 0 0 0 -0.96875,-0.1875 z"
-       id="path3643" />
+       id="path3643"
+       inkscape:connector-curvature="0" />
     <path
        style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
        d="m 24.331594,5.6718049 a 2.50025,2.50025 0 0 0 -2.34375,2.4375 c -0.09171,1.865339 -0.438636,3.8355441 -1,5.8437501 -0.496473,-0.244589 -0.990638,-0.491777 -1.5,-0.71875 a 2.570652,2.570652 0 0 0 -1.25,-0.21875 2.570652,2.570652 0 0 0 -0.84375,4.90625 c 0.625298,0.278635 1.241286,0.592651 1.84375,0.90625 -2.941507,6.884236 -7.826435,13.596811 -12.7187492,17.53125 a 2.5012204,2.5012204 0 1 0 3.125,3.90625 C 15.179763,35.813726 20.395063,28.973273 23.644094,21.546805 c 7.373339,5.316562 12.215561,12.884019 12.75,18.09375 a 2.5746662,2.5746662 0 1 0 5.125,-0.5 c -0.807794,-7.874398 -6.887771,-16.690982 -16,-22.625 0.821129,-2.734882 1.335871,-5.484802 1.46875,-8.1875001 a 2.50025,2.50025 0 0 0 -2.40625,-2.65625 2.50025,2.50025 0 0 0 -0.25,0 z"
-       id="use2830">
+       id="use2830"
+       inkscape:connector-curvature="0">
       <desc
-         id="desc3671"
-         style="fill-opacity:1;fill:url(#linearGradient3710)">die linke Linie</desc>
+         id="desc3671">die linke Linie</desc>
       <title
-         id="title3669"
-         style="fill-opacity:1;fill:url(#linearGradient3710)">Linie 1</title>
+         id="title3669">Linie 1</title>
     </path>
   </g>
   <g
