@@ -18,7 +18,7 @@
    sodipodi:docname="arida-icon.svg"
    style="display:inline"
    enable-background="new"
-   inkscape:export-filename="E:\Users\arida-lineout-512.png"
+   inkscape:export-filename="E:\Users\dstrauss\git\arida\frontend\common\src\main\resources\META-INF\resources\aridacommon\arida-inscriptionlicht2-512.png"
    inkscape:export-xdpi="960"
    inkscape:export-ydpi="960">
   <defs
@@ -308,6 +308,25 @@
        x2="33.939236"
        y2="37.484375"
        gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3626"
+       id="linearGradient3846"
+       x1="24.617363"
+       y1="6.0578756"
+       x2="24.617363"
+       y2="29.755352"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,0.76132927,0,1.8180513)" />
+    <filter
+       inkscape:collect="always"
+       id="filter3860">
+      <feBlend
+         inkscape:collect="always"
+         mode="lighten"
+         in2="BackgroundImage"
+         id="feBlend3862" />
+    </filter>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -316,16 +335,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="9.1458331"
-     inkscape:cx="11.535308"
-     inkscape:cy="23.999999"
+     inkscape:zoom="12.958333"
+     inkscape:cx="18.135048"
+     inkscape:cy="24"
      inkscape:document-units="px"
-     inkscape:current-layer="layer6"
+     inkscape:current-layer="layer7"
      showgrid="false"
      inkscape:window-width="1317"
      inkscape:window-height="794"
-     inkscape:window-x="221"
-     inkscape:window-y="52"
+     inkscape:window-x="169"
+     inkscape:window-y="88"
      inkscape:window-maximized="0"
      showguides="true"
      inkscape:guide-bbox="true" />
@@ -356,7 +375,7 @@
        sodipodi:cy="26.065117"
        sodipodi:rx="22.269768"
        sodipodi:ry="22.269768"
-       d="m 45.990698,26.065117 c 0,12.299253 -9.970515,22.269768 -22.269768,22.269768 -12.299253,0 -22.2697677,-9.970515 -22.2697677,-22.269768 0,-12.299253 9.9705147,-22.2697679 22.2697677,-22.2697679 12.299253,0 22.269768,9.9705149 22.269768,22.2697679 z"
+       d="m 45.990698,26.065117 a 22.269768,22.269768 0 1 1 -44.5395357,0 22.269768,22.269768 0 1 1 44.5395357,0 z"
        transform="matrix(1.0776942,0,0,1.0776942,-1.5639093,1000.272)" />
   </g>
   <g
@@ -380,9 +399,9 @@
      inkscape:groupmode="layer"
      id="layer6"
      inkscape:label="blackBorder"
-     style="display:inline">
+     style="display:none">
     <rect
-       style="fill:none;fill-opacity:1;stroke:url(#linearGradient3687);stroke-width:3.69230771000000010;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:none;stroke:url(#linearGradient3687);stroke-width:3.69230771;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="rect2875"
        width="44.307693"
        height="44.307693"
@@ -395,7 +414,8 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="inscription"
-     style="display:inline">
+     style="display:inline"
+     sodipodi:insensitive="true">
     <path
        style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:url(#linearGradient3707);fill-opacity:1;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
        d="m 31.112844,5.7343049 a 2.50025,2.50025 0 0 0 -0.78125,4.8437501 c 2.978434,1.130204 4.502376,5.24625 3.53125,8.4375 a 2.5008788,2.5008788 0 1 0 4.78125,1.46875 C 40.349048,14.881601 37.936966,8.1436985 32.081594,5.9218049 a 2.50025,2.50025 0 0 0 -0.96875,-0.1875 z"
@@ -416,8 +436,7 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="inscription licht1"
-     style="display:none;filter:url(#filter3723)"
-     sodipodi:insensitive="true">
+     style="display:none;filter:url(#filter3723)">
     <path
        sodipodi:type="arc"
        style="fill:url(#radialGradient3699);fill-opacity:1;stroke:none"
@@ -427,9 +446,9 @@
        sodipodi:rx="2.3139014"
        sodipodi:ry="2.3139014"
        d="m 33.578475,5.973094 a 2.3139014,2.3139014 0 1 1 -4.627802,0 2.3139014,2.3139014 0 1 1 4.627802,0 z"
-       transform="matrix(1.1018354,0,0,1.126082,-16.037749,6.3961293)" />
+       transform="matrix(1.1018354,0,0,1.126082,-16.015072,8.8655827)" />
     <path
-       transform="matrix(1.1018354,0,0,1.126082,-9.9336247,-0.9422849)"
+       transform="matrix(1.1018354,0,0,1.126082,-9.9376678,1.6219176)"
        d="m 33.578475,5.973094 a 2.3139014,2.3139014 0 1 1 -4.627802,0 2.3139014,2.3139014 0 1 1 4.627802,0 z"
        sodipodi:ry="2.3139014"
        sodipodi:rx="2.3139014"
@@ -439,7 +458,7 @@
        style="fill:url(#radialGradient3729);fill-opacity:1;stroke:none"
        sodipodi:type="arc" />
     <path
-       transform="matrix(1.1018354,0,0,1.126082,-3.2684595,-0.87496)"
+       transform="matrix(1.1018354,0,0,1.126082,-3.1963869,1.5240029)"
        d="m 33.578475,5.973094 a 2.3139014,2.3139014 0 1 1 -4.627802,0 2.3139014,2.3139014 0 1 1 4.627802,0 z"
        sodipodi:ry="2.3139014"
        sodipodi:rx="2.3139014"
@@ -448,6 +467,22 @@
        id="path3731"
        style="fill:url(#radialGradient3733);fill-opacity:1;stroke:none"
        sodipodi:type="arc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer7"
+     inkscape:label="inscription licht 2"
+     style="filter:url(#filter3860);opacity:0.9">
+    <rect
+       style="fill:url(#linearGradient3846);fill-opacity:1;stroke:none"
+       id="rect3046"
+       width="37.427654"
+       height="19.446941"
+       x="5.016077"
+       y="5.4019294"
+       rx="3.6923077"
+       ry="2.0360208"
+       inkscape:transform-center-y="0.70502473" />
   </g>
   <g
      inkscape:groupmode="layer"
