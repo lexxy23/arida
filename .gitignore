@@ -1,7 +1,6 @@
 target
-.classpath
-.project
-.checkstyle
-.settings
+.*
 build
 nb-configuration.xml
+*.versionsBackup
+*~
