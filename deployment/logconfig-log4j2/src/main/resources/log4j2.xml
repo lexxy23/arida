@@ -15,9 +15,9 @@
   <loggers>
     <logger name="com.google.code.arida" level="debug" additivity="false">
       <appender-ref ref="Console" />
+      <appender-ref ref="aridaLogfile" />
     </logger>
     <root level="info">
-      <appender-ref ref="aridaLogfile" />
       <appender-ref ref="Console" />
     </root>
   </loggers>
