@@ -4,3 +4,4 @@ build
 nb-configuration.xml
 *.versionsBackup
 *~
+test-output

@@ -4,7 +4,7 @@
   <parent>
     <artifactId>arida-persistence</artifactId>
     <groupId>ds2.arida.persistence</groupId>
-    <version>0.1-SNAPSHOT</version>
+    <version>0.2-SNAPSHOT</version>
   </parent>
   <artifactId>arida-persistence-impl-jpa</artifactId>
   <name>Arida Persistence Implementation JPA</name>
@@ -19,13 +19,12 @@
     <dependency>
       <groupId>ds2.arida.persistence</groupId>
       <artifactId>arida-persistence-api</artifactId>
-      <version>0.1-SNAPSHOT</version>
+      <version>${project.version}</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.persistence</groupId>
       <artifactId>javax.persistence</artifactId>
-      <version>2.1.0-RC1</version>
-    </dependency>
+      </dependency>
     <dependency>
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>

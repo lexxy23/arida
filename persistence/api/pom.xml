@@ -3,7 +3,7 @@
   <parent>
     <artifactId>arida-persistence</artifactId>
     <groupId>ds2.arida.persistence</groupId>
-    <version>0.1-SNAPSHOT</version>
+    <version>0.2-SNAPSHOT</version>
   </parent>
   <artifactId>arida-persistence-api</artifactId>
   <name>Arida Persistence API</name>
@@ -12,7 +12,7 @@
     <dependency>
       <groupId>ds2.arida.common</groupId>
       <artifactId>arida-common-api</artifactId>
-      <version>0.1-SNAPSHOT</version>
+      <version>0.2-SNAPSHOT</version>
     </dependency>
   </dependencies>
 </project>
