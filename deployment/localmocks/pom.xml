@@ -3,14 +3,14 @@
   <parent>
     <groupId>ds2.arida.deployment</groupId>
     <artifactId>arida-deployment</artifactId>
-    <version>0.1-SNAPSHOT</version>
+    <version>0.2-SNAPSHOT</version>
   </parent>
   <artifactId>arida-deployment-localmocks</artifactId>
   <dependencies>
     <dependency>
       <groupId>ds2.arida.common</groupId>
       <artifactId>arida-common-api</artifactId>
-      <version>0.1-SNAPSHOT</version>
+      <version>0.2-SNAPSHOT</version>
       <scope>provided</scope>
     </dependency>
     <dependency>

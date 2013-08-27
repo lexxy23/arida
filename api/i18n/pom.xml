@@ -4,7 +4,7 @@
   <parent>
     <artifactId>arida-common</artifactId>
     <groupId>ds2.arida.common</groupId>
-    <version>0.1-SNAPSHOT</version>
+    <version>0.2-SNAPSHOT</version>
   </parent>
   <artifactId>arida-i18n</artifactId>
   <name>Arida I18N</name>

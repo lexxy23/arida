@@ -5,7 +5,7 @@
   <parent>
     <artifactId>arida-deployment</artifactId>
     <groupId>ds2.arida.deployment</groupId>
-    <version>0.1-SNAPSHOT</version>
+    <version>0.2-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
   <modelVersion>4.0.0</modelVersion>
@@ -33,17 +33,17 @@
     <dependency>
       <groupId>ds2.arida.common</groupId>
       <artifactId>arida-common-api</artifactId>
-      <version>0.1-SNAPSHOT</version>
+      <version>0.2-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>ds2.arida.common</groupId>
       <artifactId>arida-i18n</artifactId>
-      <version>0.1-SNAPSHOT</version>
+      <version>0.2-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>ds2.arida.frontend</groupId>
       <artifactId>arida-frontend-guild-webapp</artifactId>
-      <version>0.1-SNAPSHOT</version>
+      <version>0.2-SNAPSHOT</version>
       <type>war</type>
     </dependency>
     <dependency>
@@ -59,7 +59,7 @@
     <dependency>
       <groupId>ds2.arida.deployment</groupId>
       <artifactId>arida-deployment-localmocks</artifactId>
-      <version>0.1-SNAPSHOT</version>
+      <version>0.2-SNAPSHOT</version>
     </dependency>
   </dependencies>
     <properties>

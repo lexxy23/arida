@@ -5,7 +5,7 @@
   <parent>
     <artifactId>arida-project</artifactId>
     <groupId>ds2.arida</groupId>
-    <version>0.1-SNAPSHOT</version>
+    <version>0.2-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <artifactId>arida-frontend</artifactId>
@@ -15,14 +15,14 @@
       <dependency>
         <groupId>ds2.arida.common</groupId>
         <artifactId>arida-i18n</artifactId>
-        <version>0.1-SNAPSHOT</version>
+        <version>0.2-SNAPSHOT</version>
         <type>jar</type>
         <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>ds2.arida.common</groupId>
         <artifactId>arida-common-api</artifactId>
-        <version>0.1-SNAPSHOT</version>
+        <version>0.2-SNAPSHOT</version>
         <type>jar</type>
         <scope>provided</scope>
       </dependency>
