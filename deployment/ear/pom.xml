@@ -61,6 +61,11 @@
       <artifactId>arida-deployment-localmocks</artifactId>
       <version>0.2-SNAPSHOT</version>
     </dependency>
+    <dependency>
+      <groupId>ds2.arida.deployment</groupId>
+      <artifactId>arida-deployment-logconfig</artifactId>
+      <version>0.2-SNAPSHOT</version>
+    </dependency>
   </dependencies>
     <properties>
         <netbeans.hint.deploy.server>gfv3ee6</netbeans.hint.deploy.server>
