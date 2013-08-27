@@ -44,8 +44,8 @@ import com.google.code.arida.common.api.service.RaidService;
 import com.google.code.arida.frontend.common.api.RequestAttributes;
 
 /**
- * A filter to load a guild by a given name, and then forwarding the request to
- * the JSF implementation.
+ * A filter to load a guild by a given name, and then forwarding the request to the JSF
+ * implementation.
  * 
  * @author Dirk Strauss
  * @version 0.1
@@ -55,8 +55,7 @@ public class GuildRaidFilter implements Filter {
     /**
      * A logger.
      */
-    private static final Logger LOG = LoggerFactory
-        .getLogger(GuildRaidFilter.class);
+    private static final Logger LOG = LoggerFactory.getLogger(GuildRaidFilter.class);
     /**
      * The pattern for a guild tag.
      */
@@ -86,36 +85,32 @@ public class GuildRaidFilter implements Filter {
     }
     
     @Override
-    public void doFilter(final ServletRequest arg0, final ServletResponse arg1,
-        final FilterChain arg2) throws IOException, ServletException {
-        HttpServletRequest req = (HttpServletRequest) arg0;
-        String reqUri = req.getRequestURI();
+    public void doFilter(final ServletRequest arg0, final ServletResponse arg1, final FilterChain arg2)
+        throws IOException, ServletException {
+        final HttpServletRequest req = (HttpServletRequest) arg0;
+        final String reqUri = req.getRequestURI();
         LOG.debug("reqUri is {}", reqUri);
         if (isWebpageRequest(reqUri)) {
-            Matcher m = GUILDTAGPATTERN.matcher(reqUri);
+            final Matcher m = GUILDTAGPATTERN.matcher(reqUri);
             if (!m.find()) {
-                throw new ServletException(
-                    "Could not find the given guild or clan!");
+                throw new ServletException("Could not find the given guild or clan!");
             }
-            String g1 = m.group();
-            Matcher guildNameMatcher =
-                RaidAdminService.GUILDTAGPATTERN.matcher(g1);
+            final String g1 = m.group();
+            final Matcher guildNameMatcher = RaidAdminService.GUILDTAGPATTERN.matcher(g1);
             guildNameMatcher.find();
-            String guildName = guildNameMatcher.group();
+            final String guildName = guildNameMatcher.group();
             LOG.debug("guildName is {}", guildName);
-            Guild guild = guildSvc.getGuildByTag(guildName);
+            final Guild guild = guildSvc.getGuildByTag(guildName);
             if (guild == null) {
-                Raid r = raidSvc.getRaidByOrderId(guildName);
+                final Raid r = raidSvc.getRaidByOrderId(guildName);
                 if (r == null) {
-                    throw new ServletException(
-                        "No clan or raid found with the given id!");
+                    throw new ServletException("No clan or raid found with the given id!");
                 }
                 arg0.setAttribute(RequestAttributes.RAID.name(), r);
             } else {
                 arg0.setAttribute(RequestAttributes.GUILD.name(), guild);
             }
-            RequestDispatcher dispatcher =
-                req.getRequestDispatcher("/c/index.jsf");
+            final RequestDispatcher dispatcher = req.getRequestDispatcher("/c/index.jsf");
             dispatcher.forward(arg0, arg1);
         } else {
             LOG.debug("pass through {}", reqUri);
@@ -136,7 +131,7 @@ public class GuildRaidFilter implements Filter {
         if (reqUri.indexOf("javax.faces.resource") > 0) {
             rc = false;
         } else {
-            Matcher m = GUILDTAGPATTERN.matcher(reqUri);
+            final Matcher m = GUILDTAGPATTERN.matcher(reqUri);
             if (m.find()) {
                 rc = true;
             }

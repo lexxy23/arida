@@ -35,19 +35,10 @@ public class StartupListener implements ServletContextListener {
     /**
      * A logger.
      */
-    private static final Logger LOG = LoggerFactory
-        .getLogger(StartupListener.class);
-    
-    /**
-     * Inits the listener.
-     */
-    public StartupListener() {
-        // TODO Auto-generated constructor stub
-    }
+    private static final Logger LOG = LoggerFactory.getLogger(StartupListener.class);
     
     /*
-     * (non-Javadoc) @see
-     * javax.servlet.ServletContextListener#contextDestroyed(javax.servlet.
+     * (non-Javadoc) @see javax.servlet.ServletContextListener#contextDestroyed(javax.servlet.
      * ServletContextEvent)
      */
     @Override
@@ -56,8 +47,7 @@ public class StartupListener implements ServletContextListener {
     }
     
     /*
-     * (non-Javadoc) @see
-     * javax.servlet.ServletContextListener#contextInitialized(javax.servlet
+     * (non-Javadoc) @see javax.servlet.ServletContextListener#contextInitialized(javax.servlet
      * .ServletContextEvent)
      */
     @Override
