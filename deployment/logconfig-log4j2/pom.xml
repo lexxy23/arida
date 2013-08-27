@@ -5,19 +5,19 @@
     <artifactId>arida-deployment</artifactId>
     <version>0.2-SNAPSHOT</version>
   </parent>
-  <artifactId>arida-deployment-localmocks</artifactId>
+  <artifactId>arida-deployment-logconfig-log4j2</artifactId>
+  <name>Arida Deployment Logconfig Log4J2</name>
+  <description>The log config for log4j2.</description>
   <dependencies>
     <dependency>
-      <groupId>ds2.arida.common</groupId>
-      <artifactId>arida-common-api</artifactId>
-      <version>0.2-SNAPSHOT</version>
-      <scope>provided</scope>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-slf4j-impl</artifactId>
+      <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>javax.enterprise</groupId>
-      <artifactId>cdi-api</artifactId>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-core</artifactId>
+      <scope>compile</scope>
     </dependency>
   </dependencies>
-  <name>Arida Deployment LocalMocks</name>
-  <inceptionYear>2013</inceptionYear>
 </project>

@@ -4,7 +4,7 @@
   <parent>
     <artifactId>arida-frontend</artifactId>
     <groupId>ds2.arida.frontend</groupId>
-    <version>0.1-SNAPSHOT</version>
+    <version>0.2-SNAPSHOT</version>
   </parent>
   <artifactId>arida-frontend-taglib</artifactId>
   <name>Arida Frontend Taglib</name>

@@ -5,7 +5,7 @@
   <parent>
     <artifactId>arida-common</artifactId>
     <groupId>ds2.arida.common</groupId>
-    <version>0.1-SNAPSHOT</version>
+    <version>0.2-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <artifactId>arida-common-api</artifactId>

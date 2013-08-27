@@ -4,11 +4,11 @@
   <parent>
     <groupId>ds2.base.oss</groupId>
     <artifactId>jee-base</artifactId>
-    <version>0.75</version>
+    <version>0.79</version>
   </parent>
   <groupId>ds2.arida</groupId>
   <artifactId>arida-project</artifactId>
-  <version>0.1-SNAPSHOT</version>
+  <version>0.2-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Arida Project</name>
   <description>The whole arida modules etc.</description>
@@ -72,12 +72,12 @@
       <dependency>
         <groupId>ds2.oss.core</groupId>
         <artifactId>ds2-oss-core-api</artifactId>
-        <version>${ds2.oss.core.version}</version>
+        <version>0.2</version>
       </dependency>
       <dependency>
         <groupId>ds2.oss.core</groupId>
         <artifactId>ds2-oss-core-base</artifactId>
-        <version>${ds2.oss.core.version}</version>
+        <version>0.2</version>
       </dependency>
       <dependency>
         <groupId>ds2.oss.core</groupId>

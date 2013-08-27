@@ -1,9 +1,6 @@
 target
-.classpath
-.project
-.checkstyle
-.settings
+.*
 build
 nb-configuration.xml
-login.properties
-test-output
+*.versionsBackup
+*~
